@@ -88,6 +88,13 @@
   animation-play-state: paused;
 }
 
+/* GPU Compositing & Containment for lag-free 60fps desktop rendering */
+.contain-paint {
+  contain: layout paint;
+  isolation: isolate;
+  transform: translateZ(0);
+}
+
 .animate-stream-up {
   animation: stream-up 65s linear infinite;
 }

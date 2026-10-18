@@ -6,6 +6,28 @@ interface HeroProps {
 }
 
 export const Hero: React.FC<HeroProps> = ({ onOpenEnquiry }) => {
+  const videoRef = React.useRef<HTMLVideoElement>(null);
+
+  // Pause offscreen video decoding to maintain smooth 60fps performance on desktop
+  React.useEffect(() => {
+    const video = videoRef.current;
+    if (!video || typeof IntersectionObserver === 'undefined') return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      },
+      { threshold: 0.05 }
+    );
+
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section
       id="home"
@@ -13,11 +35,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnquiry }) => {
     >
       {/* 1. Background Video Layer - Clean, visible without heavy overlay layers, muted */}
       <video
+        ref={videoRef}
         src="https://res.cloudinary.com/o82tprxi/video/upload/v1792194612/Jewelry_box_opening_with_diamonds_20261016210610.mp4"
         autoPlay
         loop
         muted
         playsInline
+        preload="metadata"
         className="absolute inset-0 w-full h-full object-cover"
       />
 

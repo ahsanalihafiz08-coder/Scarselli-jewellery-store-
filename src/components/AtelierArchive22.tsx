@@ -13,10 +13,32 @@ export const AtelierArchive22: React.FC<AtelierArchive22Props> = ({
   isSaved,
   onToggleSave,
 }) => {
+  const sectionRef = useRef<HTMLElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const [isInView, setIsInView] = React.useState(true);
+
+  // Pause offscreen marquee on desktop to eliminate lag/freezing
+  React.useEffect(() => {
+    const el = sectionRef.current;
+    if (!el || typeof IntersectionObserver === 'undefined') return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsInView(entry.isIntersecting);
+      },
+      { rootMargin: '250px 0px' }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <section id="atelier-archive" className="py-16 sm:py-24 bg-[#F4F6F9] border-b border-slate-200/80 overflow-hidden">
+    <section
+      id="atelier-archive"
+      ref={sectionRef}
+      className="py-16 sm:py-24 bg-[#F4F6F9] border-b border-slate-200/80 overflow-hidden"
+    >
       
       {/* Center-aligned Section Header & Description */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 sm:mb-12 text-center">
@@ -31,9 +53,12 @@ export const AtelierArchive22: React.FC<AtelierArchive22Props> = ({
       {/* Smooth Continuous Sliding Animation Track */}
       <div
         ref={scrollRef}
-        className="overflow-x-auto no-scrollbar relative w-full cursor-grab active:cursor-grabbing pb-4"
+        className="overflow-x-auto no-scrollbar relative w-full cursor-grab active:cursor-grabbing pb-4 isolate contain-paint"
       >
-        <div className="animate-marquee flex gap-4 sm:gap-4.5 px-4 sm:px-6">
+        <div
+          className="animate-marquee flex gap-4 sm:gap-4.5 px-4 sm:px-6"
+          style={{ animationPlayState: isInView ? 'running' : 'paused' }}
+        >
           {/* Double array to create seamless infinite loop */}
           {[...ARCHIVE_22_PIECES, ...ARCHIVE_22_PIECES].map((piece, index) => {
             const saved = isSaved(piece.id);
@@ -41,7 +66,8 @@ export const AtelierArchive22: React.FC<AtelierArchive22Props> = ({
               <div
                 key={`${piece.id}-${index}`}
                 onClick={() => onSelectPiece(piece, 'summary')}
-                className="w-56 sm:w-64 md:w-72 lg:w-80 shrink-0 group cursor-pointer flex flex-col justify-between transition-all duration-300"
+                className="w-56 sm:w-64 md:w-72 lg:w-80 shrink-0 group cursor-pointer flex flex-col justify-between"
+                style={{ contain: 'layout paint' }}
               >
                 {/* Rounded Corner Image Box - compact proportions on mobile */}
                 <div className="relative aspect-square overflow-hidden rounded-xl sm:rounded-2xl bg-slate-100 shadow-xs sm:shadow-sm group-hover:shadow-md transition-shadow">
