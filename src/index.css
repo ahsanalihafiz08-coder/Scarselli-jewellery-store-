@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAFBFD;
+    color: #1E293B;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom continuous sliding and stream animations with hardware acceleration */
+@keyframes marquee-slide {
+  0% {
+    transform: translate3d(0%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0%, 0, 0);
+  }
+}
+
+@keyframes stream-up {
+  0% {
+    transform: translate3d(0, 0%, 0);
+  }
+  100% {
+    transform: translate3d(0, -50%, 0);
+  }
+}
+
+@keyframes stream-down {
+  0% {
+    transform: translate3d(0, -50%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0%, 0);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-slide 60s linear infinite;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+.animate-marquee-left {
+  display: flex;
+  width: max-content;
+  animation: marquee-slide 55s linear infinite;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+.animate-marquee-right {
+  display: flex;
+  width: max-content;
+  animation: marquee-right 55s linear infinite;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+.animate-marquee:hover,
+.animate-marquee-left:hover,
+.animate-marquee-right:hover,
+.hover-pause:hover {
+  animation-play-state: paused;
+}
+
+.animate-stream-up {
+  animation: stream-up 65s linear infinite;
+}
+
+.animate-stream-up:hover {
+  animation-play-state: paused;
+}
+
+.animate-stream-down {
+  animation: stream-down 65s linear infinite;
+}
+
+.animate-stream-down:hover {
+  animation-play-state: paused;
+}
+
+/* Custom subtle diamond shimmer and reflection utilities */
+@keyframes diamond-glint {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.05);
+  }
+}
+
+.animate-diamond-glint {
+  animation: diamond-glint 4s ease-in-out infinite;
+}
+
+.bg-pearl-radial {
+  background: radial-gradient(circle at 50% 0%, rgba(224, 239, 248, 0.45) 0%, rgba(250, 251, 253, 0.95) 70%, #FAFBFD 100%);
+}
+
+.bg-ice-sheen {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(235, 245, 251, 0.7) 50%, rgba(248, 250, 252, 0.85) 100%);
+}
+
+.border-platinum {
+  border-color: rgba(203, 213, 225, 0.6);
+}
+
+.text-champagne {
+  color: #B5925A;
+}
+
+.border-champagne {
+  border-color: rgba(200, 169, 126, 0.45);
+}
+
+/* Hide scrollbar for neat category scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
