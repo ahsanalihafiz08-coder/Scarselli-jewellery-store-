@@ -29,7 +29,7 @@ export const AtelierCatalog36: React.FC<AtelierCatalog36Props> = ({
     : CATALOG_36_PIECES.filter((p) => p.category === activeCategory);
 
   return (
-    <section id="atelier-catalog" className="py-20 lg:py-28 bg-[#FAFBFD] border-b border-slate-200/80">
+    <section id="atelier-catalog" className="py-20 lg:py-28 bg-[#FAFBFD] border-b border-slate-200/80 section-auto-content">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -77,12 +77,13 @@ export const AtelierCatalog36: React.FC<AtelierCatalog36Props> = ({
                     alt={piece.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                     loading="lazy"
+                    decoding="async"
                     referrerPolicy="no-referrer"
                     onError={(e) => {
                       const target = e.currentTarget;
                       if (!target.dataset.fallback) {
                         target.dataset.fallback = 'true';
-                        target.src = 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80';
+                        target.src = `/images/atelier/${piece.id}.jpg`;
                       }
                     }}
                   />

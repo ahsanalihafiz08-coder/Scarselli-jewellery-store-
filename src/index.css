@@ -58,27 +58,27 @@
   display: flex;
   width: max-content;
   animation: marquee-slide 60s linear infinite;
-  will-change: transform;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
+  transform-style: preserve-3d;
 }
 
 .animate-marquee-left {
   display: flex;
   width: max-content;
   animation: marquee-slide 55s linear infinite;
-  will-change: transform;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
+  transform-style: preserve-3d;
 }
 
 .animate-marquee-right {
   display: flex;
   width: max-content;
   animation: marquee-right 55s linear infinite;
-  will-change: transform;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
+  transform-style: preserve-3d;
 }
 
 .animate-marquee:hover,
@@ -93,6 +93,11 @@
   contain: layout paint;
   isolation: isolate;
   transform: translateZ(0);
+}
+
+.section-auto-content {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 600px;
 }
 
 .animate-stream-up {

@@ -10,747 +10,1627 @@ export interface AtelierPiece {
 
 export const ARCHIVE_22_PIECES: AtelierPiece[] = [
   {
-    id: 'arch-1',
-    title: 'Hexagonal Hoop Earrings on Cloth',
-    image: 'https://i.ibb.co/PGCMVkKh/Hexagonal-hoop-earrings-on-cloth-20261016214816.jpg',
-    category: 'Earrings',
-    price: '$18,500',
-    description: 'Geometric hexagonal silhouette articulated in platinum, set with calibrated brilliant diamonds catching light at every angle.',
-    curationHighlights: ['Geometric hexagonal architecture', 'Hand-set pavé diamonds', 'Platinum 950 secure click closure'],
+    "id": "arch-1",
+    "title": "Stud Earrings With Diamonds",
+    "image": "https://i.ibb.co/4RKj8TBV/Stud-earrings-with-diamonds-20261021062205.jpg",
+    "category": "Earrings",
+    "price": "$15,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring stud earrings with diamonds handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
   },
   {
-    id: 'arch-2',
-    title: 'Platinum Ring on Linen Surface',
-    image: 'https://i.ibb.co/pj4KYzhQ/Platinum-ring-on-linen-surface-20261016214811.jpg',
-    category: 'Diamond Rings',
-    price: '$28,000',
-    description: 'Substantial platinum solitaire band sculpted with refined ergonomics and a focal diamond of supreme clarity.',
-    curationHighlights: ['Hand-rubbed satin platinum finish', 'Low-profile gallery setting', 'Superior optical symmetry'],
+    "id": "arch-2",
+    "title": "Diamond Stud Earrings On Surface",
+    "image": "https://i.ibb.co/LX85YDL2/Diamond-stud-earrings-on-surface-20261021062157.jpg",
+    "category": "Earrings",
+    "price": "$17,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond stud earrings on surface handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
   },
   {
-    id: 'arch-3',
-    title: 'Ring on Display Pad',
-    image: 'https://i.ibb.co/gLjDzd5C/Ring-on-display-pad-20261016214819.jpg',
-    category: 'Diamond Rings',
-    price: '$34,000',
-    description: 'Classic atelier solitaire presented on custom velvet display, demonstrating immaculate facet proportion and fire.',
-    curationHighlights: ['Ideal proportions with maximum scintillation', 'Delicate four-prong crown', 'Fifth Avenue private collection'],
+    "id": "arch-3",
+    "title": "Diamond Engagement Ring On Beige",
+    "image": "https://i.ibb.co/JNSwFsP/Diamond-engagement-ring-on-beige-20261021062021.jpg",
+    "category": "Diamond Rings",
+    "price": "$31,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond engagement ring on beige handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'arch-4',
-    title: 'Split-Band Ring Featuring Diamonds',
-    image: 'https://i.ibb.co/4nGpg0f2/Split-band-ring-featuring-diamonds-20261016214828.jpg',
-    category: 'Diamond Rings',
-    price: '$26,500',
-    description: 'An architectural split-shank design that opens into a balanced diamond focal point, marrying modern volume with lightness.',
-    curationHighlights: ['Bespoke split-shank architecture', 'Micro-claw diamond accents', 'Ergonomic comfort-fit interior'],
+    "id": "arch-4",
+    "title": "Sapphire Jewelry Set Displayed",
+    "image": "https://i.ibb.co/DHW166XK/Sapphire-jewelry-set-displayed-20261021062015.jpg",
+    "category": "Exceptional Pieces",
+    "price": "$57,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring sapphire jewelry set displayed handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Bespoke high jewellery atelier commission",
+      "Uniform color and clarity match across links",
+      "Handcrafted Fifth Avenue heritage piece"
+    ]
   },
   {
-    id: 'arch-5',
-    title: 'Diamond Bracelet on Ivory Silk',
-    image: 'https://i.ibb.co/LdWTZ0pp/Diamond-bracelet-on-ivory-silk-20261016214832.jpg',
-    category: 'Exceptional Pieces',
-    price: '$42,000',
-    description: 'Fluid articulated platinum line bracelet with precision-matched brilliant diamonds flowing seamlessly over silk.',
-    curationHighlights: ['Concealed dual-action safety box clasp', 'Even color & scintillation match', 'Hand-linked platinum mount'],
+    "id": "arch-5",
+    "title": "Platinum Diamond Eternity Weddin",
+    "image": "https://i.ibb.co/39Q7pyrX/Platinum-diamond-eternity-weddin-20261021062007.jpg",
+    "category": "Diamond Rings",
+    "price": "$36,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring platinum diamond eternity weddin handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'arch-6',
-    title: 'Cluster Ring with Diamond Petals',
-    image: 'https://i.ibb.co/ccF7JwYq/Cluster-ring-with-diamond-petals-20261016214835.jpg',
-    category: 'Diamond Rings',
-    price: '$31,500',
-    description: 'Floral-inspired high jewellery cluster ring arranged with pear and marquise diamond petals around a luminous center.',
-    curationHighlights: ['Botanical petal arrangement', 'Multi-tier optical depth', 'Hand-sculpted basket in platinum'],
+    "id": "arch-6",
+    "title": "Wedding Ring Set On Backdrop",
+    "image": "https://i.ibb.co/5gMCH1CP/Wedding-ring-set-on-backdrop-20261021062000.jpg",
+    "category": "Diamond Rings",
+    "price": "$38,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring wedding ring set on backdrop handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'arch-7',
-    title: 'Diamond Bracelet on Silk',
-    image: 'https://i.ibb.co/k6X9rtyL/Diamond-bracelet-on-silk-20261016214842.jpg',
-    category: 'Exceptional Pieces',
-    price: '$38,000',
-    description: 'Gracefully draped diamond line bracelet resting on liquid silk, displaying continuous sparkle and flexible comfort.',
-    curationHighlights: ['Flexible link articulation', 'Flawless prong setting alignment', 'Solid platinum construction'],
+    "id": "arch-7",
+    "title": "Diamond Rings On Backdrop",
+    "image": "https://i.ibb.co/9mFmH414/Diamond-rings-on-backdrop-20261021061929.jpg",
+    "category": "Diamond Rings",
+    "price": "$41,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond rings on backdrop handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'arch-8',
-    title: 'Diamond Choker Necklace on Silk',
-    image: 'https://i.ibb.co/FkfhKyFY/Diamond-choker-necklace-on-silk-20261016214944.jpg',
-    category: 'Necklaces',
-    price: '$78,000',
-    description: 'An extraordinary high-jewellery diamond choker structured with graduated brilliant diamonds resting flush along the collarbone.',
-    curationHighlights: ['Graduated concentric brilliance', 'Tailored ergonomic neck contour', 'Heirloom collection quality'],
+    "id": "arch-8",
+    "title": "Two Stone Ring On Gold Band",
+    "image": "https://i.ibb.co/S48C7gpD/Two-stone-ring-on-gold-band-20261021061917.jpg",
+    "category": "Diamond Rings",
+    "price": "$43,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring two stone ring on gold band handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'arch-9',
-    title: 'Diamond Lattice Ring on Dish',
-    image: 'https://i.ibb.co/tph850nN/Diamond-lattice-ring-on-dish-20261016214947.jpg',
-    category: 'Diamond Rings',
-    price: '$22,500',
-    description: 'Intricate openwork lattice band studded with diamonds, combining lightness with geometric shadow play.',
-    curationHighlights: ['Open-air diamond lattice', 'Precision micro-pavé', 'Smooth ceramic-tray presentation'],
+    "id": "arch-9",
+    "title": "Toi Et Moi Ring Displayed",
+    "image": "https://i.ibb.co/mCJjfGmB/Toi-et-Moi-ring-displayed-20261021061916.jpg",
+    "category": "Diamond Rings",
+    "price": "$46,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring toi et moi ring displayed handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'arch-10',
-    title: 'Diamond Resting on Silk Cloth',
-    image: 'https://i.ibb.co/prMBtLL2/Diamond-resting-on-silk-cloth-20261016214952.jpg',
-    category: 'Loose Diamonds',
-    price: '$65,000',
-    description: 'A loose masterwork diamond resting on crushed silk, exhibiting razor-sharp facet intersections and intense dispersion.',
-    curationHighlights: ['Superlative facet symmetry', 'Intense natural optical fire', 'Accompanied by Fifth Avenue grading notes'],
+    "id": "arch-10",
+    "title": "Gold Ring With Diamond Drop",
+    "image": "https://i.ibb.co/1GDn6K52/Gold-ring-with-diamond-drop-20261021061822.jpg",
+    "category": "Diamond Rings",
+    "price": "$48,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring gold ring with diamond drop handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'arch-11',
-    title: 'Diamond Necklace on Wire Background',
-    image: 'https://i.ibb.co/99WXHYqs/Diamond-necklace-on-wire-background-20261016214013.jpg',
-    category: 'Necklaces',
-    price: '$54,000',
-    description: 'Contemporary diamond pendant suspended from a minimal architectural wire backdrop, highlighting stone purity.',
-    curationHighlights: ['Architectural silhouette', 'Minimal metal obstruction', 'High-fire center diamond'],
+    "id": "arch-11",
+    "title": "Diamond Eternity Band On Silk",
+    "image": "https://i.ibb.co/Q7MgB9jv/Diamond-eternity-band-on-silk-20261021061759.jpg",
+    "category": "Diamond Rings",
+    "price": "$51,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond eternity band on silk handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'arch-12',
-    title: 'Diamond Ring on Ceramic Dish',
-    image: 'https://i.ibb.co/VcHZ7MVw/Diamond-ring-on-ceramic-dish-20261016214211.jpg',
-    category: 'Diamond Rings',
-    price: '$29,000',
-    description: 'Crisp solitaire diamond ring resting in a matte ceramic dish, balancing minimalist sculpture and brilliant luxury.',
-    curationHighlights: ['Clean modern solitaire styling', 'Four slender platinum talons', 'Bright white table facet'],
+    "id": "arch-12",
+    "title": "Ruby Ring On Stone Block",
+    "image": "https://i.ibb.co/xqdYG5xQ/Ruby-ring-on-stone-block-20261021061753.jpg",
+    "category": "Diamond Rings",
+    "price": "$53,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring ruby ring on stone block handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'arch-13',
-    title: 'Diamond Ring on Ceramic Dish',
-    image: 'https://i.ibb.co/3yQLKwPK/Diamond-ring-on-ceramic-dish-20261016214213.jpg',
-    category: 'Diamond Rings',
-    price: '$32,000',
-    description: 'Refined diamond creation resting on artisanal ceramic, showing the crisp sparkle of calibrated shoulder stones.',
-    curationHighlights: ['Shoulder-set brilliant diamonds', 'High-polish platinum shank', 'Balanced center stone height'],
+    "id": "arch-13",
+    "title": "Emerald And Diamond Drop Earrings",
+    "image": "https://i.ibb.co/bRvctqCY/Emerald-and-diamond-drop-earrings-20261021061653.jpg",
+    "category": "Earrings",
+    "price": "$39,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring emerald and diamond drop earrings handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
   },
   {
-    id: 'arch-14',
-    title: 'Platinum Ring on Concrete Block',
-    image: 'https://i.ibb.co/BVV3YF5X/Platinum-ring-on-concrete-block-20261016214332.jpg',
-    category: 'Diamond Rings',
-    price: '$27,500',
-    description: 'Industrial juxtaposition of high-polish platinum and raw concrete block, emphasizing modern Fifth Avenue distinction.',
-    curationHighlights: ['Raw texture contrast study', 'Dense solid platinum 950', 'Timeless round cut center'],
+    "id": "arch-14",
+    "title": "Sapphire Blue Gemstone Stud Earr",
+    "image": "https://i.ibb.co/YBRbZCQR/Sapphire-blue-gemstone-stud-earr-20261021061646.jpg",
+    "category": "Earrings",
+    "price": "$16,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring sapphire blue gemstone stud earr handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
   },
   {
-    id: 'arch-15',
-    title: 'Hexagon Diamond Ring on Tray',
-    image: 'https://i.ibb.co/GQ9Jjyq1/Hexagon-diamond-ring-on-tray-20261016214743.jpg',
-    category: 'Diamond Rings',
-    price: '$36,000',
-    description: 'Striking hexagonal halo diamond ring arranged with sharp geometric contours and step-cut accents.',
-    curationHighlights: ['Geometric hexagon halo', 'Art Deco inspired geometry', 'Prismatic step-cut facet array'],
+    "id": "arch-15",
+    "title": "Cross Shaped Diamond Earrings",
+    "image": "https://i.ibb.co/n8zx6qDS/Cross-shaped-diamond-earrings-20261021061637.jpg",
+    "category": "Earrings",
+    "price": "$18,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring cross shaped diamond earrings handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
   },
   {
-    id: 'arch-16',
-    title: 'Hexagon Diamond Ring on Tray',
-    image: 'https://i.ibb.co/LhczgkCt/Hexagon-diamond-ring-on-tray-20261016214744.jpg',
-    category: 'Diamond Rings',
-    price: '$37,500',
-    description: 'Alternative perspective of our signature hexagonal halo ring on presentation tray, highlighting low-set comfort.',
-    curationHighlights: ['Low-profile basket', 'Triple-row pavé shoulders', 'Master stone alignment'],
+    "id": "arch-16",
+    "title": "Diamond Stud Earrings On Surface",
+    "image": "https://i.ibb.co/tpZcxL5x/Diamond-stud-earrings-on-surface-20261021061627.jpg",
+    "category": "Earrings",
+    "price": "$20,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond stud earrings on surface handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
   },
   {
-    id: 'arch-17',
-    title: 'Diamond Earrings on Silk',
-    image: 'https://i.ibb.co/HTGvffmX/Diamond-earrings-on-silk-20261016214748.jpg',
-    category: 'Earrings',
-    price: '$21,000',
-    description: 'Ethereal drop earrings resting on soft ivory silk, crafted to sway gently and capture ambient evening light.',
-    curationHighlights: ['Articulated drop design', 'Lightweight platinum mount', 'Hand-selected matching diamond pairs'],
+    "id": "arch-17",
+    "title": "Marquise Sapphire Ring On Tile",
+    "image": "https://i.ibb.co/zT8XcRZS/Marquise-sapphire-ring-on-tile-20261021061451.jpg",
+    "category": "Diamond Rings",
+    "price": "$31,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring marquise sapphire ring on tile handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'arch-18',
-    title: 'Diamond Earrings on White Silk',
-    image: 'https://i.ibb.co/wNwcdmDX/Diamond-earrings-on-white-silk-20261016214749.jpg',
-    category: 'Earrings',
-    price: '$24,500',
-    description: 'Matched brilliant drop earrings nestled on white silk, highlighting pure colorlessness and crystalline fire.',
-    curationHighlights: ['Colorless D-F grade appearance', 'French wire back with safety hook', 'Pure light scintillation'],
+    "id": "arch-18",
+    "title": "Diamond Resting On Silk Cloth",
+    "image": "https://i.ibb.co/4gfzV82D/Diamond-resting-on-silk-cloth-20261021061335.jpg",
+    "category": "Diamond Rings",
+    "price": "$33,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond resting on silk cloth handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'arch-19',
-    title: 'Diamond Ring with Open Space',
-    image: 'https://i.ibb.co/nNxqQdmN/Diamond-ring-with-open-space-20261016214756.jpg',
-    category: 'Diamond Rings',
-    price: '$25,000',
-    description: 'Avant-garde open-space architectural band framing negative space alongside floating diamond clusters.',
-    curationHighlights: ['Negative-space modern styling', 'Floating tension aesthetic', 'Comfortable daily wear balance'],
+    "id": "arch-19",
+    "title": "Diamond Lattice Ring On Dish",
+    "image": "https://i.ibb.co/7B44xry/Diamond-lattice-ring-on-dish-20261021061332.jpg",
+    "category": "Diamond Rings",
+    "price": "$36,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond lattice ring on dish handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'arch-20',
-    title: 'Diamond Platinum Mesh Ribbon Bracelet',
-    image: 'https://i.ibb.co/LhY4NwMt/Diamond-platinum-mesh-ribbon-bra-20261016214759.jpg',
-    category: 'Exceptional Pieces',
-    price: '$58,000',
-    description: 'Supple woven mesh ribbon crafted from fine platinum strands, pavé-set with hundreds of glittering diamond accents.',
-    curationHighlights: ['Fabric-like platinum mesh flexibility', 'Seamless diamond ribbon border', 'Bespoke atelier jewel'],
+    "id": "arch-20",
+    "title": "Diamond Choker Necklace On Silk",
+    "image": "https://i.ibb.co/Y4m66MCf/Diamond-choker-necklace-on-silk-20261021061330.jpg",
+    "category": "Necklaces",
+    "price": "$53,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond choker necklace on silk handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Articulated platinum links for fluid drape",
+      "Concealed high-security safety clasp",
+      "Spectacular focal diamond scintillation"
+    ]
   },
   {
-    id: 'arch-21',
-    title: 'Diamond Mesh Ribbon Bracelet',
-    image: 'https://i.ibb.co/rRcJgXjG/Diamond-mesh-ribbon-bracelet-res-20261016214802.jpg',
-    category: 'Exceptional Pieces',
-    price: '$56,000',
-    description: 'Artisanal mesh bracelet showing extraordinary fluidity and continuous diamond sparkle around the wrist.',
-    curationHighlights: ['Tactile silk-smooth finish', 'Concealed clasp mechanism', 'High-carat micro-pavé density'],
+    "id": "arch-21",
+    "title": "Diamond Bolo Bracelet On Silk",
+    "image": "https://i.ibb.co/MkWjZG5R/Diamond-bolo-bracelet-on-silk-20261021061325.jpg",
+    "category": "Exceptional Pieces",
+    "price": "$82,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond bolo bracelet on silk handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Bespoke high jewellery atelier commission",
+      "Uniform color and clarity match across links",
+      "Handcrafted Fifth Avenue heritage piece"
+    ]
   },
   {
-    id: 'arch-22',
-    title: 'Diamond Ring on Slate Tile',
-    image: 'https://i.ibb.co/nNQZ57CP/Diamond-ring-on-slate-tile-20261016214807.jpg',
-    category: 'Diamond Rings',
-    price: '$33,000',
-    description: 'Solitaire masterpiece resting on natural deep slate, exhibiting striking contrast and high scintillation.',
-    curationHighlights: ['High-contrast optical reflection', 'Hand-finished platinum prongs', 'Fifth Avenue atelier creation'],
-  },
+    "id": "arch-22",
+    "title": "Diamond Bracelet On Ivory Silk",
+    "image": "https://i.ibb.co/jvKgFm5G/Diamond-bracelet-on-ivory-silk-20261021061316.jpg",
+    "category": "Exceptional Pieces",
+    "price": "$87,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond bracelet on ivory silk handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Bespoke high jewellery atelier commission",
+      "Uniform color and clarity match across links",
+      "Handcrafted Fifth Avenue heritage piece"
+    ]
+  }
 ];
 
 export const SUITES_9_PIECES: AtelierPiece[] = [
   {
-    id: 'suite-1',
-    title: 'Diamond Anklet on Stone Slab',
-    image: 'https://i.ibb.co/rG9zrXNZ/Diamond-anklet-on-stone-slab-20261016213840.jpg',
-    category: 'Exceptional Pieces',
-    price: '$16,500',
-    description: 'Fine diamond line anklet articulated in platinum, designed for understated summer elegance and subtle sparkle.',
-    curationHighlights: ['Durable platinum chain links', 'Full-cut diamonds in bezel cups', 'Secure lobster lock'],
+    "id": "suite-1",
+    "title": "Bypass Ring With Yellow Diamond",
+    "image": "https://i.ibb.co/3mkZ2Mkf/Bypass-ring-with-yellow-diamond-20261021061312.jpg",
+    "category": "Diamond Rings",
+    "price": "$26,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring bypass ring with yellow diamond handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'suite-2',
-    title: 'Diamond Watch Bezel Resting on Display',
-    image: 'https://i.ibb.co/7tMcjZcV/Diamond-watch-bezel-resting-on-20261016213533.jpg',
-    category: 'Suites & Timepieces',
-    price: '$48,000',
-    description: 'Precision luxury timepiece bezel encrusted with graduated baguette and brilliant cut diamonds.',
-    curationHighlights: ['Horological gem-setting precision', 'Calibrated baguette diamonds', 'Platinum watch case integration'],
+    "id": "suite-2",
+    "title": "Split Band Ring Featuring Diamonds",
+    "image": "https://i.ibb.co/7d37D7bs/Split-band-ring-featuring-diamonds-20261021061311.jpg",
+    "category": "Diamond Rings",
+    "price": "$28,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring split band ring featuring diamonds handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'suite-3',
-    title: 'Diamond Ring Suspended Between Pedestals',
-    image: 'https://i.ibb.co/yFTgqC5f/Diamond-ring-suspended-between-p-20261016213845.jpg',
-    category: 'Diamond Rings',
-    price: '$39,000',
-    description: 'High-concept suspension sculpture showcasing an elevated solitaire ring with complete light entry underneath.',
-    curationHighlights: ['360-degree light aperture', 'Architectural high mount', 'Exceptional diamond color & clarity'],
+    "id": "suite-3",
+    "title": "Ring On Display Pad",
+    "image": "https://i.ibb.co/7tMQsrCw/Ring-on-display-pad-20261021061307.jpg",
+    "category": "Diamond Rings",
+    "price": "$31,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring ring on display pad handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'suite-4',
-    title: 'Diamond Watch Bezel Resting',
-    image: 'https://i.ibb.co/xt9sS6xX/Diamond-watch-bezel-resting-20261016213854.jpg',
-    category: 'Suites & Timepieces',
-    price: '$45,000',
-    description: 'Master horology creation featuring a double-row diamond bezel with seamless gem alignment.',
-    curationHighlights: ['Double-row optical halo', 'Swiss precision fit', 'Flawless gem calibration'],
+    "id": "suite-4",
+    "title": "Hexagonal Hoop Earrings On Cloth",
+    "image": "https://i.ibb.co/qLBbk5R9/Hexagonal-hoop-earrings-on-cloth-20261021061302.jpg",
+    "category": "Earrings",
+    "price": "$21,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring hexagonal hoop earrings on cloth handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
   },
   {
-    id: 'suite-5',
-    title: 'Diamond Hoop Earrings on Cloth',
-    image: 'https://i.ibb.co/jkdH2LzQ/Diamond-hoop-earrings-on-cloth-20261016214008.jpg',
-    category: 'Earrings',
-    price: '$19,500',
-    description: 'Inside-out diamond hoop earrings engineered so diamonds face forward from both interior and exterior curves.',
-    curationHighlights: ['Inside-out diamond technology', 'Seamless hinged click mechanism', 'Lightweight platinum core'],
+    "id": "suite-5",
+    "title": "Diamond Ring On Slate Tile",
+    "image": "https://i.ibb.co/3ZFXW3t/Diamond-ring-on-slate-tile-20261021061258.jpg",
+    "category": "Diamond Rings",
+    "price": "$36,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond ring on slate tile handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'suite-6',
-    title: 'Diamond Anklet on Stone Slab',
-    image: 'https://i.ibb.co/TDW5KbK9/Diamond-anklet-on-stone-slab-20261016213510.jpg',
-    category: 'Exceptional Pieces',
-    price: '$17,000',
-    description: 'Close architectural study of diamond line anklet resting on polished stone slab, showing fluid link flexibility.',
-    curationHighlights: ['Articulated platinum bezels', 'Low friction links', 'Clean minimalist aesthetic'],
+    "id": "suite-6",
+    "title": "Platinum Ring On Linen Surface",
+    "image": "https://i.ibb.co/W4WWtHB0/Platinum-ring-on-linen-surface-20261021061255.jpg",
+    "category": "Diamond Rings",
+    "price": "$38,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring platinum ring on linen surface handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'suite-7',
-    title: 'Diamond Ring Suspended Between Pedestals',
-    image: 'https://i.ibb.co/DDvj3nZt/Diamond-ring-suspended-between-p-20261016213514.jpg',
-    category: 'Diamond Rings',
-    price: '$41,000',
-    description: 'Solitaire creation elevated in mid-air display, demonstrating unobstructed light refraction and scintillation.',
-    curationHighlights: ['Maximum pavilion light return', 'Sculpted platinum prongs', 'Impeccable table symmetry'],
+    "id": "suite-7",
+    "title": "Diamond Mesh Ribbon Bracelet Res",
+    "image": "https://i.ibb.co/HcYkbhK/Diamond-mesh-ribbon-bracelet-res-20261021061250.jpg",
+    "category": "Exceptional Pieces",
+    "price": "$72,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond mesh ribbon bracelet res handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Bespoke high jewellery atelier commission",
+      "Uniform color and clarity match across links",
+      "Handcrafted Fifth Avenue heritage piece"
+    ]
   },
   {
-    id: 'suite-8',
-    title: 'Diamond Drop Earrings on Silk',
-    image: 'https://i.ibb.co/F4Vqx5jr/Diamond-drop-earrings-on-silk-20261016213518.jpg',
-    category: 'Earrings',
-    price: '$23,000',
-    description: 'Cascading drop earrings resting on champagne silk, designed with graduated round and pear-shaped diamonds.',
-    curationHighlights: ['Graduated movement', 'Whisper-light platinum links', 'Brilliant sparkle in low light'],
+    "id": "suite-8",
+    "title": "Diamond Platinum Mesh Ribbon Bra",
+    "image": "https://i.ibb.co/7t5sTq1t/Diamond-platinum-mesh-ribbon-bra-20261021061248.jpg",
+    "category": "Exceptional Pieces",
+    "price": "$77,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond platinum mesh ribbon bra handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Bespoke high jewellery atelier commission",
+      "Uniform color and clarity match across links",
+      "Handcrafted Fifth Avenue heritage piece"
+    ]
   },
   {
-    id: 'suite-9',
-    title: 'Diamond Ring on Satin Surface',
-    image: 'https://i.ibb.co/s9Hwd91m/Diamond-ring-on-satin-surface-20261016213521.jpg',
-    category: 'Diamond Rings',
-    price: '$35,000',
-    description: 'Classic high-carat diamond ring reclining on pleated satin, radiating timeless Fifth Avenue romance.',
-    curationHighlights: ['Classic heirloom silhouette', 'Solid platinum ring band', 'Hand-selected focal stone'],
-  },
+    "id": "suite-9",
+    "title": "Diamond Ring With Open Space",
+    "image": "https://i.ibb.co/TxS2KyGc/Diamond-ring-with-open-space-20261021061246.jpg",
+    "category": "Diamond Rings",
+    "price": "$46,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond ring with open space handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  }
 ];
 
 export const CATALOG_36_PIECES: AtelierPiece[] = [
   {
-    id: 'cat-1',
-    title: 'Diamond Tennis Bracelet on Satin',
-    image: 'https://i.ibb.co/273PtG9D/Diamond-tennis-bracelet-on-satin-20261016212333.jpg',
-    category: 'Exceptional Pieces',
-    price: '$45,000',
-    description: 'Quintessential diamond tennis bracelet resting on satin, showcasing uniform round brilliant diamonds.',
-    curationHighlights: ['Uniform color and clarity match', 'Hand-linked platinum prongs', 'Double security latch'],
+    "id": "cat-1",
+    "title": "Diamond Earrings On White Silk",
+    "image": "https://i.ibb.co/QvhKMy88/Diamond-earrings-on-white-silk-20261021061242.jpg",
+    "category": "Earrings",
+    "price": "$15,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond earrings on white silk handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
   },
   {
-    id: 'cat-2',
-    title: 'Asscher Cut Diamond on Studio Block',
-    image: 'https://i.ibb.co/1GB1vY7j/Asscher-cut-diamond-on-studio-block-20261016212337.jpg',
-    category: 'Loose Diamonds',
-    price: '$72,000',
-    description: 'Hypnotic square emerald Asscher-cut diamond displaying windmill step-cut facets and optical depth.',
-    curationHighlights: ['Dramatic hall-of-mirrors effect', 'High corner-angle precision', 'Collector-grade investment stone'],
+    "id": "cat-2",
+    "title": "Diamond Earrings On Silk",
+    "image": "https://i.ibb.co/1t1wCD2Y/Diamond-earrings-on-silk-20261021061240.jpg",
+    "category": "Earrings",
+    "price": "$17,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond earrings on silk handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
   },
   {
-    id: 'cat-3',
-    title: 'Blue Diamond Pendant Necklace Lying',
-    image: 'https://i.ibb.co/qLwxjgb8/Blue-diamond-pendant-necklace-lying-20261016212343.jpg',
-    category: 'Necklaces',
-    price: '$120,000',
-    description: 'Rare fancy blue diamond pendant suspended on a fine platinum cable chain, radiating oceanic brilliance.',
-    curationHighlights: ['Natural fancy blue diamond', 'Micro-pavé diamond halo', 'Platinum delicate chain'],
+    "id": "cat-3",
+    "title": "Hexagon Diamond Ring On Tray",
+    "image": "https://i.ibb.co/ZRHJRzd3/Hexagon-diamond-ring-on-tray-20261021061239.jpg",
+    "category": "Diamond Rings",
+    "price": "$31,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring hexagon diamond ring on tray handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'cat-4',
-    title: 'Yellow Diamond Ring Resting',
-    image: 'https://i.ibb.co/wFBrrJB3/Yellow-diamond-ring-resting-20261016212359.jpg',
-    category: 'Diamond Rings',
-    price: '$68,000',
-    description: 'Vibrant fancy vivid yellow diamond flanked by trapezoid diamond side stones in 18k yellow gold and platinum.',
-    curationHighlights: ['Fancy intense yellow center', 'Trapezoid side diamond framing', 'Dual-metal luxury setting'],
+    "id": "cat-4",
+    "title": "Platinum Ring On Concrete Block",
+    "image": "https://i.ibb.co/zWYy5yzW/Platinum-ring-on-concrete-block-20261021061116.jpg",
+    "category": "Diamond Rings",
+    "price": "$33,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring platinum ring on concrete block handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'cat-5',
-    title: 'Diamond Chandelier Earrings on Silk',
-    image: 'https://i.ibb.co/C3y6x74V/Diamond-chandelier-earrings-on-silk-20261016212413.jpg',
-    category: 'Earrings',
-    price: '$38,000',
-    description: 'Dramatic multi-tier chandelier earrings cascading with brilliant-cut diamonds across fluid platinum links.',
-    curationHighlights: ['Multi-tiered waterfall drape', 'Gala and black-tie elegance', 'Balanced earlobe comfort'],
+    "id": "cat-5",
+    "title": "Diamond Ring On Limestone Slab",
+    "image": "https://i.ibb.co/DHZBmSZn/Diamond-ring-on-limestone-slab-20261021061110.jpg",
+    "category": "Diamond Rings",
+    "price": "$36,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond ring on limestone slab handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'cat-6',
-    title: 'Diamond Chandelier Earrings on Ceramic',
-    image: 'https://i.ibb.co/fVgvFcw3/Diamond-chandelier-earrings-on-c-20261016212415.jpg',
-    category: 'Earrings',
-    price: '$36,500',
-    description: 'Architectural diamond chandelier earrings displayed on ceramic, revealing precise articulation and balance.',
-    curationHighlights: ['Hand-articulated joins', 'Brilliant and marquise cuts', 'Optimal light scintillation'],
+    "id": "cat-6",
+    "title": "Diamond Ring On Ceramic Dish",
+    "image": "https://i.ibb.co/BVQKF7fh/Diamond-ring-on-ceramic-dish-20261021061104.jpg",
+    "category": "Diamond Rings",
+    "price": "$38,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond ring on ceramic dish handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'cat-7',
-    title: 'Diamond Ring on Concrete Block',
-    image: 'https://i.ibb.co/KzFYz08Q/Diamond-ring-on-concrete-block-20261016212418.jpg',
-    category: 'Diamond Rings',
-    price: '$29,500',
-    description: 'Modern statement solitaire set against textured concrete, spotlighting the gem’s pristine crisp facets.',
-    curationHighlights: ['Pure D-color presentation', 'Four-talon minimal setting', 'Solid platinum shank'],
+    "id": "cat-7",
+    "title": "Diamond Ring Suspended Between P",
+    "image": "https://i.ibb.co/qLTq8tjb/Diamond-ring-suspended-between-p-20261021061054.jpg",
+    "category": "Diamond Rings",
+    "price": "$41,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond ring suspended between p handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'cat-8',
-    title: 'Green Diamond Ring on Dish',
-    image: 'https://i.ibb.co/78qMy2H/Green-diamond-ring-on-dish-20261016212420.jpg',
-    category: 'Diamond Rings',
-    price: '$95,000',
-    description: 'Extremely rare natural green diamond centerpiece accented with a micro-pavé halo on an ivory dish.',
-    curationHighlights: ['Natural green coloration', 'Rare collector diamond', 'Bespoke hand-crafted gallery'],
+    "id": "cat-8",
+    "title": "Ring On Silver Display Block",
+    "image": "https://i.ibb.co/WvmcZkJy/Ring-on-silver-display-block-20261021061037.jpg",
+    "category": "Diamond Rings",
+    "price": "$43,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring ring on silver display block handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'cat-9',
-    title: 'Platinum Wedding Band with Diamonds',
-    image: 'https://i.ibb.co/v4dsyZJy/Platinum-wedding-band-with-diamonds-20261016212422.jpg',
-    category: 'Diamond Rings',
-    price: '$12,500',
-    description: 'Subtle eternity wedding band featuring channel-set diamonds in solid platinum 950.',
-    curationHighlights: ['Smooth channel setting', 'Snag-free daily wear profile', 'Comfort-fit interior curve'],
+    "id": "cat-9",
+    "title": "Diamond Cocktail Ring On Fabric",
+    "image": "https://i.ibb.co/pv09GFb8/Diamond-cocktail-ring-on-fabric-20261021061023.jpg",
+    "category": "Diamond Rings",
+    "price": "$46,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond cocktail ring on fabric handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'cat-10',
-    title: 'Diamond Wedding Band on Satin',
-    image: 'https://i.ibb.co/XkrHFxdt/Diamond-wedding-band-on-satin-20261016212425.jpg',
-    category: 'Diamond Rings',
-    price: '$14,000',
-    description: 'Full eternity diamond band with shared prongs, creating an unbroken ribbon of light on satin.',
-    curationHighlights: ['Shared prong brilliance', '360-degree continuous sparkle', 'Hand-calibrated diamond sizes'],
+    "id": "cat-10",
+    "title": "Diamond Encrusted Watch Bezel On",
+    "image": "https://i.ibb.co/1GY9HHrJ/Diamond-encrusted-watch-bezel-on-20261021061015.jpg",
+    "category": "Suites & Timepieces",
+    "price": "$48,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond encrusted watch bezel on handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Swiss horology precision calibration",
+      "Seamless pavé diamond halo architecture",
+      "Solid platinum 950 casing"
+    ]
   },
   {
-    id: 'cat-11',
-    title: 'Yellow Diamond Crystal on Base',
-    image: 'https://i.ibb.co/1tHCw2hc/Yellow-diamond-crystal-on-base-20261016212434.jpg',
-    category: 'Loose Diamonds',
-    price: '$52,000',
-    description: 'Geometric radiant-cut fancy yellow diamond crystal mounted on studio base, demonstrating warm golden fire.',
-    curationHighlights: ['Golden canary saturation', 'Crushed-ice radiant cutting', 'Fifth Avenue certified origin'],
+    "id": "cat-11",
+    "title": "Diamond Ring Suspended Between P",
+    "image": "https://i.ibb.co/0pLxrqT1/Diamond-ring-suspended-between-p-20261021061010.jpg",
+    "category": "Diamond Rings",
+    "price": "$51,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond ring suspended between p handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'cat-12',
-    title: 'Platinum Choker Necklace with Diamonds',
-    image: 'https://i.ibb.co/PGr039Xn/Platinum-choker-necklace-with-di-20261016212437.jpg',
-    category: 'Necklaces',
-    price: '$85,000',
-    description: 'Regal diamond choker necklace constructed from articulated platinum links with graduating diamonds.',
-    curationHighlights: ['Ergonomically contoured collar', 'Total carat weight over 25ct', 'Private showroom showcase'],
+    "id": "cat-12",
+    "title": "Diamond Engagement Ring On Satin",
+    "image": "https://i.ibb.co/rKp29dHL/Diamond-engagement-ring-on-satin-20261021061007.jpg",
+    "category": "Diamond Rings",
+    "price": "$53,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond engagement ring on satin handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'cat-13',
-    title: 'Platinum Choker Necklace on Silk',
-    image: 'https://i.ibb.co/KcFwBw2R/Platinum-choker-necklace-on-silk-20261016212439.jpg',
-    category: 'Necklaces',
-    price: '$82,000',
-    description: 'Sculpted high-jewellery collar resting on silk cloth, capturing ambient boutique light effortlessly.',
-    curationHighlights: ['Silky platinum movement', 'Custom box safety clasp', 'Spectacular scintillation'],
+    "id": "cat-13",
+    "title": "Diamond Drop Earrings On Silk",
+    "image": "https://i.ibb.co/kVFyzH7v/Diamond-drop-earrings-on-silk-20261021061003.jpg",
+    "category": "Earrings",
+    "price": "$39,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond drop earrings on silk handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
   },
   {
-    id: 'cat-14',
-    title: 'Victorian-Inspired Cluster Ring',
-    image: 'https://i.ibb.co/fYWq3SGW/Victorian-inspired-cluster-ring-20261016213503.jpg',
-    category: 'Diamond Rings',
-    price: '$28,500',
-    description: 'Vintage-inspired diamond cluster halo with milgrain details and a central old European cut diamond.',
-    curationHighlights: ['Romantic vintage heritage motif', 'Intricate hand milgrain borders', 'Old-world diamond charm'],
+    "id": "cat-14",
+    "title": "Victorian Inspired Cluster Ring",
+    "image": "https://i.ibb.co/V0VsM80N/Victorian-inspired-cluster-ring-20261021060958.jpg",
+    "category": "Diamond Rings",
+    "price": "$58,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring victorian inspired cluster ring handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'cat-15',
-    title: 'Green Diamond Crystal on Slate',
-    image: 'https://i.ibb.co/wFQYZJvZ/Green-diamond-crystal-on-slate-20261016212243.jpg',
-    category: 'Loose Diamonds',
-    price: '$88,000',
-    description: 'Unmounted natural green diamond crystal displaying rare mint-to-forest green optical saturation on slate.',
-    curationHighlights: ['Natural green coloration', 'Clean facet symmetry', 'Connoisseur stone archive'],
+    "id": "cat-15",
+    "title": "Victorian Inspired Cluster Ring",
+    "image": "https://i.ibb.co/ymcdxSDY/Victorian-inspired-cluster-ring-20261021060951.jpg",
+    "category": "Diamond Rings",
+    "price": "$26,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring victorian inspired cluster ring handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'cat-16',
-    title: 'Diamond Ring on Silk Band',
-    image: 'https://i.ibb.co/LD6Xv16F/Diamond-ring-on-silk-band-20261016212246.jpg',
-    category: 'Diamond Rings',
-    price: '$26,000',
-    description: 'Modern solitaire ring bound with ivory silk ribbon, emphasizing the pure brilliance of the diamond table.',
-    curationHighlights: ['Low-profile modern crown', 'Micro-pavé concealed halo', 'D-color visual clarity'],
+    "id": "cat-16",
+    "title": "Diamond Ear Cuff On Fabric",
+    "image": "https://i.ibb.co/hRnP7yjw/Diamond-ear-cuff-on-fabric-20261021060949.jpg",
+    "category": "Earrings",
+    "price": "$20,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond ear cuff on fabric handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
   },
   {
-    id: 'cat-17',
-    title: 'Blue Diamond Ring on Slab',
-    image: 'https://i.ibb.co/d491PPz8/Blue-diamond-ring-on-slab-20261016212249.jpg',
-    category: 'Diamond Rings',
-    price: '$110,000',
-    description: 'Breathtaking fancy light blue diamond in custom platinum ring with shield-shaped diamond shoulders.',
-    curationHighlights: ['Rare fancy blue diamond', 'Shield diamond accents', 'Fifth Avenue private vault piece'],
+    "id": "cat-17",
+    "title": "Diamond Ear Cuff On Satin",
+    "image": "https://i.ibb.co/bMCBS96F/Diamond-ear-cuff-on-satin-20261021060947.jpg",
+    "category": "Earrings",
+    "price": "$22,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond ear cuff on satin handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
   },
   {
-    id: 'cat-18',
-    title: 'Blue Diamond Ring on Stone',
-    image: 'https://i.ibb.co/spC39FNm/Blue-diamond-ring-on-stone-20261016212252.jpg',
-    category: 'Diamond Rings',
-    price: '$115,000',
-    description: 'Natural fancy blue diamond ring photographed on limestone, displaying striking icy-azure brilliance.',
-    curationHighlights: ['Pure blue chromatic tone', 'Micro-prong platinum basket', 'Certified optical symmetry'],
+    "id": "cat-18",
+    "title": "Diamond Ring On Backdrop",
+    "image": "https://i.ibb.co/3m3VwVM5/Diamond-ring-on-backdrop-20261021060944.jpg",
+    "category": "Diamond Rings",
+    "price": "$33,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond ring on backdrop handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'cat-19',
-    title: 'Platinum Necklace with Diamond Pendant',
-    image: 'https://i.ibb.co/nsmtWqNt/Platinum-necklace-with-diamond-p-20261016212254.jpg',
-    category: 'Necklaces',
-    price: '$32,000',
-    description: 'Solitaire pear-cut diamond pendant resting gracefully on a platinum trace chain.',
-    curationHighlights: ['Graceful pear silhouette', 'Tapered diamond bail', 'Fluid everyday luxury'],
+    "id": "cat-19",
+    "title": "Diamond Ring With Princess Cut S",
+    "image": "https://i.ibb.co/d0DMNk0m/Diamond-ring-with-princess-cut-s-20261021060938.jpg",
+    "category": "Diamond Rings",
+    "price": "$36,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond ring with princess cut s handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'cat-20',
-    title: 'Yellow Diamond Gemstone on Block',
-    image: 'https://i.ibb.co/kgKG2n1r/Yellow-diamond-gemstone-on-block-20261016212257.jpg',
-    category: 'Loose Diamonds',
-    price: '$62,000',
-    description: 'Cushion-cut fancy yellow diamond gem demonstrating fire and sunlit warmth on studio block.',
-    curationHighlights: ['Vivid canary hue', 'Modified brilliant cushion cut', 'Exceptional depth of fire'],
+    "id": "cat-20",
+    "title": "Diamond On Display Tray",
+    "image": "https://i.ibb.co/7JDqmNfm/Diamond-on-display-tray-20261021060941.jpg",
+    "category": "Diamond Rings",
+    "price": "$38,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond on display tray handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'cat-21',
-    title: 'Yellow Diamond on Display Block',
-    image: 'https://i.ibb.co/V07zN1Xr/Yellow-diamond-on-display-block-20261016212259.jpg',
-    category: 'Loose Diamonds',
-    price: '$59,000',
-    description: 'Loose radiant-cut yellow diamond in display block with intense brilliance and crisp corners.',
-    curationHighlights: ['Crystalline light return', 'Sharp corner facets', 'High-carat rarity'],
+    "id": "cat-21",
+    "title": "Diamond Hoop Earrings On Cloth",
+    "image": "https://i.ibb.co/qFsmpsqJ/Diamond-hoop-earrings-on-cloth-20261021060935.jpg",
+    "category": "Earrings",
+    "price": "$30,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond hoop earrings on cloth handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
   },
   {
-    id: 'cat-22',
-    title: 'Diamond Stud Earrings on Cloth',
-    image: 'https://i.ibb.co/99XHS02V/Diamond-stud-earrings-on-cloth-20261016212302.jpg',
-    category: 'Earrings',
-    price: '$15,000',
-    description: 'Essential round brilliant diamond stud earrings set in minimalist three-prong martini platinum cups.',
-    curationHighlights: ['Martini setting for flush fit', 'Screw-back security posts', 'High brilliance pair'],
+    "id": "cat-22",
+    "title": "Diamond Hoop Earrings On Silk",
+    "image": "https://i.ibb.co/FbY090vC/Diamond-hoop-earrings-on-silk-20261021060933.jpg",
+    "category": "Earrings",
+    "price": "$32,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond hoop earrings on silk handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
   },
   {
-    id: 'cat-23',
-    title: 'Diamond Ring on Surface',
-    image: 'https://i.ibb.co/ShC7jB9/Diamond-ring-on-surface-20261016212305.jpg',
-    category: 'Diamond Rings',
-    price: '$27,000',
-    description: 'Understated elegance in a slender platinum diamond band with a focal round solitaire stone.',
-    curationHighlights: ['Slender tapered shank', 'Six-prong classic crown', 'Ideal cut scintillation'],
+    "id": "cat-23",
+    "title": "Diamond Band Ring Displayed",
+    "image": "https://i.ibb.co/PZv63SJZ/Diamond-band-ring-displayed-20261021060929.jpg",
+    "category": "Diamond Rings",
+    "price": "$46,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond band ring displayed handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'cat-24',
-    title: 'Purple Pink Diamond Ring Resting',
-    image: 'https://i.ibb.co/27nt264p/Purple-pink-diamond-ring-resting-20261016212307.jpg',
-    category: 'Diamond Rings',
-    price: '$145,000',
-    description: 'Ultra-rare fancy intense purple-pink diamond surrounded by a dual halo of pink and white diamonds.',
-    curationHighlights: ['Rare purple-pink natural hue', 'Dual halo contrast setting', 'Heirloom collector caliber'],
+    "id": "cat-24",
+    "title": "Diamond Sliding On Platinum Chain",
+    "image": "https://i.ibb.co/FLWJFTJw/Diamond-sliding-on-platinum-chain-20261021060927.jpg",
+    "category": "Diamond Rings",
+    "price": "$48,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond sliding on platinum chain handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'cat-25',
-    title: 'Diamond Ring on Silk Cushion',
-    image: 'https://i.ibb.co/MyHg4bQn/Diamond-ring-on-silk-cushion-20261016212312.jpg',
-    category: 'Diamond Rings',
-    price: '$31,000',
-    description: 'Romantic solitaire ring with a delicate micro-pavé band resting on an ivory silk pillow.',
-    curationHighlights: ['Three-quarter pavé band', 'Ultra-clean D/E color look', 'Refined platinum craftsmanship'],
+    "id": "cat-25",
+    "title": "Diamond Cluster Ring On Ceramic",
+    "image": "https://i.ibb.co/RpwTt64y/Diamond-cluster-ring-on-ceramic-20261021060924.jpg",
+    "category": "Diamond Rings",
+    "price": "$51,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond cluster ring on ceramic handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'cat-26',
-    title: 'Yellow Diamond Crystal on Pad',
-    image: 'https://i.ibb.co/PzgLL3bv/Yellow-diamond-crystal-on-pad-20261016212315.jpg',
-    category: 'Loose Diamonds',
-    price: '$54,000',
-    description: 'Cushion-cut natural yellow diamond on leather appraisal pad, showing vivid canary highlights.',
-    curationHighlights: ['Even color distribution', 'Brilliant facet scintillation', 'Private suite consultation'],
+    "id": "cat-26",
+    "title": "Diamond Necklace Draped On Bust",
+    "image": "https://i.ibb.co/5Xp4LWhy/Diamond-necklace-draped-on-bust-20261021060920.jpg",
+    "category": "Necklaces",
+    "price": "$77,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond necklace draped on bust handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Articulated platinum links for fluid drape",
+      "Concealed high-security safety clasp",
+      "Spectacular focal diamond scintillation"
+    ]
   },
   {
-    id: 'cat-27',
-    title: 'Yellow Diamond Crystal on Display',
-    image: 'https://i.ibb.co/3bqcdPC/Yellow-diamond-crystal-on-display-20261016212320.jpg',
-    category: 'Loose Diamonds',
-    price: '$57,000',
-    description: 'Brilliant yellow diamond gemstone displaying geometric symmetry under boutique studio lights.',
-    curationHighlights: ['High visual clarity', 'Ideal light dispersion', 'Bespoke setting candidate'],
+    "id": "cat-27",
+    "title": "Diamond Lariat Necklace On Bust",
+    "image": "https://i.ibb.co/h3CYq6h/Diamond-lariat-necklace-on-bust-20261021060918.jpg",
+    "category": "Necklaces",
+    "price": "$81,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond lariat necklace on bust handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Articulated platinum links for fluid drape",
+      "Concealed high-security safety clasp",
+      "Spectacular focal diamond scintillation"
+    ]
   },
   {
-    id: 'cat-28',
-    title: 'Three-Stone Diamond Ring',
-    image: 'https://i.ibb.co/Q7NQKCLD/Three-stone-diamond-ring-20261016212323.jpg',
-    category: 'Diamond Rings',
-    price: '$44,000',
-    description: 'Symbolic trilogy ring featuring three matched brilliant diamonds representing past, present, and future.',
-    curationHighlights: ['Three-stone balanced proportion', 'Solid platinum cast mounting', 'Luminous finger presence'],
+    "id": "cat-28",
+    "title": "Open Finger Ring On Display Block",
+    "image": "https://i.ibb.co/N2xptVjv/Open-finger-ring-on-display-block-20261021060915.jpg",
+    "category": "Diamond Rings",
+    "price": "$58,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring open finger ring on display block handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'cat-29',
-    title: 'Green Diamond Ring on Stone',
-    image: 'https://i.ibb.co/5XWTnQJ9/Green-diamond-ring-on-stone-20261016212326.jpg',
-    category: 'Diamond Rings',
-    price: '$92,000',
-    description: 'Magnificent fancy green diamond ring set with tapered baguette diamonds on smooth limestone.',
-    curationHighlights: ['Uncommon natural green hue', 'Baguette side stone accents', 'Platinum master casting'],
+    "id": "cat-29",
+    "title": "Ring Resting On Display Block",
+    "image": "https://i.ibb.co/JjtDLmLJ/Ring-resting-on-display-block-20261021060914.jpg",
+    "category": "Diamond Rings",
+    "price": "$26,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring ring resting on display block handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'cat-30',
-    title: 'Diamond Ring on Silk Fabric',
-    image: 'https://i.ibb.co/HDPjNCxg/Diamond-ring-on-silk-fabric-20261016212218.jpg',
-    category: 'Diamond Rings',
-    price: '$29,000',
-    description: 'Artfully nestled solitaire ring within folds of liquid silk, radiating pure white brilliance.',
-    curationHighlights: ['Fluid silk backdrop study', 'High-polish platinum mirror finish', 'Exceptional cut grade'],
+    "id": "cat-30",
+    "title": "Diamond Cocktail Ring On Fabric",
+    "image": "https://i.ibb.co/67Ywqr5r/Diamond-cocktail-ring-on-fabric-20261021060909.jpg",
+    "category": "Diamond Rings",
+    "price": "$28,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond cocktail ring on fabric handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'cat-31',
-    title: 'Yellow Diamond on Display Tray',
-    image: 'https://i.ibb.co/xKZNYSdT/Yellow-diamond-on-display-tray-20261016212221.jpg',
-    category: 'Loose Diamonds',
-    price: '$64,000',
-    description: 'Natural fancy intense yellow diamond on presentation tray showing warm sunset hues.',
-    curationHighlights: ['Intense yellow color grade', 'Radiant modified cut', 'Showroom viewing by appointment'],
+    "id": "cat-31",
+    "title": "Diamond Tennis Bracelet On Satin",
+    "image": "https://i.ibb.co/21KYqZ3P/Diamond-tennis-bracelet-on-satin-20261021060900.jpg",
+    "category": "Exceptional Pieces",
+    "price": "$72,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond tennis bracelet on satin handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Bespoke high jewellery atelier commission",
+      "Uniform color and clarity match across links",
+      "Handcrafted Fifth Avenue heritage piece"
+    ]
   },
   {
-    id: 'cat-32',
-    title: 'Yellow Diamond on Tray',
-    image: 'https://i.ibb.co/r2nsvvmc/Yellow-diamond-on-tray-20261016212224.jpg',
-    category: 'Loose Diamonds',
-    price: '$61,000',
-    description: 'Cushion modified yellow diamond gemstone reflecting crystalline brilliance across its facets.',
-    curationHighlights: ['Symmetrical facet array', 'Deep warm saturation', 'Fine jewellery gemstone'],
+    "id": "cat-32",
+    "title": "Diamond Ring On Gray Surface",
+    "image": "https://i.ibb.co/gcbJvRF/Diamond-ring-on-gray-surface-20261021060855.jpg",
+    "category": "Diamond Rings",
+    "price": "$33,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond ring on gray surface handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'cat-33',
-    title: 'Diamond Drop Earrings Lying Flat',
-    image: 'https://i.ibb.co/vC1j6Bn0/Diamond-drop-earrings-lying-flat-20261016212229.jpg',
-    category: 'Earrings',
-    price: '$22,000',
-    description: 'Geometric diamond drop earrings arranged flat, displaying symmetrical alignment and joint mobility.',
-    curationHighlights: ['Flexible link joints', 'Micro-pavé linear accents', 'Pure light reflection'],
+    "id": "cat-33",
+    "title": "Yellow Diamond Gemstone On Display",
+    "image": "https://i.ibb.co/TDYT5Cf8/Yellow-diamond-gemstone-on-display-20261021060848.jpg",
+    "category": "Loose Diamonds",
+    "price": "$114,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring yellow diamond gemstone on display handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "GIA Certified Natural Diamond Dossier",
+      "Exceptional hearts & arrows optical symmetry",
+      "Exclusive Fifth Avenue private consultation"
+    ]
   },
   {
-    id: 'cat-34',
-    title: 'Diamond Drop Earrings on Surface',
-    image: 'https://i.ibb.co/sp5W87w7/Diamond-drop-earrings-on-surface-20261016212231.jpg',
-    category: 'Earrings',
-    price: '$25,000',
-    description: 'Delicate diamond chandelier drop earrings resting on polished surface with subtle ice-blue highlights.',
-    curationHighlights: ['Chandelier cascade design', 'Lightweight platinum links', 'High fire diamond accents'],
+    "id": "cat-34",
+    "title": "Diamond Stud Earrings On Cloth",
+    "image": "https://i.ibb.co/XkG4mHVb/Diamond-stud-earrings-on-cloth-20261021060851.jpg",
+    "category": "Earrings",
+    "price": "$31,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond stud earrings on cloth handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
   },
   {
-    id: 'cat-35',
-    title: 'Diamond Ring on Fabric Fold',
-    image: 'https://i.ibb.co/V01HgTfW/Diamond-ring-on-fabric-fold-20261016212235.jpg',
-    category: 'Diamond Rings',
-    price: '$33,500',
-    description: 'Intricately set diamond ring resting within soft textile folds, revealing clean prong architecture.',
-    curationHighlights: ['Hand-filed four-prong head', 'Micro-pavé gallery rail', 'Exacting stone clarity'],
+    "id": "cat-35",
+    "title": "Diamond Pendant On Silk Surface",
+    "image": "https://i.ibb.co/hxCjN9hf/Diamond-pendant-on-silk-surface-20261021060844.jpg",
+    "category": "Necklaces",
+    "price": "$58,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond pendant on silk surface handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Articulated platinum links for fluid drape",
+      "Concealed high-security safety clasp",
+      "Spectacular focal diamond scintillation"
+    ]
   },
   {
-    id: 'cat-36',
-    title: 'Green Diamond Crystal on Slate',
-    image: 'https://i.ibb.co/XZrHmbmt/Green-diamond-crystal-on-slate-20261016212238.jpg',
-    category: 'Loose Diamonds',
-    price: '$98,000',
-    description: 'Rare raw and polished natural fancy green diamond crystal exhibiting distinct geological heritage.',
-    curationHighlights: ['Natural fancy green color', 'Unmatched collector rarity', 'Scarselli Fifth Avenue archive'],
-  },
+    "id": "cat-36",
+    "title": "Pink Diamond Ring On Fabric",
+    "image": "https://i.ibb.co/FPf6KqB/Pink-diamond-ring-on-fabric-20261021060841.jpg",
+    "category": "Diamond Rings",
+    "price": "$43,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring pink diamond ring on fabric handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  }
 ];
 
 export const MOTION_48_PIECES: AtelierPiece[] = [
-  { id: 'mot-1', title: 'Diamond Pendant on Silk Surface', image: 'https://i.ibb.co/Fbb82JQ9/Diamond-pendant-on-silk-surface-20261016212947.jpg', category: 'Necklaces', price: '$24,000', description: 'Solitaire diamond pendant lying on ivory silk.', curationHighlights: ['Fluid drape', 'Platinum chain', 'Brilliant cut'] },
-  { id: 'mot-2', title: 'Diamond Ring on Silk', image: 'https://i.ibb.co/RkBypqTq/Diamond-ring-on-silk-20261016212944.jpg', category: 'Diamond Rings', price: '$27,500', description: 'Classic diamond solitaire on champagne silk.', curationHighlights: ['Timeless silhouette', 'Refined prongs', 'High fire'] },
-  { id: 'mot-3', title: 'Yellow Diamond on Display Block', image: 'https://i.ibb.co/B54xNZ43/Yellow-diamond-on-display-block-20261016212950.jpg', category: 'Loose Diamonds', price: '$58,000', description: 'Fancy yellow diamond gemstone on display.', curationHighlights: ['Vivid saturation', 'Radiant cut', 'Investment stone'] },
-  { id: 'mot-4', title: 'Diamond Constellation Necklace', image: 'https://i.ibb.co/tT2crBgG/Diamond-constellation-necklace-o-20261016213400.jpg', category: 'Necklaces', price: '$64,000', description: 'Scattered constellation necklace set in platinum.', curationHighlights: ['Asymmetric motif', 'Micro-claw mounts', 'Evening statement'] },
-  { id: 'mot-5', title: 'Engagement Ring on Ceramic Plate', image: 'https://i.ibb.co/DfRzz9bD/Engagement-ring-on-ceramic-plate-20261016213403.jpg', category: 'Diamond Rings', price: '$32,000', description: 'Solitaire ring resting in an artisanal plate.', curationHighlights: ['Clean modern form', 'Low gallery', 'D-color appearance'] },
-  { id: 'mot-6', title: 'Diamond Ring on Ceramic Plate', image: 'https://i.ibb.co/9m03Bfpx/Diamond-ring-on-ceramic-plate-20261016213406.jpg', category: 'Diamond Rings', price: '$34,500', description: 'Brilliant cut diamond ring with pavé details.', curationHighlights: ['Side pavé', 'Four prongs', 'Exceptional cut'] },
-  { id: 'mot-7', title: 'Diamond Cocktail Ring on Fabric', image: 'https://i.ibb.co/vC9THs04/Diamond-cocktail-ring-on-fabric-20261016213414.jpg', category: 'Diamond Rings', price: '$46,000', description: 'Grand cocktail ring with multi-cut diamond halo.', curationHighlights: ['High-impact cluster', 'Multi-shape array', 'Fine platinum'] },
-  { id: 'mot-8', title: 'Ring Resting on Display Block', image: 'https://i.ibb.co/WWWTnfSz/Ring-resting-on-display-block-20261016213417.jpg', category: 'Diamond Rings', price: '$29,000', description: 'Solitaire masterpiece displayed on acrylic block.', curationHighlights: ['High symmetry', 'Slender band', 'Comfort fit'] },
-  { id: 'mot-9', title: 'Open Finger Ring on Display Block', image: 'https://i.ibb.co/67gbvsvT/Open-finger-ring-on-display-block-20261016213419.jpg', category: 'Diamond Rings', price: '$22,000', description: 'Architectural open-finger diamond band.', curationHighlights: ['Negative space design', 'Twin focal gems', 'Modern luxury'] },
-  { id: 'mot-10', title: 'Diamond Necklace Draped on Bust', image: 'https://i.ibb.co/5gK5SxpB/Diamond-necklace-draped-on-bust-20261016213424.jpg', category: 'Necklaces', price: '$88,000', description: 'Grand diamond necklace draped over couture bust.', curationHighlights: ['Heirloom scale', 'Graduated stones', 'Seamless clasp'] },
-  { id: 'mot-11', title: 'Diamond Lariat Necklace on Bust', image: 'https://i.ibb.co/vCJXF09D/Diamond-lariat-necklace-on-bust-20261016213426.jpg', category: 'Necklaces', price: '$72,000', description: 'Fluid lariat diamond necklace with drop stone.', curationHighlights: ['Modern lariat drape', 'Pear diamond finish', 'Articulated platinum'] },
-  { id: 'mot-12', title: 'Diamond Sliding on Platinum Chain', image: 'https://i.ibb.co/CKRjJhVc/Diamond-sliding-on-platinum-chain-20261016213432.jpg', category: 'Necklaces', price: '$26,000', description: 'Tension-set floating diamond on delicate chain.', curationHighlights: ['Floating optical effect', 'Clean minimalism', 'Everyday prestige'] },
-  { id: 'mot-13', title: 'Cluster Ring with Scattered Diamonds', image: 'https://i.ibb.co/qYrbTSfq/Cluster-ring-with-scattered-diam-20261016213434.jpg', category: 'Diamond Rings', price: '$30,500', description: 'Asymmetric diamond cluster evoking celestial stars.', curationHighlights: ['Organic arrangement', 'Varying diamond sizes', 'Handmade mount'] },
-  { id: 'mot-14', title: 'Diamond Band Ring on Background', image: 'https://i.ibb.co/cKx0zWF2/Diamond-band-ring-on-background-20261016213438.jpg', category: 'Diamond Rings', price: '$15,500', description: 'Subtle diamond eternity band with secure prongs.', curationHighlights: ['Continuous sparkle', 'Solid platinum', 'Stackable design'] },
-  { id: 'mot-15', title: 'Diamond Hoop Earrings on Silk', image: 'https://i.ibb.co/ZzBxsbkn/Diamond-hoop-earrings-on-silk-20261016213443.jpg', category: 'Earrings', price: '$18,000', description: 'Delicate diamond hoop earrings on ivory fabric.', curationHighlights: ['Lightweight wear', 'Secure latch', 'Full scintillation'] },
-  { id: 'mot-16', title: 'Green Diamond Cocktail Ring', image: 'https://i.ibb.co/Qvpb5PjR/Green-diamond-cocktail-ring-20261016212554.jpg', category: 'Diamond Rings', price: '$94,000', description: 'Natural green diamond centerpiece with micro-pavé.', curationHighlights: ['Extremely rare color', 'Cocktail silhouette', 'Vault piece'] },
-  { id: 'mot-17', title: 'Platinum Necklace with Diamond Pendant', image: 'https://i.ibb.co/6JDJMtx5/Platinum-necklace-with-diamond-p-20261016212558.jpg', category: 'Necklaces', price: '$33,000', description: 'Teardrop pear diamond on fine platinum chain.', curationHighlights: ['Ethereal presence', 'Micro-pavé halo', 'Classic elegance'] },
-  { id: 'mot-18', title: 'Yellow Diamond on Ceramic Stand', image: 'https://i.ibb.co/fzVVHkWV/Yellow-diamond-on-ceramic-stand-20261016212600.jpg', category: 'Loose Diamonds', price: '$56,000', description: 'Cushion cut yellow diamond gemstone.', curationHighlights: ['Vivid canary yellow', 'Ideal light return', 'Private viewing'] },
-  { id: 'mot-19', title: 'Drop Earrings with Diamonds', image: 'https://i.ibb.co/S9R9K0c/Drop-earrings-with-diamonds-20261016212604.jpg', category: 'Earrings', price: '$22,500', description: 'Articulated diamond drop earrings.', curationHighlights: ['Fluid dangle', 'Clean platinum bezels', 'High scintillation'] },
-  { id: 'mot-20', title: 'Diamond Drop Earrings on Satin', image: 'https://i.ibb.co/Myd4Fbkx/Diamond-drop-earrings-on-satin-20261016212605.jpg', category: 'Earrings', price: '$25,500', description: 'Cascading diamond drops resting on pleated satin.', curationHighlights: ['Graduated drops', 'Brilliant sparkle', 'Lightweight comfort'] },
-  { id: 'mot-21', title: 'Diamond Engagement Ring Resting', image: 'https://i.ibb.co/jkHcCYnY/Diamond-engagement-ring-resting-20261016212607.jpg', category: 'Diamond Rings', price: '$36,000', description: 'Classic solitaire engagement ring in platinum.', curationHighlights: ['Six-prong setting', 'Ideal cut proportion', 'Fifth Avenue classic'] },
-  { id: 'mot-22', title: 'Diamond Engagement Ring Resting', image: 'https://i.ibb.co/5hq4NqDv/Diamond-engagement-ring-resting-20261016212609.jpg', category: 'Diamond Rings', price: '$38,000', description: 'Round brilliant solitaire on platinum mount.', curationHighlights: ['Four-talon prongs', 'Optical symmetry', 'High clarity'] },
-  { id: 'mot-23', title: 'Raw Fancy Color Diamond Cluster', image: 'https://i.ibb.co/Z6QW4k0g/Raw-fancy-color-diamond-cluster-20261016212613.jpg', category: 'Exceptional Pieces', price: '$78,000', description: 'Curated cluster of natural fancy color diamonds.', curationHighlights: ['Rare color array', 'Geological wonder', 'Atelier collector'] },
-  { id: 'mot-24', title: 'Raw Fancy Color Diamond Cluster', image: 'https://i.ibb.co/N2bySc11/Raw-fancy-color-diamond-cluster-20261016212615.jpg', category: 'Exceptional Pieces', price: '$82,000', description: 'Sculptural cluster of fancy color diamond stones.', curationHighlights: ['Rainbow scintillation', 'Natural hues', 'Masterpiece study'] },
-  { id: 'mot-25', title: 'Platinum Diamond Bangle Bracelet', image: 'https://i.ibb.co/BKr9vtxz/Platinum-diamond-bangle-bracelet-20261016212619.jpg', category: 'Exceptional Pieces', price: '$44,000', description: 'Hinged solid platinum bangle with diamond rows.', curationHighlights: ['Hinged safety clasp', 'Micro-pavé rows', 'Solid weight'] },
-  { id: 'mot-26', title: 'Sapphire Ring with Accent Diamonds', image: 'https://i.ibb.co/Ndp5V7Jq/Sapphire-ring-with-accent-diamonds-20261016212630.jpg', category: 'Diamond Rings', price: '$49,000', description: 'Deep royal blue sapphire with diamond halo.', curationHighlights: ['Royal blue saturation', 'Trapezoid diamond flank', 'Platinum setting'] },
-  { id: 'mot-27', title: 'Diamond Necklace on Display Block', image: 'https://i.ibb.co/Lz8pLjQ7/Diamond-necklace-on-display-block-20261016212647.jpg', category: 'Necklaces', price: '$68,000', description: 'Articulated diamond collar resting on block.', curationHighlights: ['Concentric links', 'High carat total', 'Seamless jointing'] },
-  { id: 'mot-28', title: 'Pink Diamond Ring on Tile', image: 'https://i.ibb.co/xx7fD8H/Pink-diamond-ring-on-tile-20261016212650.jpg', category: 'Diamond Rings', price: '$135,000', description: 'Rare natural pink diamond in rose gold & platinum.', curationHighlights: ['Fancy pink hue', 'Double halo accent', 'Collector stone'] },
-  { id: 'mot-29', title: 'Collection of Colored Diamonds', image: 'https://i.ibb.co/21D2nL0z/Collection-of-colored-diamonds-20261016212655.jpg', category: 'Loose Diamonds', price: '$150,000', description: 'An exceptional suite of natural fancy diamonds.', curationHighlights: ['Yellow, pink, and green hues', 'Investment suite', 'Private vault'] },
-  { id: 'mot-30', title: 'Diamond Drop Earrings on Surface', image: 'https://i.ibb.co/PzMJd1q5/Diamond-drop-earrings-on-surface-20261016212939.jpg', category: 'Earrings', price: '$26,000', description: 'Chandelier diamond earrings with sparkling drops.', curationHighlights: ['Tiered movement', 'Ice blue scintillation', 'Platinum posts'] },
-  { id: 'mot-31', title: 'Bypass Ring Holding Two Diamonds', image: 'https://i.ibb.co/dJ1ZrKLL/Bypass-ring-holding-two-diamonds-20261016212449.jpg', category: 'Diamond Rings', price: '$35,000', description: 'Toi et Moi bypass ring holding two diamonds.', curationHighlights: ['Toi et Moi symbolism', 'Contrasting cuts', 'Modern platinum'] },
-  { id: 'mot-32', title: 'Bypass Ring with Two Diamonds', image: 'https://i.ibb.co/Y45ppKwp/Bypass-ring-with-two-diamonds-20261016212453.jpg', category: 'Diamond Rings', price: '$37,000', description: 'Sleek bypass ring framing two radiant diamonds.', curationHighlights: ['Dynamic spiral band', 'Dual focal stones', 'Smooth comfort'] },
-  { id: 'mot-33', title: 'Diamond Drop Earrings on Stand', image: 'https://i.ibb.co/d0jKs4HZ/Diamond-drop-earrings-on-stand-20261016212455.jpg', category: 'Earrings', price: '$27,000', description: 'Architectural drop earrings on showroom stand.', curationHighlights: ['Clean linear silhouette', 'Precision matching', 'Reflective finish'] },
-  { id: 'mot-34', title: 'Diamond Drop Earrings on Display', image: 'https://i.ibb.co/JFCzfWch/Diamond-drop-earrings-on-display-20261016212457.jpg', category: 'Earrings', price: '$28,500', description: 'Matched pair of drop earrings under studio light.', curationHighlights: ['Optimal refraction', 'Solid platinum build', 'Bespoke atelier'] },
-  { id: 'mot-35', title: 'Diamond Ring on Leather', image: 'https://i.ibb.co/bpHxgv3/Diamond-ring-on-leather-20261016212501.jpg', category: 'Diamond Rings', price: '$31,500', description: 'Solitaire diamond ring on calfskin leather.', curationHighlights: ['Modern tactile texture', 'Four-claw crown', 'Bright white table'] },
-  { id: 'mot-36', title: 'Pink Diamond Ring Photography', image: 'https://i.ibb.co/KxPk9MDD/Pink-diamond-ring-photography-20261016212505.jpg', category: 'Diamond Rings', price: '$128,000', description: 'Fancy pink diamond ring in editorial setting.', curationHighlights: ['Natural pink brilliance', 'Micro-pavé frame', 'Museum quality'] },
-  { id: 'mot-37', title: 'Diamond Eternity Band on Cloth', image: 'https://i.ibb.co/NdVM8N32/Diamond-eternity-band-on-cloth-20261016212507.jpg', category: 'Diamond Rings', price: '$16,000', description: 'Continuous eternity band set with diamonds.', curationHighlights: ['Seamless circumference', 'Low profile prongs', 'Daily luxury'] },
-  { id: 'mot-38', title: 'Blue Diamond Crystal on Block', image: 'https://i.ibb.co/4n4fyCY0/Blue-diamond-crystal-on-block-20261016212512.jpg', category: 'Loose Diamonds', price: '$96,000', description: 'Rare blue diamond crystal in display block.', curationHighlights: ['Icy blue brilliance', 'Pristine facet lines', 'Investment grade'] },
-  { id: 'mot-39', title: 'Diamond Engagement Ring on Surface', image: 'https://i.ibb.co/MycD3BkG/Diamond-engagement-ring-on-surface-20261016212516.jpg', category: 'Diamond Rings', price: '$33,000', description: 'Round brilliant solitaire on platinum mount.', curationHighlights: ['Exceptional light return', 'Subtle tapered band', 'Fifth Avenue icon'] },
-  { id: 'mot-40', title: 'Diamond Cluster Stud Earrings', image: 'https://i.ibb.co/vCYNMdnV/Diamond-cluster-stud-earrings-di-20261016212520.jpg', category: 'Earrings', price: '$19,000', description: 'Floral diamond cluster studs with center stone.', curationHighlights: ['Multi-diamond flower', 'High surface area sparkle', 'Screw-back safety'] },
-  { id: 'mot-41', title: 'Diamond Cluster Stud Earrings', image: 'https://i.ibb.co/d0p5XH4k/Diamond-cluster-stud-earrings-20261016212521.jpg', category: 'Earrings', price: '$18,500', description: 'Matched pair of sparkling diamond cluster studs.', curationHighlights: ['Day to evening wear', 'Platinum 950 cups', 'Prong setting'] },
-  { id: 'mot-42', title: 'Yellow Diamond Ring on Display', image: 'https://i.ibb.co/mZq6b74/Yellow-diamond-ring-on-display-20261016212526.jpg', category: 'Diamond Rings', price: '$66,000', description: 'Canary yellow diamond ring on boutique display.', curationHighlights: ['Vivid warm yellow', 'Diamond halo frame', '18k yellow prongs'] },
-  { id: 'mot-43', title: 'Diamond Gemstone Resting on Silk', image: 'https://i.ibb.co/67ZNMHCh/Diamond-gemstone-resting-on-silk-20261016212529.jpg', category: 'Loose Diamonds', price: '$51,000', description: 'Loose faceted diamond resting on liquid silk.', curationHighlights: ['Razor sharp facets', 'Exceptional scintillation', 'Collector piece'] },
-  { id: 'mot-44', title: 'Platinum Diamond Line Bracelet', image: 'https://i.ibb.co/YBsMfTJ3/Platinum-diamond-line-bracelet-20261016212534.jpg', category: 'Exceptional Pieces', price: '$46,000', description: 'Classic diamond line bracelet in pure platinum.', curationHighlights: ['Articulated box joints', 'Concealed security clasp', 'Uniform fire'] },
-  { id: 'mot-45', title: 'Pink Diamond Ring on Stone', image: 'https://i.ibb.co/ds7yDD0v/Pink-diamond-ring-on-stone-20261016212537.jpg', category: 'Diamond Rings', price: '$140,000', description: 'Natural fancy pink diamond ring on stone slab.', curationHighlights: ['Rare pink diamond', 'Dual metal setting', 'Private collection'] },
-  { id: 'mot-46', title: 'Pink Diamond Ring on Stone', image: 'https://i.ibb.co/whb8JNXy/Pink-diamond-ring-on-stone-20261016212544.jpg', category: 'Diamond Rings', price: '$142,000', description: 'Alternative angle of pink diamond ring on stone.', curationHighlights: ['Intense pink hue', 'Trapezoid accents', 'Fifth Avenue archive'] },
-  { id: 'mot-47', title: 'Diamond Solitaire Ring on Cloth', image: 'https://i.ibb.co/xqXXXRN2/Diamond-solitaire-ring-on-cloth-20261016212547.jpg', category: 'Diamond Rings', price: '$35,000', description: 'Pristine diamond solitaire ring on soft fabric.', curationHighlights: ['Six-prong platinum head', 'Optimal light return', 'Heirloom quality'] },
-  { id: 'mot-48', title: 'Green Diamond Cocktail Ring', image: 'https://i.ibb.co/LXqDKtj4/Green-diamond-cocktail-ring-20261016212551.jpg', category: 'Diamond Rings', price: '$96,000', description: 'Rare natural green diamond cocktail ring.', curationHighlights: ['Lush mint-green fire', 'Intricate diamond gallery', 'Connoisseur treasure'] },
+  {
+    "id": "mot-1",
+    "title": "Diamond Ring On Silk",
+    "image": "https://i.ibb.co/4ZGGKrgt/Diamond-ring-on-silk-20261021060838.jpg",
+    "category": "Diamond Rings",
+    "price": "$26,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond ring on silk handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-2",
+    "title": "Diamond Drop Earrings On Surface",
+    "image": "https://i.ibb.co/n8kP9m9W/Diamond-drop-earrings-on-surface-20261021060834.jpg",
+    "category": "Earrings",
+    "price": "$17,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond drop earrings on surface handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
+  },
+  {
+    "id": "mot-3",
+    "title": "Diamond Drop Earrings Lying Flat",
+    "image": "https://i.ibb.co/xSKYjywj/Diamond-drop-earrings-lying-flat-20261021060832.jpg",
+    "category": "Earrings",
+    "price": "$19,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond drop earrings lying flat handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
+  },
+  {
+    "id": "mot-4",
+    "title": "Yellow Diamond On Display Tray",
+    "image": "https://i.ibb.co/rR958X8f/Yellow-diamond-on-display-tray-20261021060829.jpg",
+    "category": "Diamond Rings",
+    "price": "$33,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring yellow diamond on display tray handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-5",
+    "title": "Pink Diamond Ring On Tile",
+    "image": "https://i.ibb.co/sdqYRjZ4/Pink-diamond-ring-on-tile-20261021060823.jpg",
+    "category": "Diamond Rings",
+    "price": "$36,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring pink diamond ring on tile handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-6",
+    "title": "Sapphire Ring With Accent Diamonds",
+    "image": "https://i.ibb.co/wZT28KQ3/Sapphire-ring-with-accent-diamonds-20261021060818.jpg",
+    "category": "Diamond Rings",
+    "price": "$38,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring sapphire ring with accent diamonds handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-7",
+    "title": "Platinum Diamond Bangle On Silk",
+    "image": "https://i.ibb.co/3mxyzTLf/Platinum-diamond-bangle-on-silk-20261021060812.jpg",
+    "category": "Exceptional Pieces",
+    "price": "$72,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring platinum diamond bangle on silk handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Bespoke high jewellery atelier commission",
+      "Uniform color and clarity match across links",
+      "Handcrafted Fifth Avenue heritage piece"
+    ]
+  },
+  {
+    "id": "mot-8",
+    "title": "Raw Fancy Color Diamond Cluster",
+    "image": "https://i.ibb.co/GfTgzQVS/Raw-fancy-color-diamond-cluster-20261021060808.jpg",
+    "category": "Loose Diamonds",
+    "price": "$94,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring raw fancy color diamond cluster handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "GIA Certified Natural Diamond Dossier",
+      "Exceptional hearts & arrows optical symmetry",
+      "Exclusive Fifth Avenue private consultation"
+    ]
+  },
+  {
+    "id": "mot-9",
+    "title": "Diamond Engagement Ring Resting",
+    "image": "https://i.ibb.co/m5nBZt2j/Diamond-engagement-ring-resting-20261021060806.jpg",
+    "category": "Diamond Rings",
+    "price": "$46,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond engagement ring resting handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-10",
+    "title": "Diamond Engagement Ring Resting",
+    "image": "https://i.ibb.co/8Dz1Yjp3/Diamond-engagement-ring-resting-20261021060804.jpg",
+    "category": "Diamond Rings",
+    "price": "$48,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond engagement ring resting handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-11",
+    "title": "Drop Earrings With Diamonds",
+    "image": "https://i.ibb.co/ksChHwYQ/Drop-earrings-with-diamonds-20261021060752.jpg",
+    "category": "Earrings",
+    "price": "$35,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring drop earrings with diamonds handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
+  },
+  {
+    "id": "mot-12",
+    "title": "Platinum Necklace With Diamond P",
+    "image": "https://i.ibb.co/Kj5gQVRS/Platinum-necklace-with-diamond-p-20261021060749.jpg",
+    "category": "Necklaces",
+    "price": "$76,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring platinum necklace with diamond p handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Articulated platinum links for fluid drape",
+      "Concealed high-security safety clasp",
+      "Spectacular focal diamond scintillation"
+    ]
+  },
+  {
+    "id": "mot-13",
+    "title": "Diamond Drop Earrings On Satin",
+    "image": "https://i.ibb.co/15jT9XV/Diamond-drop-earrings-on-satin-20261021060740.jpg",
+    "category": "Earrings",
+    "price": "$39,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond drop earrings on satin handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
+  },
+  {
+    "id": "mot-14",
+    "title": "Green Diamond Cocktail Ring",
+    "image": "https://i.ibb.co/nsfMCmPS/Green-diamond-cocktail-ring-20261021060733.jpg",
+    "category": "Diamond Rings",
+    "price": "$58,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring green diamond cocktail ring handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-15",
+    "title": "Pink Diamond Ring On Stone",
+    "image": "https://i.ibb.co/TMz5KCXG/Pink-diamond-ring-on-stone-20261021060728.jpg",
+    "category": "Diamond Rings",
+    "price": "$26,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring pink diamond ring on stone handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-16",
+    "title": "Platinum Diamond Line Bracelet",
+    "image": "https://i.ibb.co/XfxrrCGb/Platinum-diamond-line-bracelet-20261021060724.jpg",
+    "category": "Exceptional Pieces",
+    "price": "$57,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring platinum diamond line bracelet handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Bespoke high jewellery atelier commission",
+      "Uniform color and clarity match across links",
+      "Handcrafted Fifth Avenue heritage piece"
+    ]
+  },
+  {
+    "id": "mot-17",
+    "title": "Yellow Diamond Ring On Display",
+    "image": "https://i.ibb.co/qFJKXcVg/Yellow-diamond-ring-on-display-20261021060716.jpg",
+    "category": "Diamond Rings",
+    "price": "$31,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring yellow diamond ring on display handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-18",
+    "title": "Diamond Cluster Stud Earrings Di",
+    "image": "https://i.ibb.co/qLkJ4wQH/Diamond-cluster-stud-earrings-di-20261021060713.jpg",
+    "category": "Earrings",
+    "price": "$24,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond cluster stud earrings di handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
+  },
+  {
+    "id": "mot-19",
+    "title": "Emerald Cut Diamond Engagement Ring",
+    "image": "https://i.ibb.co/SHRfG3Y/Emerald-cut-diamond-engagement-ring-20261021060712.jpg",
+    "category": "Diamond Rings",
+    "price": "$36,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring emerald cut diamond engagement ring handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-20",
+    "title": "Diamond Eternity Band On Cloth",
+    "image": "https://i.ibb.co/nN2MHHvR/Diamond-eternity-band-on-cloth-20261021060707.jpg",
+    "category": "Diamond Rings",
+    "price": "$38,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond eternity band on cloth handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-21",
+    "title": "Diamond Eternity Band Resting",
+    "image": "https://i.ibb.co/RpcZgJ7C/Diamond-eternity-band-resting-20261021060702.jpg",
+    "category": "Diamond Rings",
+    "price": "$41,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond eternity band resting handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-22",
+    "title": "Pink Diamond Ring Photography",
+    "image": "https://i.ibb.co/sp8Lrbg3/Pink-diamond-ring-photography-20261021060658.jpg",
+    "category": "Diamond Rings",
+    "price": "$43,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring pink diamond ring photography handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-23",
+    "title": "Diamond Ring On Leather",
+    "image": "https://i.ibb.co/04GwM6X/Diamond-ring-on-leather-20261021060655.jpg",
+    "category": "Diamond Rings",
+    "price": "$46,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond ring on leather handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-24",
+    "title": "Diamond Drop Earrings On Display",
+    "image": "https://i.ibb.co/6RYKxrcr/Diamond-drop-earrings-on-display-20261021060651.jpg",
+    "category": "Earrings",
+    "price": "$36,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond drop earrings on display handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
+  },
+  {
+    "id": "mot-25",
+    "title": "Bypass Ring Holding Two Diamonds",
+    "image": "https://i.ibb.co/6JyZqY8d/Bypass-ring-holding-two-diamonds-20261021060645.jpg",
+    "category": "Diamond Rings",
+    "price": "$51,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring bypass ring holding two diamonds handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-26",
+    "title": "Bypass Ring With Two Diamonds",
+    "image": "https://i.ibb.co/FkMkY4v5/Bypass-ring-with-two-diamonds-20261021060643.jpg",
+    "category": "Diamond Rings",
+    "price": "$53,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring bypass ring with two diamonds handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-27",
+    "title": "Yellow Diamond Crystal On Base",
+    "image": "https://i.ibb.co/5xBkVxMg/Yellow-diamond-crystal-on-base-20261021060640.jpg",
+    "category": "Loose Diamonds",
+    "price": "$78,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring yellow diamond crystal on base handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "GIA Certified Natural Diamond Dossier",
+      "Exceptional hearts & arrows optical symmetry",
+      "Exclusive Fifth Avenue private consultation"
+    ]
+  },
+  {
+    "id": "mot-28",
+    "title": "Yellow Diamond On Slate Slab",
+    "image": "https://i.ibb.co/nqdKd7Pr/Yellow-diamond-on-slate-slab-20261021060638.jpg",
+    "category": "Diamond Rings",
+    "price": "$58,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring yellow diamond on slate slab handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-29",
+    "title": "Platinum Choker Necklace With Di",
+    "image": "https://i.ibb.co/bMsDQMyZ/Platinum-choker-necklace-with-di-20261021060635.jpg",
+    "category": "Necklaces",
+    "price": "$34,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring platinum choker necklace with di handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Articulated platinum links for fluid drape",
+      "Concealed high-security safety clasp",
+      "Spectacular focal diamond scintillation"
+    ]
+  },
+  {
+    "id": "mot-30",
+    "title": "Diamond Wedding Band On Satin",
+    "image": "https://i.ibb.co/2z3Zg78/Diamond-wedding-band-on-satin-20261021060631.jpg",
+    "category": "Diamond Rings",
+    "price": "$28,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond wedding band on satin handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-31",
+    "title": "Platinum Wedding Band With Diamonds",
+    "image": "https://i.ibb.co/67Ls3HXW/Platinum-wedding-band-with-diamonds-20261021060630.jpg",
+    "category": "Diamond Rings",
+    "price": "$31,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring platinum wedding band with diamonds handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-32",
+    "title": "Green Diamond Ring On Dish",
+    "image": "https://i.ibb.co/fdrNXhHx/Green-diamond-ring-on-dish-20261021060627.jpg",
+    "category": "Diamond Rings",
+    "price": "$33,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring green diamond ring on dish handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-33",
+    "title": "Diamond Ring On Concrete Block",
+    "image": "https://i.ibb.co/XkzYhjpj/Diamond-ring-on-concrete-block-20261021060622.jpg",
+    "category": "Diamond Rings",
+    "price": "$36,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond ring on concrete block handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-34",
+    "title": "Diamond Chandelier Earrings On Silk",
+    "image": "https://i.ibb.co/jPgzPGP1/Diamond-chandelier-earrings-on-silk-20261021060612.jpg",
+    "category": "Earrings",
+    "price": "$31,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond chandelier earrings on silk handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
+  },
+  {
+    "id": "mot-35",
+    "title": "Diamond Chandelier Earrings On C",
+    "image": "https://i.ibb.co/C3zbVkXp/Diamond-chandelier-earrings-on-c-20261021060615.jpg",
+    "category": "Earrings",
+    "price": "$33,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond chandelier earrings on c handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
+  },
+  {
+    "id": "mot-36",
+    "title": "Yellow Diamond Ring Resting",
+    "image": "https://i.ibb.co/0yW7VFJL/Yellow-diamond-ring-resting-20261021060610.jpg",
+    "category": "Diamond Rings",
+    "price": "$43,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring yellow diamond ring resting handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-37",
+    "title": "Blue Diamond Pendant Necklace Lying",
+    "image": "https://i.ibb.co/wZ0JXyFM/Blue-diamond-pendant-necklace-lying-20261021060607.jpg",
+    "category": "Necklaces",
+    "price": "$66,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring blue diamond pendant necklace lying handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Articulated platinum links for fluid drape",
+      "Concealed high-security safety clasp",
+      "Spectacular focal diamond scintillation"
+    ]
+  },
+  {
+    "id": "mot-38",
+    "title": "Asscher Cut Diamond On Studio Block",
+    "image": "https://i.ibb.co/Rkc4VfdN/Asscher-cut-diamond-on-studio-block-20261021060602.jpg",
+    "category": "Earrings",
+    "price": "$39,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring asscher cut diamond on studio block handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
+  },
+  {
+    "id": "mot-39",
+    "title": "Diamond Tennis Bracelet On Satin",
+    "image": "https://i.ibb.co/3G8LPk3/Diamond-tennis-bracelet-on-satin-20261021060558.jpg",
+    "category": "Exceptional Pieces",
+    "price": "$52,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond tennis bracelet on satin handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Bespoke high jewellery atelier commission",
+      "Uniform color and clarity match across links",
+      "Handcrafted Fifth Avenue heritage piece"
+    ]
+  },
+  {
+    "id": "mot-40",
+    "title": "Diamond Tennis Bracelet On Satin",
+    "image": "https://i.ibb.co/pj0hqj35/Diamond-tennis-bracelet-on-satin-20261021060553.jpg",
+    "category": "Exceptional Pieces",
+    "price": "$57,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond tennis bracelet on satin handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Bespoke high jewellery atelier commission",
+      "Uniform color and clarity match across links",
+      "Handcrafted Fifth Avenue heritage piece"
+    ]
+  },
+  {
+    "id": "mot-41",
+    "title": "Green Diamond Ring On Stone",
+    "image": "https://i.ibb.co/MD5N61dM/Green-diamond-ring-on-stone-20261021060549.jpg",
+    "category": "Diamond Rings",
+    "price": "$56,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring green diamond ring on stone handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-42",
+    "title": "Three Stone Diamond Ring On Fabric",
+    "image": "https://i.ibb.co/5gVktLn2/Three-stone-diamond-ring-on-fabric-20261021060546.jpg",
+    "category": "Diamond Rings",
+    "price": "$58,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring three stone diamond ring on fabric handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-43",
+    "title": "Yellow Diamond Crystal On Display",
+    "image": "https://i.ibb.co/V0wv369x/Yellow-diamond-crystal-on-display-20261021060543.jpg",
+    "category": "Loose Diamonds",
+    "price": "$109,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring yellow diamond crystal on display handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "GIA Certified Natural Diamond Dossier",
+      "Exceptional hearts & arrows optical symmetry",
+      "Exclusive Fifth Avenue private consultation"
+    ]
+  },
+  {
+    "id": "mot-44",
+    "title": "Purple Pink Diamond Ring Resting",
+    "image": "https://i.ibb.co/CktFqjY/Purple-pink-diamond-ring-resting-20261021060540.jpg",
+    "category": "Diamond Rings",
+    "price": "$28,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring purple pink diamond ring resting handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-45",
+    "title": "Diamond Ring On Surface",
+    "image": "https://i.ibb.co/Kz90KB2d/Diamond-ring-on-surface-20261021060536.jpg",
+    "category": "Diamond Rings",
+    "price": "$31,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond ring on surface handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  },
+  {
+    "id": "mot-46",
+    "title": "Diamond Stud Earrings On Cloth",
+    "image": "https://i.ibb.co/RGRKmcdk/Diamond-stud-earrings-on-cloth-20261021060532.jpg",
+    "category": "Earrings",
+    "price": "$30,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond stud earrings on cloth handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
+  },
+  {
+    "id": "mot-47",
+    "title": "Yellow Diamond Gemstone On Block",
+    "image": "https://i.ibb.co/Q336nhVW/Yellow-diamond-gemstone-on-block-20261021060528.jpg",
+    "category": "Loose Diamonds",
+    "price": "$68,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring yellow diamond gemstone on block handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "GIA Certified Natural Diamond Dossier",
+      "Exceptional hearts & arrows optical symmetry",
+      "Exclusive Fifth Avenue private consultation"
+    ]
+  },
+  {
+    "id": "mot-48",
+    "title": "Platinum Necklace With Diamond P",
+    "image": "https://i.ibb.co/WNdXs14p/Platinum-necklace-with-diamond-p-20261021060525.jpg",
+    "category": "Necklaces",
+    "price": "$55,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring platinum necklace with diamond p handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Articulated platinum links for fluid drape",
+      "Concealed high-security safety clasp",
+      "Spectacular focal diamond scintillation"
+    ]
+  }
 ];
 
 export const SECONDARY_9_PIECES: AtelierPiece[] = [
   {
-    id: 'sec-1',
-    title: 'Diamond Bolo Bracelet on Silk',
-    image: 'https://i.ibb.co/3yzHXftC/Diamond-bolo-bracelet-on-silk-20261016215320.jpg',
-    category: 'Exceptional Pieces',
-    price: '$19,500',
-    description: 'Contemporary bolo adjustable diamond bracelet resting on ivory silk, providing bespoke fit and fluid grace.',
-    curationHighlights: ['Adjustable bolo slider', 'Silicone-lined bead mechanism', 'Micro-pavé diamond bar'],
+    "id": "sec-1",
+    "title": "Blue Diamond Ring On Slab",
+    "image": "https://i.ibb.co/p6sddcCV/Blue-diamond-ring-on-slab-20261021060520.jpg",
+    "category": "Diamond Rings",
+    "price": "$26,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring blue diamond ring on slab handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'sec-2',
-    title: 'Victorian-Inspired Cluster Ring',
-    image: 'https://i.ibb.co/8gDQy2P1/Victorian-inspired-cluster-ring-20261016213505.jpg',
-    category: 'Diamond Rings',
-    price: '$29,000',
-    description: 'Intricately clustered diamond ring with antique milgrain detailing and balanced floral geometry.',
-    curationHighlights: ['Vintage Victorian aesthetic', 'Hand-applied milgrain edge', 'Old European cut central diamond'],
+    "id": "sec-2",
+    "title": "Blue Diamond Ring On Stone",
+    "image": "https://i.ibb.co/LD65pn16/Blue-diamond-ring-on-stone-20261021060518.jpg",
+    "category": "Diamond Rings",
+    "price": "$28,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring blue diamond ring on stone handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'sec-3',
-    title: 'Victorian-Inspired Cluster Ring on Pedestal',
-    image: 'https://i.ibb.co/fYWq3SGW/Victorian-inspired-cluster-ring-20261016213503.jpg',
-    category: 'Diamond Rings',
-    price: '$28,500',
-    description: 'Heritage cluster ring displayed on honed pedestal, highlighting the romantic warmth of hand-cut facets.',
-    curationHighlights: ['Multi-stone optical depth', 'Openwork gallery basket', 'Solid platinum 950'],
+    "id": "sec-3",
+    "title": "Diamond Ring On Silk Band",
+    "image": "https://i.ibb.co/zhMYJ0vz/Diamond-ring-on-silk-band-20261021060516.jpg",
+    "category": "Diamond Rings",
+    "price": "$31,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond ring on silk band handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'sec-4',
-    title: 'Diamond Ear Cuff on Fabric',
-    image: 'https://i.ibb.co/WN2vcBfJ/Diamond-ear-cuff-on-fabric-20261016213500.jpg',
-    category: 'Earrings',
-    price: '$14,000',
-    description: 'Non-pierced diamond ear cuff crafted from flexible platinum, curving snugly along the ear helix.',
-    curationHighlights: ['No-piercing tension design', 'Ergonomic smooth edge', 'Brilliant pavé diamond row'],
+    "id": "sec-4",
+    "title": "Green Diamond Crystal On Slate",
+    "image": "https://i.ibb.co/6RpRJ6Wf/Green-diamond-crystal-on-slate-20261021060505.jpg",
+    "category": "Loose Diamonds",
+    "price": "$70,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring green diamond crystal on slate handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "GIA Certified Natural Diamond Dossier",
+      "Exceptional hearts & arrows optical symmetry",
+      "Exclusive Fifth Avenue private consultation"
+    ]
   },
   {
-    id: 'sec-5',
-    title: 'Diamond Ear Cuff on Satin',
-    image: 'https://i.ibb.co/24p3CKj/Diamond-ear-cuff-on-satin-20261016213459.jpg',
-    category: 'Earrings',
-    price: '$14,500',
-    description: 'Minimalist luxury ear cuff nestled in satin, catching ambient light with high-clarity pavé stones.',
-    curationHighlights: ['Satin finish interior', 'Triple-row micro diamonds', 'Modern Fifth Avenue styling'],
+    "id": "sec-5",
+    "title": "Diamond Drop Earrings Lying Flat",
+    "image": "https://i.ibb.co/jmnZ90y/Diamond-drop-earrings-lying-flat-20261021060502.jpg",
+    "category": "Earrings",
+    "price": "$23,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond drop earrings lying flat handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Precision-matched brilliant diamonds",
+      "Solid platinum 950 secure click posts",
+      "Maximum ambient light scintillation"
+    ]
   },
   {
-    id: 'sec-6',
-    title: 'Diamond Resting on Display Tray',
-    image: 'https://i.ibb.co/wZzL04rc/Diamond-resting-on-display-tray-20261016213452.jpg',
-    category: 'Loose Diamonds',
-    price: '$67,000',
-    description: 'Flawless round brilliant loose diamond presented on leather tray, revealing hearts and arrows optical perfection.',
-    curationHighlights: ['Ideal optical symmetry', 'Hearts & arrows pattern', 'Accompanied by Fifth Avenue dossier'],
+    "id": "sec-6",
+    "title": "Diamond Ring On Fabric Fold",
+    "image": "https://i.ibb.co/FbFf1nqQ/Diamond-ring-on-fabric-fold-20261021060459.jpg",
+    "category": "Diamond Rings",
+    "price": "$38,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond ring on fabric fold handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'sec-7',
-    title: 'Diamond Ring with Princess Cut Stone',
-    image: 'https://i.ibb.co/SDvSPWRp/Diamond-ring-with-princess-cut-s-20261016213449.jpg',
-    category: 'Diamond Rings',
-    price: '$36,000',
-    description: 'Sharp, modern princess-cut diamond solitaire ring mounted in four corner chevron prongs in platinum.',
-    curationHighlights: ['Crisp 90-degree square geometry', 'V-prong corner protection', 'Pyramidal light scintillation'],
+    "id": "sec-7",
+    "title": "Yellow Diamond On Display Tray",
+    "image": "https://i.ibb.co/XfSgf2Kj/Yellow-diamond-on-display-tray-20261021060456.jpg",
+    "category": "Diamond Rings",
+    "price": "$41,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring yellow diamond on display tray handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'sec-8',
-    title: 'Diamond Ring on Backdrop',
-    image: 'https://i.ibb.co/DD4Vp1Hp/Diamond-ring-on-backdrop-20261016213447.jpg',
-    category: 'Diamond Rings',
-    price: '$31,000',
-    description: 'Minimalist studio presentation of a timeless platinum diamond solitaire ring, clean and radiant.',
-    curationHighlights: ['Classic proportion', 'Narrow tapering shoulders', 'Maximum white light return'],
+    "id": "sec-8",
+    "title": "Yellow Diamond On Tray",
+    "image": "https://i.ibb.co/Kpxz1V4L/Yellow-diamond-on-tray-20261021060454.jpg",
+    "category": "Diamond Rings",
+    "price": "$43,500",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring yellow diamond on tray handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
   },
   {
-    id: 'sec-9',
-    title: 'Diamond Hoop Earrings on Cloth',
-    image: 'https://i.ibb.co/PsHkQchV/Diamond-hoop-earrings-on-cloth-20261016213444.jpg',
-    category: 'Earrings',
-    price: '$18,500',
-    description: 'Medium platinum diamond hoops resting on draped cloth, designed with shared prong brilliant diamonds.',
-    curationHighlights: ['Shared prong diamond row', 'Secure click-to-lock post', 'Balanced earlobe proportion'],
-  },
+    "id": "sec-9",
+    "title": "Diamond Ring On Silk Fabric",
+    "image": "https://i.ibb.co/FqCWykrC/Diamond-ring-on-silk-fabric-20261021060452.jpg",
+    "category": "Diamond Rings",
+    "price": "$46,000",
+    "description": "An exceptional creation from our Fifth Avenue atelier, featuring diamond ring on silk fabric handcrafted in platinum with superior diamond fire and precision.",
+    "curationHighlights": [
+      "Four-talon micro-claw platinum setting",
+      "Optimal table and pavilion proportions",
+      "Fifth Avenue private vault collection"
+    ]
+  }
 ];

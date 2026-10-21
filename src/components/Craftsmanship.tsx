@@ -6,7 +6,7 @@ const icons = [Sparkles, Compass, Gem, MessageSquare];
 
 export const Craftsmanship: React.FC = () => {
   return (
-    <section id="craftsmanship" className="py-20 lg:py-28 bg-[#F4F6F9] border-b border-slate-200/70">
+    <section id="craftsmanship" className="py-20 lg:py-28 bg-[#F4F6F9] border-b border-slate-200/70 section-auto-content">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

@@ -2,57 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Heart } from 'lucide-react';
 import { MOTION_48_PIECES, AtelierPiece } from '../data/atelierData';
 
-// Provided 48 direct image URLs specifically embedded for continuous animation streams
-export const MOTION_48_DIRECT_IMAGES: string[] = [
-  'https://i.ibb.co/Fbb82JQ9/Diamond-pendant-on-silk-surface-20261016212947.jpg',
-  'https://i.ibb.co/RkBypqTq/Diamond-ring-on-silk-20261016212944.jpg',
-  'https://i.ibb.co/B54xNZ43/Yellow-diamond-on-display-block-20261016212950.jpg',
-  'https://i.ibb.co/tT2crBgG/Diamond-constellation-necklace-o-20261016213400.jpg',
-  'https://i.ibb.co/DfRzz9bD/Engagement-ring-on-ceramic-plate-20261016213403.jpg',
-  'https://i.ibb.co/9m03Bfpx/Diamond-ring-on-ceramic-plate-20261016213406.jpg',
-  'https://i.ibb.co/vC9THs04/Diamond-cocktail-ring-on-fabric-20261016213414.jpg',
-  'https://i.ibb.co/WWWTnfSz/Ring-resting-on-display-block-20261016213417.jpg',
-  'https://i.ibb.co/67gbvsvT/Open-finger-ring-on-display-block-20261016213419.jpg',
-  'https://i.ibb.co/5gK5SxpB/Diamond-necklace-draped-on-bust-20261016213424.jpg',
-  'https://i.ibb.co/vCJXF09D/Diamond-lariat-necklace-on-bust-20261016213426.jpg',
-  'https://i.ibb.co/CKRjJhVc/Diamond-sliding-on-platinum-chain-20261016213432.jpg',
-  'https://i.ibb.co/qYrbTSfq/Cluster-ring-with-scattered-diam-20261016213434.jpg',
-  'https://i.ibb.co/cKx0zWF2/Diamond-band-ring-on-background-20261016213438.jpg',
-  'https://i.ibb.co/ZzBxsbkn/Diamond-hoop-earrings-on-silk-20261016213443.jpg',
-  'https://i.ibb.co/Qvpb5PjR/Green-diamond-cocktail-ring-20261016212554.jpg',
-  'https://i.ibb.co/6JDJMtx5/Platinum-necklace-with-diamond-p-20261016212558.jpg',
-  'https://i.ibb.co/fzVVHkWV/Yellow-diamond-on-ceramic-stand-20261016212600.jpg',
-  'https://i.ibb.co/S9R9K0c/Drop-earrings-with-diamonds-20261016212604.jpg',
-  'https://i.ibb.co/Myd4Fbkx/Diamond-drop-earrings-on-satin-20261016212605.jpg',
-  'https://i.ibb.co/jkHcCYnY/Diamond-engagement-ring-resting-20261016212607.jpg',
-  'https://i.ibb.co/5hq4NqDv/Diamond-engagement-ring-resting-20261016212609.jpg',
-  'https://i.ibb.co/Z6QW4k0g/Raw-fancy-color-diamond-cluster-20261016212613.jpg',
-  'https://i.ibb.co/N2bySc11/Raw-fancy-color-diamond-cluster-20261016212615.jpg',
-  'https://i.ibb.co/BKr9vtxz/Platinum-diamond-bangle-bracelet-20261016212619.jpg',
-  'https://i.ibb.co/Ndp5V7Jq/Sapphire-ring-with-accent-diamonds-20261016212630.jpg',
-  'https://i.ibb.co/Lz8pLjQ7/Diamond-necklace-on-display-block-20261016212647.jpg',
-  'https://i.ibb.co/xx7fD8H/Pink-diamond-ring-on-tile-20261016212650.jpg',
-  'https://i.ibb.co/21D2nL0z/Collection-of-colored-diamonds-20261016212655.jpg',
-  'https://i.ibb.co/PzMJd1q5/Diamond-drop-earrings-on-surface-20261016212939.jpg',
-  'https://i.ibb.co/dJ1ZrKLL/Bypass-ring-holding-two-diamonds-20261016212449.jpg',
-  'https://i.ibb.co/Y45ppKwp/Bypass-ring-with-two-diamonds-20261016212453.jpg',
-  'https://i.ibb.co/d0jKs4HZ/Diamond-drop-earrings-on-stand-20261016212455.jpg',
-  'https://i.ibb.co/JFCzfWch/Diamond-drop-earrings-on-display-20261016212457.jpg',
-  'https://i.ibb.co/bpHxgv3/Diamond-ring-on-leather-20261016212501.jpg',
-  'https://i.ibb.co/KxPk9MDD/Pink-diamond-ring-photography-20261016212505.jpg',
-  'https://i.ibb.co/NdVM8N32/Diamond-eternity-band-on-cloth-20261016212507.jpg',
-  'https://i.ibb.co/4n4fyCY0/Blue-diamond-crystal-on-block-20261016212512.jpg',
-  'https://i.ibb.co/MycD3BkG/Diamond-engagement-ring-on-surface-20261016212516.jpg',
-  'https://i.ibb.co/vCYNMdnV/Diamond-cluster-stud-earrings-di-20261016212520.jpg',
-  'https://i.ibb.co/d0p5XH4k/Diamond-cluster-stud-earrings-20261016212521.jpg',
-  'https://i.ibb.co/mZq6b74/Yellow-diamond-ring-on-display-20261016212526.jpg',
-  'https://i.ibb.co/67ZNMHCh/Diamond-gemstone-resting-on-silk-20261016212529.jpg',
-  'https://i.ibb.co/YBsMfTJ3/Platinum-diamond-line-bracelet-20261016212534.jpg',
-  'https://i.ibb.co/ds7yDD0v/Pink-diamond-ring-on-stone-20261016212537.jpg',
-  'https://i.ibb.co/whb8JNXy/Pink-diamond-ring-on-stone-20261016212544.jpg',
-  'https://i.ibb.co/xqXXXRN2/Diamond-solitaire-ring-on-cloth-20261016212547.jpg',
-  'https://i.ibb.co/LXqDKtj4/Green-diamond-cocktail-ring-20261016212551.jpg',
-];
+// Restored 48 local high-resolution atelier images
+export const MOTION_48_DIRECT_IMAGES: string[] = MOTION_48_PIECES.map(p => p.image);
 
 interface MotionShowcase48Props {
   onSelectPiece: (piece: AtelierPiece, mode?: 'summary' | 'detail') => void;
@@ -84,17 +35,10 @@ export const MotionShowcase48: React.FC<MotionShowcase48Props> = ({
     return () => observer.disconnect();
   }, []);
 
-  // 24 pieces moving right in upper stream (links 1 to 24)
-  // 24 pieces moving left in lower stream (links 25 to 48)
-  const upperStream = MOTION_48_PIECES.slice(0, 24).map((piece, i) => ({
-    ...piece,
-    image: MOTION_48_DIRECT_IMAGES[i] || piece.image,
-  }));
-
-  const lowerStream = MOTION_48_PIECES.slice(24, 48).map((piece, i) => ({
-    ...piece,
-    image: MOTION_48_DIRECT_IMAGES[24 + i] || piece.image,
-  }));
+  // 24 pieces moving right in upper stream (mot-1 to mot-24)
+  // 24 pieces moving left in lower stream (mot-25 to mot-48)
+  const upperStream = MOTION_48_PIECES.slice(0, 24);
+  const lowerStream = MOTION_48_PIECES.slice(24, 48);
 
   const renderCard = (piece: AtelierPiece, keySuffix: string) => {
     const saved = isSaved(piece.id);
@@ -112,21 +56,14 @@ export const MotionShowcase48: React.FC<MotionShowcase48Props> = ({
             src={piece.image}
             alt={piece.title}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-            loading="lazy"
+            loading="eager"
             decoding="async"
             referrerPolicy="no-referrer"
             onError={(e) => {
               const target = e.currentTarget;
-              const retryCount = Number(target.dataset.retry || '0');
-              // Automatically retry if transient 503 Service Unavailable occurs
-              if (retryCount < 2) {
-                target.dataset.retry = String(retryCount + 1);
-                setTimeout(() => {
-                  target.src = piece.image;
-                }, 600 * (retryCount + 1));
-              } else if (!target.dataset.fallback) {
+              if (!target.dataset.fallback) {
                 target.dataset.fallback = 'true';
-                target.src = 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80';
+                target.src = `/images/atelier/${piece.id}.jpg`;
               }
             }}
           />

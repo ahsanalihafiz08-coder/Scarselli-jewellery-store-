@@ -108,7 +108,7 @@ export const SavedPiecesModal: React.FC<SavedPiecesModalProps> = ({
                       const target = e.currentTarget;
                       if (!target.dataset.fallback) {
                         target.dataset.fallback = 'true';
-                        target.src = 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=400&q=80';
+                        target.src = `/images/atelier/${piece.id}.jpg`;
                       }
                     }}
                   />

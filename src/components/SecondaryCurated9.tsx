@@ -45,12 +45,13 @@ export const SecondaryCurated9: React.FC<SecondaryCurated9Props> = ({
                     alt={piece.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                     loading="lazy"
+                    decoding="async"
                     referrerPolicy="no-referrer"
                     onError={(e) => {
                       const target = e.currentTarget;
                       if (!target.dataset.fallback) {
                         target.dataset.fallback = 'true';
-                        target.src = 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=80';
+                        target.src = `/images/atelier/${piece.id}.jpg`;
                       }
                     }}
                   />

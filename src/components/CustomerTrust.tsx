@@ -4,7 +4,7 @@ import { BUSINESS_INFO } from '../data/jewelleryData';
 
 export const CustomerTrust: React.FC = () => {
   return (
-    <section className="py-16 lg:py-20 bg-[#FAFBFD] border-b border-slate-200/60">
+    <section className="py-16 lg:py-20 bg-[#FAFBFD] border-b border-slate-200/60 section-auto-content">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="p-8 sm:p-12 bg-white border border-slate-200/80 shadow-2xs">
