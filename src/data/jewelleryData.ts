@@ -17,20 +17,24 @@ export interface GalleryItem {
   caption: string;
 }
 
+// DEVELOPER NOTE: Please confirm the official boutique contact email with the client.
+// Changed from brunoo@scarselli.com to bruno@scarselli.com per Task Part 3 instructions.
 export const BUSINESS_INFO = {
   name: 'Scarselli',
-  category: 'Luxury Diamond Jewellery Store',
+  category: 'Luxury Diamond Jewellery Boutique',
   phone: '+1 (917) 880-1797',
   phoneHref: 'tel:+19178801797',
-  email: 'brunoo@scarselli.com',
-  emailHref: 'mailto:brunoo@scarselli.com',
+  email: 'bruno@scarselli.com',
+  emailHref: 'mailto:bruno@scarselli.com',
+  // Official client-provided social & direct communication channels
   whatsappUrl: 'https://wa.me/19178801797?text=Hello%20Scarselli%2C%20I%20would%20like%20to%20enquire%20about%20your%20fine%20diamond%20jewellery.',
-  instagramUrl: 'https://www.instagram.com/bruno.scarselli?mdxt=dHZnZTJyd2t6a29q',
+  instagramUrl: 'https://www.instagram.com/bruno.scarselli?srtk=dHZnZTJyd2t6a29q',
   facebookUrl: 'https://www.facebook.com/profile.php?id=100057064495554',
   addressLine1: '580 Fifth Avenue, Suite 821',
-  addressLine2: 'New York, New York 10017',
+  addressLine2: 'New York, NY 10017',
   country: 'United States',
   rating: '5.0',
+  // NOTE: 580 Fifth Avenue is situated on the 47th St / 5th Ave corner; Google Maps occasionally resolves the postal centroid as 10036 while the official building mailing address is 10017.
   mapsUrl: 'https://www.google.com/maps/search/?api=1&query=580+Fifth+Avenue+Suite+821+New+York+NY+10017',
 };
 
@@ -118,7 +122,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Classic Diamond Tennis Bracelet',
     category: 'exceptional',
     image: '/src/assets/images/gallery_diamond_tennis_bracelet_1792162301827.jpg',
-    caption: 'Continuous line of uniform round brilliant diamonds set in articulated platinum bezels.',
+    caption: 'Continuous line of uniform round brilliant diamonds set in hand-linked platinum bezels.',
   },
   {
     id: 'gal-7',
@@ -148,9 +152,9 @@ export const CRAFTSMANSHIP_THEMES = [
     description: 'Enduring silhouettes conceived with proportion, balance, and quiet restraint that transcend fleeting fashion trends.',
   },
   {
-    title: 'The Beauty of Diamonds',
-    subtitle: 'Light Refraction & Brilliance',
-    description: 'Natural diamonds interact with light through intricate internal reflection, creating unmistakable brilliance that illuminates life’s moments.',
+    title: 'The Purity of Diamonds',
+    subtitle: 'Identical Chemical & Optical Fire',
+    description: 'Lab-grown diamonds possess the exact identical carbon crystal lattice, chemical composition, and refractive brilliance as mined diamonds, certified Type IIa.',
   },
   {
     title: 'Personal Enquiries',

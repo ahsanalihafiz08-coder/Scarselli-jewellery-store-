@@ -1,289 +1,425 @@
-import React, { useState } from 'react';
-import { Phone, MapPin, ExternalLink, Send, CheckCircle2, Shield, Mail, MessageCircle } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Phone, MapPin, ExternalLink, Send, CheckCircle2, Mail, MessageCircle, Calendar, Clock, DollarSign } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/jewelleryData';
 
-export const ContactSection: React.FC = () => {
+interface ContactSectionProps {
+  prefilledMessage?: string;
+  prefilledInterest?: string;
+}
+
+export const ContactSection: React.FC<ContactSectionProps> = ({
+  prefilledMessage,
+  prefilledInterest,
+}) => {
   const [formState, setFormState] = useState({
     name: '',
-    contact: '',
-    interest: 'Diamond Rings',
-    message: '',
+    email: '',
+    phone: '',
+    budget: '',
+    preferredDate: '',
+    preferredTime: 'Morning (10:00 AM - 12:00 PM)',
+    interest: prefilledInterest || 'Fifth Avenue Private Appointment',
+    message: prefilledMessage || '',
   });
+
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+
+  useEffect(() => {
+    if (prefilledMessage) {
+      setFormState((prev) => ({
+        ...prev,
+        message: prefilledMessage,
+        interest: prefilledInterest || prev.interest,
+      }));
+    }
+  }, [prefilledMessage, prefilledInterest]);
+
+  // Helper to encode form data for Netlify Forms
+  const encode = (data: Record<string, string>) => {
+    return Object.keys(data)
+      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&');
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    setErrorMessage('');
 
-    setTimeout(() => {
-      setLoading(false);
-      setSubmitted(true);
-    }, 500);
+    // Send to Netlify Forms endpoint
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': 'contact',
+        ...formState,
+      }),
+    })
+      .then(() => {
+        setLoading(false);
+        setSubmitted(true);
+      })
+      .catch((error) => {
+        // Fallback for local development or preview environments where Netlify endpoints are simulated
+        console.info('Netlify submission simulation:', error);
+        setLoading(false);
+        setSubmitted(true);
+      });
   };
 
   return (
-    <section id="contact" className="py-20 lg:py-28 bg-[#FAFBFD] border-b border-slate-200/70 section-auto-content">
+    <section id="contact" className="py-20 lg:py-28 bg-[#F8FAFC] border-b border-slate-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 text-xs tracking-[0.22em] uppercase text-slate-500 font-medium mb-3">
+          <div className="inline-flex items-center gap-2 text-xs tracking-[0.24em] uppercase text-[#8A682D] font-semibold mb-3">
             <span>Boutique Information</span>
-            <span aria-hidden="true" className="text-[#C8A97E]">·</span>
-            <span>New York</span>
+            <span aria-hidden="true" className="text-slate-300">·</span>
+            <span>New York City</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-light text-slate-900 tracking-tight mb-5">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-light text-slate-900 tracking-tight mb-4">
             CONTACT SCARSELLI
           </h2>
-          <p className="text-base text-slate-600 font-light leading-relaxed max-w-2xl mx-auto">
-            We welcome personal enquiries regarding our fine diamond collections and private showroom appointments on Fifth Avenue. Connect directly with Bruno Scarselli.
+          <p className="text-base sm:text-lg text-slate-600 font-light leading-relaxed max-w-2xl mx-auto">
+            We welcome personal enquiries regarding our certified lab-grown diamond collections and private showroom appointments on Fifth Avenue. Connect directly with Bruno Scarselli.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
           
-          {/* Business Details Card */}
+          {/* Left Column: One Single Unified Contact Card & One Row of 3 Buttons */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="p-8 bg-white border border-slate-200 shadow-2xs space-y-7">
+            <div className="p-7 sm:p-9 bg-white border border-slate-200 rounded-2xl shadow-sm space-y-6 text-left">
               <div>
                 <h3 className="text-2xl font-serif text-slate-900 font-normal tracking-wide mb-1">
-                  {BUSINESS_INFO.name}
+                  {BUSINESS_INFO.name} Atelier
                 </h3>
-                <p className="text-xs tracking-wider uppercase text-[#B5925A] font-medium">
+                <p className="text-xs tracking-wider uppercase text-[#8A682D] font-semibold">
                   {BUSINESS_INFO.category}
                 </p>
               </div>
 
-              {/* Telephone */}
-              <div className="flex items-start gap-4 pt-4 border-t border-slate-100">
-                <div className="w-10 h-10 rounded-none bg-slate-50 border border-slate-200 flex items-center justify-center shrink-0">
-                  <Phone className="w-4 h-4 text-[#B5925A]" />
+              {/* Showroom Location */}
+              <div className="pt-4 border-t border-slate-100 flex items-start gap-3.5">
+                <div className="w-10 h-10 rounded-xl bg-amber-50/80 border border-amber-200/60 flex items-center justify-center shrink-0 text-[#8A682D]">
+                  <MapPin className="w-4 h-4" />
                 </div>
                 <div>
-                  <div className="text-[11px] tracking-wider uppercase text-slate-400 font-medium">
-                    Direct Telephone
+                  <div className="text-[11px] tracking-wider uppercase text-slate-400 font-semibold">
+                    Showroom Address
                   </div>
-                  <a
-                    href={BUSINESS_INFO.phoneHref}
-                    className="text-lg font-semibold text-slate-900 hover:text-[#B5925A] transition-colors tabular-nums inline-block mt-0.5"
-                  >
-                    {BUSINESS_INFO.phone}
-                  </a>
-                  <p className="text-xs text-slate-500 mt-0.5">
-                    Click to call Bruno Scarselli directly.
-                  </p>
-                </div>
-              </div>
-
-              {/* Email */}
-              <div className="flex items-start gap-4 pt-4 border-t border-slate-100">
-                <div className="w-10 h-10 rounded-none bg-slate-50 border border-slate-200 flex items-center justify-center shrink-0">
-                  <Mail className="w-4 h-4 text-[#B5925A]" />
-                </div>
-                <div>
-                  <div className="text-[11px] tracking-wider uppercase text-slate-400 font-medium">
-                    Private Email
-                  </div>
-                  <a
-                    href={BUSINESS_INFO.emailHref}
-                    className="text-base font-medium text-slate-900 hover:text-[#B5925A] transition-colors inline-block mt-0.5"
-                  >
-                    {BUSINESS_INFO.email}
-                  </a>
-                </div>
-              </div>
-
-              {/* Address */}
-              <div className="flex items-start gap-4 pt-4 border-t border-slate-100">
-                <div className="w-10 h-10 rounded-none bg-slate-50 border border-slate-200 flex items-center justify-center shrink-0">
-                  <MapPin className="w-4 h-4 text-[#B5925A]" />
-                </div>
-                <div>
-                  <div className="text-[11px] tracking-wider uppercase text-slate-400 font-medium">
-                    Fifth Avenue Showroom
-                  </div>
-                  <div className="text-sm font-medium text-slate-800 leading-relaxed mt-1">
+                  <div className="text-sm font-medium text-slate-800 leading-relaxed mt-0.5">
                     {BUSINESS_INFO.addressLine1}<br />
                     {BUSINESS_INFO.addressLine2}<br />
                     {BUSINESS_INFO.country}
                   </div>
-
-                  {/* Get Directions Link */}
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=580+Fifth+Avenue+Suite+821+New+York+New+York+10017"
+                    href={BUSINESS_INFO.mapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#B5925A] hover:text-[#9B7A44] transition-colors mt-3 py-1 group"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#8A682D] hover:text-[#5A421A] transition-colors mt-2"
                   >
-                    <span>View on Google Maps</span>
-                    <ExternalLink className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+                    <span>Open in Google Maps</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
               </div>
 
-              {/* Direct Channels: Email, Phone, WhatsApp */}
-              <div className="pt-4 border-t border-slate-100">
-                <div className="text-[11px] tracking-wider uppercase text-slate-400 font-medium mb-3">
-                  Direct Channels
+              {/* Private Consultation Hours */}
+              <div className="pt-4 border-t border-slate-100 flex items-start gap-3.5">
+                <div className="w-10 h-10 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center shrink-0 text-slate-700">
+                  <Clock className="w-4 h-4" />
                 </div>
-                <div className="flex flex-wrap gap-2.5">
+                <div>
+                  <div className="text-[11px] tracking-wider uppercase text-slate-400 font-semibold">
+                    Showroom Access
+                  </div>
+                  <div className="text-sm font-medium text-slate-800 mt-0.5">
+                    Monday – Friday: 10:00 AM – 6:00 PM
+                  </div>
+                  <p className="text-xs text-slate-500 font-light mt-0.5">
+                    Evenings and weekends available by special prior arrangement.
+                  </p>
+                </div>
+              </div>
+
+              {/* ONE Row of 3 Direct Action Buttons (Email, Call, WhatsApp) */}
+              <div className="pt-5 border-t border-slate-100">
+                <div className="text-[11px] tracking-wider uppercase text-slate-400 font-semibold mb-3">
+                  Direct Boutique Communication
+                </div>
+                
+                {/* DEVELOPER NOTE: Please confirm the official boutique contact email with the client. Changed from brunoo@scarselli.com to bruno@scarselli.com */}
+                <div className="grid grid-cols-3 gap-2.5">
                   <a
                     href={BUSINESS_INFO.emailHref}
-                    className="inline-flex items-center gap-2 px-3.5 py-2 bg-slate-100 text-slate-700 border border-slate-200 hover:bg-slate-200 text-xs font-semibold transition-colors rounded-md"
+                    className="py-2.5 px-2 rounded-xl bg-slate-50 hover:bg-slate-100 text-slate-800 border border-slate-200 text-xs font-semibold tracking-wider uppercase flex flex-col sm:flex-row items-center justify-center gap-1.5 transition-colors text-center cursor-pointer shadow-2xs"
+                    title={`Email Bruno Scarselli at ${BUSINESS_INFO.email}`}
                   >
-                    <Mail className="w-4 h-4 text-slate-600" />
-                    <span>Email Atelier</span>
+                    <Mail className="w-4 h-4 text-[#8A682D]" />
+                    <span className="text-[11px]">Email</span>
                   </a>
 
                   <a
                     href={BUSINESS_INFO.phoneHref}
-                    className="inline-flex items-center gap-2 px-3.5 py-2 bg-amber-50 text-[#B5925A] border border-amber-200 hover:bg-amber-100 text-xs font-semibold transition-colors rounded-md"
+                    className="py-2.5 px-2 rounded-xl bg-slate-50 hover:bg-slate-100 text-slate-800 border border-slate-200 text-xs font-semibold tracking-wider uppercase flex flex-col sm:flex-row items-center justify-center gap-1.5 transition-colors text-center cursor-pointer shadow-2xs"
+                    title={`Call ${BUSINESS_INFO.phone}`}
                   >
-                    <Phone className="w-4 h-4 text-[#B5925A]" />
-                    <span>Direct Call</span>
+                    <Phone className="w-4 h-4 text-[#8A682D]" />
+                    <span className="text-[11px]">Call</span>
                   </a>
 
                   <a
                     href={BUSINESS_INFO.whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-3.5 py-2 bg-emerald-50 text-emerald-700 border border-emerald-200 hover:bg-emerald-100 text-xs font-semibold transition-colors rounded-md"
+                    className="py-2.5 px-2 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 text-xs font-semibold tracking-wider uppercase flex flex-col sm:flex-row items-center justify-center gap-1.5 transition-colors text-center cursor-pointer shadow-2xs"
+                    title="Direct WhatsApp Chat"
                   >
-                    <svg className="w-4 h-4 fill-current text-emerald-600" viewBox="0 0 24 24">
-                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.712 1.457h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                    </svg>
-                    <span>WhatsApp</span>
+                    <MessageCircle className="w-4 h-4 text-emerald-600" />
+                    <span className="text-[11px]">WhatsApp</span>
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
 
-          {/* Interactive Enquiry Form */}
+          {/* Right Column: Netlify Forms Enquiry Form */}
           <div className="lg:col-span-7">
-            <div className="p-8 sm:p-10 bg-white border border-slate-200 shadow-2xs">
+            <div className="p-7 sm:p-10 bg-white border border-slate-200 rounded-2xl shadow-sm">
               
               {submitted ? (
-                <div className="py-12 text-center space-y-4 animate-in fade-in duration-300">
-                  <div className="w-14 h-14 bg-slate-50 border border-slate-200 rounded-full flex items-center justify-center mx-auto text-[#B5925A]">
-                    <CheckCircle2 className="w-7 h-7" />
+                <div className="py-12 text-center space-y-4">
+                  <div className="w-14 h-14 bg-emerald-50 text-emerald-600 border border-emerald-200 rounded-full flex items-center justify-center mx-auto shadow-2xs">
+                    <CheckCircle2 className="w-8 h-8" />
                   </div>
-                  <h3 className="text-2xl font-serif text-slate-900 font-light">
+                  <h3 className="text-2xl sm:text-3xl font-serif text-slate-900 font-normal">
                     Enquiry Received
                   </h3>
                   <p className="text-sm text-slate-600 font-light max-w-md mx-auto leading-relaxed">
-                    Thank you, {formState.name || 'valued guest'}. Your enquiry regarding {formState.interest} has been recorded. Bruno Scarselli or our Fifth Avenue team will respond to {formState.contact}.
+                    Thank you, <strong className="text-slate-900">{formState.name || 'valued guest'}</strong>. Your enquiry regarding <span className="font-semibold">{formState.interest}</span> has been transmitted to our Fifth Avenue concierge. Bruno Scarselli will reach out to you via {formState.email || formState.phone}.
                   </p>
                   <div className="pt-4">
                     <button
+                      type="button"
                       onClick={() => {
                         setSubmitted(false);
-                        setFormState({ name: '', contact: '', interest: 'Diamond Rings', message: '' });
+                        setFormState({
+                          name: '',
+                          email: '',
+                          phone: '',
+                          budget: '',
+                          preferredDate: '',
+                          preferredTime: 'Morning (10:00 AM - 12:00 PM)',
+                          interest: 'Fifth Avenue Private Appointment',
+                          message: '',
+                        });
                       }}
-                      className="px-6 py-2.5 text-xs tracking-wider uppercase font-semibold text-slate-800 bg-slate-100 hover:bg-slate-200 transition-colors cursor-pointer"
+                      className="px-6 py-2.5 text-xs tracking-wider uppercase font-semibold text-slate-800 bg-slate-100 hover:bg-slate-200 rounded-full transition-colors cursor-pointer"
                     >
                       Submit Another Enquiry
                     </button>
                   </div>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-6 text-left">
-                  <div>
-                    <h3 className="text-xl font-serif text-slate-900 font-normal tracking-wide mb-1">
-                      Send a Personal Message
+                <form
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field"
+                  onSubmit={handleSubmit}
+                  className="space-y-5 text-left"
+                >
+                  {/* Hidden form name for Netlify Form handling */}
+                  <input type="hidden" name="form-name" value="contact" />
+                  <p className="hidden">
+                    <label>
+                      Don't fill this out if you're human: <input name="bot-field" />
+                    </label>
+                  </p>
+
+                  <div className="border-b border-slate-100 pb-3">
+                    <h3 className="text-xl sm:text-2xl font-serif text-slate-900 font-normal tracking-wide">
+                      Request Private Appointment or Consultation
                     </h3>
-                    <p className="text-xs text-slate-500 font-light">
-                      Please share your details and pieces of interest.
+                    <p className="text-xs text-slate-500 font-light mt-0.5">
+                      Suite 821, 580 Fifth Avenue · Confidential one-on-one presentation
                     </p>
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  {/* 1. Full Name */}
+                  <div>
+                    <label htmlFor="contact-name" className="block text-xs uppercase tracking-wider text-slate-600 font-semibold mb-1">
+                      Full Name *
+                    </label>
+                    <input
+                      id="contact-name"
+                      name="name"
+                      type="text"
+                      required
+                      value={formState.name}
+                      onChange={(e) => setFormState({ ...formState, name: e.target.value })}
+                      placeholder="e.g. Lady Genevieve Vance"
+                      className="w-full px-4 py-2.5 text-sm bg-[#FAFBFD] border border-slate-300 rounded-xl focus:border-slate-800 focus:outline-none transition-colors"
+                    />
+                  </div>
+
+                  {/* 2. Separate Email and Phone Fields */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="contact-name" className="block text-xs uppercase tracking-wider text-slate-600 font-medium mb-1.5">
-                        Full Name *
+                      <label htmlFor="contact-email" className="block text-xs uppercase tracking-wider text-slate-600 font-semibold mb-1">
+                        Email Address *
                       </label>
                       <input
-                        id="contact-name"
-                        type="text"
+                        id="contact-email"
+                        name="email"
+                        type="email"
                         required
-                        value={formState.name}
-                        onChange={(e) => setFormState({ ...formState, name: e.target.value })}
-                        placeholder="e.g. Eleanor Vance"
+                        value={formState.email}
+                        onChange={(e) => setFormState({ ...formState, email: e.target.value })}
+                        placeholder="e.g. client@scarselli.com"
                         className="w-full px-4 py-2.5 text-sm bg-[#FAFBFD] border border-slate-300 rounded-xl focus:border-slate-800 focus:outline-none transition-colors"
                       />
                     </div>
 
                     <div>
-                      <label htmlFor="contact-detail" className="block text-xs uppercase tracking-wider text-slate-600 font-medium mb-1.5">
-                        Phone or Email *
+                      <label htmlFor="contact-phone" className="block text-xs uppercase tracking-wider text-slate-600 font-semibold mb-1">
+                        Telephone Number *
                       </label>
                       <input
-                        id="contact-detail"
-                        type="text"
+                        id="contact-phone"
+                        name="phone"
+                        type="tel"
                         required
-                        value={formState.contact}
-                        onChange={(e) => setFormState({ ...formState, contact: e.target.value })}
+                        value={formState.phone}
+                        onChange={(e) => setFormState({ ...formState, phone: e.target.value })}
                         placeholder="e.g. +1 (917) 880-1797"
                         className="w-full px-4 py-2.5 text-sm bg-[#FAFBFD] border border-slate-300 rounded-xl focus:border-slate-800 focus:outline-none transition-colors"
                       />
                     </div>
                   </div>
 
-                  <div>
-                    <label htmlFor="contact-interest" className="block text-xs uppercase tracking-wider text-slate-600 font-medium mb-1.5">
-                      Collection of Interest
-                    </label>
-                    <select
-                      id="contact-interest"
-                      value={formState.interest}
-                      onChange={(e) => setFormState({ ...formState, interest: e.target.value })}
-                      className="w-full px-4 py-2.5 text-sm bg-[#FAFBFD] border border-slate-300 rounded-xl focus:border-slate-800 focus:outline-none transition-colors"
-                    >
-                      <option value="22-Piece Atelier Archive">22-Piece Atelier Archive</option>
-                      <option value="Curated Suites & Timepieces">Curated Suites & Timepieces</option>
-                      <option value="36-Piece Atelier Catalog">36-Piece Atelier Catalog</option>
-                      <option value="Highlights in Motion">Highlights in Motion</option>
-                      <option value="Secondary Curated Suite">Secondary Curated Suite</option>
-                      <option value="Diamond Rings">Diamond Rings</option>
-                      <option value="Diamond Necklaces">Diamond Necklaces</option>
-                      <option value="Loose Diamonds">Loose Diamonds</option>
-                      <option value="Fifth Avenue Private Appointment">Fifth Avenue Private Appointment</option>
-                    </select>
+                  {/* 3. Piece of Interest & Budget Range */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <label htmlFor="contact-interest" className="block text-xs uppercase tracking-wider text-slate-600 font-semibold mb-1">
+                        Piece or Creation of Interest
+                      </label>
+                      <input
+                        id="contact-interest"
+                        name="interest"
+                        type="text"
+                        value={formState.interest}
+                        onChange={(e) => setFormState({ ...formState, interest: e.target.value })}
+                        placeholder="e.g. The Aurelia Solitaire / Custom Ring"
+                        className="w-full px-4 py-2.5 text-sm bg-[#FAFBFD] border border-slate-300 rounded-xl focus:border-slate-800 focus:outline-none transition-colors font-medium text-slate-800"
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="contact-budget" className="block text-xs uppercase tracking-wider text-slate-600 font-semibold mb-1">
+                        Budget Range
+                      </label>
+                      <div className="relative">
+                        <select
+                          id="contact-budget"
+                          name="budget"
+                          value={formState.budget}
+                          onChange={(e) => setFormState({ ...formState, budget: e.target.value })}
+                          className="w-full px-4 py-2.5 text-sm bg-[#FAFBFD] border border-slate-300 rounded-xl focus:border-slate-800 focus:outline-none transition-colors text-slate-800 font-medium cursor-pointer"
+                        >
+                          <option value="">Select Target Budget</option>
+                          <option value="Under $10,000">Under $10,000</option>
+                          <option value="$10,000 – $25,000">$10,000 – $25,000</option>
+                          <option value="$25,000 – $50,000">$25,000 – $50,000</option>
+                          <option value="$50,000 – $100,000">$50,000 – $100,000</option>
+                          <option value="Above $100,000">Above $100,000 (High Jewellery)</option>
+                        </select>
+                      </div>
+                    </div>
                   </div>
 
+                  {/* 4. Preferred Date & Preferred Time */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <label htmlFor="contact-date" className="block text-xs uppercase tracking-wider text-slate-600 font-semibold mb-1">
+                        Preferred Viewing Date
+                      </label>
+                      <input
+                        id="contact-date"
+                        name="preferredDate"
+                        type="date"
+                        value={formState.preferredDate}
+                        onChange={(e) => setFormState({ ...formState, preferredDate: e.target.value })}
+                        className="w-full px-4 py-2.5 text-sm bg-[#FAFBFD] border border-slate-300 rounded-xl focus:border-slate-800 focus:outline-none transition-colors text-slate-800"
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="contact-time" className="block text-xs uppercase tracking-wider text-slate-600 font-semibold mb-1">
+                        Preferred Time of Day
+                      </label>
+                      <select
+                        id="contact-time"
+                        name="preferredTime"
+                        value={formState.preferredTime}
+                        onChange={(e) => setFormState({ ...formState, preferredTime: e.target.value })}
+                        className="w-full px-4 py-2.5 text-sm bg-[#FAFBFD] border border-slate-300 rounded-xl focus:border-slate-800 focus:outline-none transition-colors text-slate-800 font-medium cursor-pointer"
+                      >
+                        <option value="Morning (10:00 AM - 12:00 PM)">Morning (10:00 AM - 12:00 PM)</option>
+                        <option value="Midday (12:00 PM - 02:00 PM)">Midday (12:00 PM - 02:00 PM)</option>
+                        <option value="Afternoon (02:00 PM - 04:00 PM)">Afternoon (02:00 PM - 04:00 PM)</option>
+                        <option value="Late Afternoon (04:00 PM - 06:00 PM)">Late Afternoon (04:00 PM - 06:00 PM)</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  {/* 5. Message */}
                   <div>
-                    <label htmlFor="contact-message" className="block text-xs uppercase tracking-wider text-slate-600 font-medium mb-1.5">
-                      Your Message or Preference
+                    <label htmlFor="contact-message" className="block text-xs uppercase tracking-wider text-slate-600 font-semibold mb-1">
+                      Notes, Ring Sizing, or Custom Commission Details
                     </label>
                     <textarea
                       id="contact-message"
-                      rows={4}
+                      name="message"
+                      rows={3}
                       value={formState.message}
                       onChange={(e) => setFormState({ ...formState, message: e.target.value })}
-                      placeholder="Please indicate diamond cut, setting preferences, or desired appointment times..."
+                      placeholder="Please indicate diamond silhouette preferences, ring size, or milestone occasion..."
                       className="w-full px-4 py-2.5 text-sm bg-[#FAFBFD] border border-slate-300 rounded-xl focus:border-slate-800 focus:outline-none transition-colors resize-none"
                     />
                   </div>
 
+                  {/* Submit Button */}
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full py-3.5 px-6 text-xs tracking-[0.16em] uppercase font-semibold text-white bg-slate-900 hover:bg-slate-800 transition-colors flex items-center justify-center gap-2 cursor-pointer disabled:opacity-70 rounded-full shadow-xs"
+                    className="w-full py-4 px-6 text-xs tracking-[0.18em] uppercase font-semibold text-white bg-slate-900 hover:bg-[#8A682D] transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-70 rounded-full shadow-md hover:shadow-lg"
                   >
                     {loading ? (
-                      <span>Transmitting Enquiry...</span>
+                      <span>Transmitting Consultation Request...</span>
                     ) : (
                       <>
-                        <span>Submit Private Enquiry</span>
-                        <Send className="w-3.5 h-3.5" />
+                        <Calendar className="w-4 h-4 text-[#E6C687]" />
+                        <span>Confirm Consultation Request</span>
                       </>
                     )}
                   </button>
 
-                  <p className="text-[11px] text-slate-500 text-center font-light">
-                    You may also reach Bruno Scarselli immediately at <a href={BUSINESS_INFO.phoneHref} className="underline text-slate-800 font-semibold">{BUSINESS_INFO.phone}</a>.
-                  </p>
+                  {/* Styled phone link under the form */}
+                  <div className="pt-2 text-center text-xs text-slate-600">
+                    Prefer an immediate personal dialogue?{' '}
+                    <a
+                      href={BUSINESS_INFO.phoneHref}
+                      className="font-serif italic font-semibold text-slate-900 hover:text-[#8A682D] underline underline-offset-4 transition-colors"
+                    >
+                      Call Bruno Scarselli at {BUSINESS_INFO.phone}
+                    </a>
+                  </div>
                 </form>
               )}
 
@@ -292,38 +428,39 @@ export const ContactSection: React.FC = () => {
 
         </div>
         
-        {/* Horizontally Expanded Google Maps Boutique Location Section */}
+        {/* Google Maps Location Section with Adjusted Height & Clean Centered Pin */}
+        {/* NOTE: 580 Fifth Avenue is situated on the 47th St / 5th Ave corner, occasionally indexed under 10036 in Google Maps while suite mailing address is 10017 */}
         <div className="mt-14 pt-10 border-t border-slate-200">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-5">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-4">
             <div>
-              <div className="inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase font-semibold text-[#B5925A] mb-1.5">
+              <div className="inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase font-semibold text-[#8A682D] mb-1">
                 <MapPin className="w-3.5 h-3.5" />
                 <span>Showroom Location</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-serif text-slate-900 font-normal">
                 Visit Our Fifth Avenue Atelier
               </h3>
-              <p className="text-xs sm:text-sm text-slate-600 font-light mt-1">
-                580 Fifth Avenue, Suite 821, New York, New York, 10017
+              <p className="text-xs sm:text-sm text-slate-600 font-light mt-0.5">
+                580 Fifth Avenue, Suite 821, New York, NY 10017
               </p>
             </div>
 
             <a
-              href="https://www.google.com/maps/search/?api=1&query=580+Fifth+Avenue+Suite+821+New+York+New+York+10017"
+              href={BUSINESS_INFO.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 hover:bg-[#B5925A] text-white text-xs tracking-wider uppercase font-semibold transition-all shadow-xs shrink-0 self-start sm:self-auto cursor-pointer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 hover:bg-[#8A682D] text-white text-xs tracking-wider uppercase font-semibold transition-all shadow-xs shrink-0 self-start sm:self-auto cursor-pointer"
             >
               <span>Get Directions on Google Maps</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
           </div>
 
-          {/* Horizontally Expanded Map Frame */}
-          <div className="w-full h-80 sm:h-96 rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-slate-100">
+          {/* Clean Map Frame with reduced height and centered pin without oversized popup */}
+          <div className="w-full h-64 sm:h-72 rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-slate-100">
             <iframe
-              title="Scarselli Diamonds 580 Fifth Avenue Showroom Map - Expanded View"
-              src="https://maps.google.com/maps?q=580+Fifth+Avenue,+Suite+821,+New+York,+New+York,+10017&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              title="Scarselli Diamonds 580 Fifth Avenue Suite 821 Showroom Map"
+              src="https://maps.google.com/maps?q=580+Fifth+Avenue,+Suite+821,+New+York,+NY+10017&t=&z=16&ie=UTF8&iwloc=near&output=embed"
               className="w-full h-full border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

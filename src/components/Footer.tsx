@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin, Mail, Phone } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/jewelleryData';
+import { PolicyType } from './PolicyModals';
 
 // Official Brand Social SVGs
 const InstagramIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
@@ -21,23 +22,26 @@ const WhatsAppIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
   </svg>
 );
 
-export const Footer: React.FC = () => {
+interface FooterProps {
+  onOpenPolicy?: (type: PolicyType) => void;
+}
+
+export const Footer: React.FC<FooterProps> = ({ onOpenPolicy }) => {
   const currentYear = 2026;
 
   const navLinks = [
-    { label: 'Home', href: '#home' },
-    { label: 'Lab Grown Diamonds', href: '#stone-selection' },
+    { label: 'The Collection', href: '#the-collection' },
+    { label: 'Diamond Shapes', href: '#stone-selection' },
+    { label: 'Featured Pieces', href: '#featured-pieces' },
     { label: 'Craftsmanship', href: '#craftsmanship' },
-    { label: 'Curated Suites & Timepieces', href: '#curated-suites' },
-    { label: 'Atelier Catalog', href: '#atelier-catalog' },
-    { label: 'Highlights in Motion', href: '#motion-showcase' },
-    { label: 'Secondary Curated Suite', href: '#secondary-curated' },
+    { label: 'About Bruno Scarselli', href: '#about' },
+    { label: 'Frequently Asked Questions', href: '#faq' },
     { label: 'Contact & Showroom', href: '#contact' },
   ];
 
   return (
-    <footer className="bg-[#EEF2F6] border-t border-slate-300/80 text-slate-700">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-16 lg:py-20">
+    <footer className="bg-[#EDF2F7] border-t border-slate-300 text-slate-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-14 pb-12 border-b border-slate-300">
           
@@ -45,73 +49,77 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-6 space-y-4">
             <a
               href="#home"
-              className="text-lg sm:text-xl font-serif tracking-[0.25em] font-light text-slate-900 uppercase block"
+              className="text-xl sm:text-2xl font-serif tracking-[0.22em] font-light text-slate-950 uppercase block"
             >
               {BUSINESS_INFO.name}
             </a>
             
-            <p className="text-sm font-serif italic text-slate-600 max-w-sm">
+            <p className="text-sm sm:text-base font-serif italic text-slate-700 max-w-sm">
               “The extraordinary beauty of fine diamonds.”
             </p>
 
-            <p className="text-xs text-slate-500 font-light leading-relaxed max-w-md pt-1">
-              Curated fine diamond jewellery and certified lab grown diamonds presented at our private suite on Fifth Avenue, New York.
+            <p className="text-sm text-slate-700 font-light leading-relaxed max-w-md pt-1">
+              Curated fine diamond jewellery and certified lab-grown diamonds presented at our private suite on Fifth Avenue, New York.
             </p>
 
-            {/* Boutique Location Highlight */}
-            <div className="pt-2 text-xs text-slate-600 flex items-start gap-2">
-              <MapPin className="w-4 h-4 text-[#B5925A] shrink-0 mt-0.5" />
+            {/* Boutique Location */}
+            <div className="pt-2 text-sm text-slate-800 flex items-start gap-2.5">
+              <MapPin className="w-4 h-4 text-[#8A682D] shrink-0 mt-1" />
               <div>
-                <span className="font-semibold text-slate-800">Fifth Avenue Boutique:</span>{' '}
+                <span className="font-semibold text-slate-900">Fifth Avenue Atelier:</span>{' '}
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=580+Fifth+Avenue+Suite+821+New+York+New+York+10017"
+                  href={BUSINESS_INFO.mapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:underline text-slate-700 hover:text-slate-950 font-medium"
+                  className="hover:underline text-slate-800 hover:text-slate-950 font-medium"
                 >
-                  580 Fifth Avenue, Suite 821, New York, New York, 10017
+                  580 Fifth Avenue, Suite 821, New York, NY 10017
                 </a>
               </div>
             </div>
 
-            {/* Bottom Footer Contact Row: Instagram, Facebook, Email, WhatsApp, and Direct Phone Call */}
+            {/* Social Icons with Client Verification Comments */}
             <div className="pt-4">
-              <div className="text-[11px] tracking-[0.16em] uppercase text-slate-500 font-semibold mb-3">
+              <div className="text-xs tracking-[0.16em] uppercase text-slate-600 font-bold mb-3">
                 Connect Directly
               </div>
               <div className="flex flex-wrap items-center gap-3">
-                {/* 1. Instagram Official Logo */}
-                <a
-                  href={BUSINESS_INFO.instagramUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-white border border-slate-300 hover:border-[#ee2a7b] text-slate-800 hover:text-[#ee2a7b] flex items-center justify-center transition-all shadow-2xs hover:scale-105 cursor-pointer"
-                  title="Scarselli on Instagram"
-                  aria-label="Instagram"
-                >
-                  <InstagramIcon className="w-4 h-4" />
-                </a>
+                {/* 1. Instagram: Client to provide official handle or hide if inactive */}
+                {BUSINESS_INFO.instagramUrl && (
+                  <a
+                    href={BUSINESS_INFO.instagramUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full bg-white border border-slate-300 hover:border-[#ee2a7b] text-slate-800 hover:text-[#ee2a7b] flex items-center justify-center transition-all shadow-xs hover:scale-105 cursor-pointer"
+                    title="Scarselli on Instagram"
+                    aria-label="Instagram"
+                  >
+                    <InstagramIcon className="w-4 h-4" />
+                  </a>
+                )}
 
-                {/* 2. Facebook Official Logo */}
-                <a
-                  href={BUSINESS_INFO.facebookUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-white border border-slate-300 hover:border-[#1877F2] text-[#1877F2] flex items-center justify-center transition-all shadow-2xs hover:scale-105 cursor-pointer"
-                  title="Scarselli on Facebook"
-                  aria-label="Facebook"
-                >
-                  <FacebookIcon className="w-4 h-4" />
-                </a>
+                {/* 2. Facebook: Client to provide official page or hide if inactive */}
+                {BUSINESS_INFO.facebookUrl && (
+                  <a
+                    href={BUSINESS_INFO.facebookUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full bg-white border border-slate-300 hover:border-[#1877F2] text-[#1877F2] flex items-center justify-center transition-all shadow-xs hover:scale-105 cursor-pointer"
+                    title="Scarselli on Facebook"
+                    aria-label="Facebook"
+                  >
+                    <FacebookIcon className="w-4 h-4" />
+                  </a>
+                )}
 
                 {/* 3. Email Atelier Icon */}
                 <a
                   href={BUSINESS_INFO.emailHref}
-                  className="w-10 h-10 rounded-full bg-white border border-slate-300 hover:border-slate-800 text-slate-700 hover:text-slate-950 flex items-center justify-center transition-all shadow-2xs hover:scale-105 cursor-pointer"
-                  title="Send Private Email"
+                  className="w-10 h-10 rounded-full bg-white border border-slate-300 hover:border-slate-800 text-slate-800 hover:text-slate-950 flex items-center justify-center transition-all shadow-xs hover:scale-105 cursor-pointer"
+                  title={`Send Private Email to ${BUSINESS_INFO.email}`}
                   aria-label="Email"
                 >
-                  <Mail className="w-4 h-4 text-slate-700" />
+                  <Mail className="w-4 h-4 text-slate-800" />
                 </a>
 
                 {/* 4. WhatsApp Official Logo */}
@@ -119,7 +127,7 @@ export const Footer: React.FC = () => {
                   href={BUSINESS_INFO.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-white border border-slate-300 hover:border-emerald-600 text-emerald-600 flex items-center justify-center transition-all shadow-2xs hover:scale-105 cursor-pointer"
+                  className="w-10 h-10 rounded-full bg-white border border-slate-300 hover:border-emerald-600 text-emerald-600 flex items-center justify-center transition-all shadow-xs hover:scale-105 cursor-pointer"
                   title="Chat on WhatsApp"
                   aria-label="WhatsApp"
                 >
@@ -129,11 +137,11 @@ export const Footer: React.FC = () => {
                 {/* 5. Direct Phone Call Icon */}
                 <a
                   href={BUSINESS_INFO.phoneHref}
-                  className="w-10 h-10 rounded-full bg-white border border-slate-300 hover:border-[#B5925A] text-[#B5925A] flex items-center justify-center transition-all shadow-2xs hover:scale-105 cursor-pointer"
-                  title="Call Bruno Scarselli Directly"
+                  className="w-10 h-10 rounded-full bg-white border border-slate-300 hover:border-[#8A682D] text-[#8A682D] flex items-center justify-center transition-all shadow-xs hover:scale-105 cursor-pointer"
+                  title={`Call Bruno Scarselli at ${BUSINESS_INFO.phone}`}
                   aria-label="Direct Phone Call"
                 >
-                  <Phone className="w-4 h-4 text-[#B5925A]" />
+                  <Phone className="w-4 h-4 text-[#8A682D]" />
                 </a>
               </div>
             </div>
@@ -141,16 +149,16 @@ export const Footer: React.FC = () => {
           </div>
 
           {/* Navigation Column */}
-          <div className="md:col-span-6 space-y-3">
-            <div className="text-xs tracking-[0.18em] uppercase font-semibold text-slate-900 mb-4">
+          <div className="md:col-span-6 space-y-4">
+            <div className="text-xs tracking-[0.2em] uppercase font-bold text-slate-900 mb-4">
               Navigation
             </div>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {navLinks.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-xs uppercase tracking-wider text-slate-600 hover:text-slate-950 transition-colors"
+                    className="text-sm uppercase tracking-wider text-slate-700 hover:text-slate-950 font-medium transition-colors"
                   >
                     {link.label}
                   </a>
@@ -161,22 +169,37 @@ export const Footer: React.FC = () => {
 
         </div>
 
-        {/* Bottom Bar with Integrated Google Maps Link */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-          <p>© {currentYear} {BUSINESS_INFO.name}. All rights reserved.</p>
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-[11px] tracking-wider uppercase text-slate-400">
-            <span>Fine Diamond Jewellery</span>
-            <span>·</span>
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=580+Fifth+Avenue+Suite+821+New+York+New+York+10017"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 hover:text-slate-800 transition-colors group"
-              title="View 580 Fifth Avenue, Suite 821 on Google Maps"
+        {/* Bottom Bar: Higher contrast, policies links, and removed redundant taglines */}
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm text-slate-700 gap-4">
+          <p className="font-medium">
+            © {currentYear} {BUSINESS_INFO.name} Atelier. All rights reserved.
+          </p>
+          
+          {/* Policy Links */}
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-xs uppercase tracking-wider font-semibold text-slate-700">
+            <button
+              type="button"
+              onClick={() => onOpenPolicy && onOpenPolicy('privacy')}
+              className="hover:text-slate-950 hover:underline cursor-pointer"
             >
-              <MapPin className="w-3.5 h-3.5 text-[#B5925A] shrink-0" />
-              <span className="group-hover:underline">580 Fifth Avenue, Suite 821, New York, New York, 10017</span>
-            </a>
+              Privacy Policy
+            </button>
+            <span>·</span>
+            <button
+              type="button"
+              onClick={() => onOpenPolicy && onOpenPolicy('terms')}
+              className="hover:text-slate-950 hover:underline cursor-pointer"
+            >
+              Terms &amp; Conditions
+            </button>
+            <span>·</span>
+            <button
+              type="button"
+              onClick={() => onOpenPolicy && onOpenPolicy('shipping')}
+              className="hover:text-slate-950 hover:underline cursor-pointer"
+            >
+              Shipping &amp; Returns
+            </button>
           </div>
         </div>
 

@@ -1,0 +1,994 @@
+[
+  {
+    "id": "arch-1",
+    "oldName": "The Aurelia Martini Studs",
+    "newName": "The Aurelia Martini Studs",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Updated name to distinguish martini setting; refined carat to 1.50 ctw and ensured unique description."
+  },
+  {
+    "id": "arch-2",
+    "oldName": "The Celeste Bezel Studs",
+    "newName": "The Celeste Bezel Studs",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Changed from generic studs to Celeste Bezel Studs matching the bezel setting visible in photo."
+  },
+  {
+    "id": "arch-3",
+    "oldName": "The Eterna Low-Profile Solitaire",
+    "newName": "The Eterna Low-Profile Solitaire",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Replaced repetitive description; highlighted knife-edge band and claw prongs seen in photo."
+  },
+  {
+    "id": "arch-4",
+    "oldName": "The Royal Sapphire & Diamond Parure",
+    "newName": "The Royal Sapphire & Diamond Parure",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Corrected category from Bracelets to Earrings/Suite; renamed from Tennis Bracelet to Royal Sapphire Parure matching photo."
+  },
+  {
+    "id": "arch-5",
+    "oldName": "The Seraphina Channel Eternity Band",
+    "newName": "The Seraphina Channel Eternity Band",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Specified channel setting visible in image and created unique description."
+  },
+  {
+    "id": "arch-6",
+    "oldName": "The Solstice Bridal Ring Duo",
+    "newName": "The Solstice Bridal Ring Duo",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Corrected category from Earrings to Rings; changed name from Cascade Drops to Solstice Bridal Duo matching ring set photo."
+  },
+  {
+    "id": "arch-7",
+    "oldName": "The Genevieve Multi-Band Stacking Ring",
+    "newName": "The Genevieve Multi-Band Stacking Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Corrected category from Earrings to Rings; updated name from Cascade Drops to Multi-Band Stacking Ring."
+  },
+  {
+    "id": "arch-8",
+    "oldName": "The Vivienne Two-Stone Bypass Ring",
+    "newName": "The Vivienne Two-Stone Bypass Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Corrected name from Eternity Band to Two-Stone Bypass Ring; verified 18k Yellow Gold metal matching photo."
+  },
+  {
+    "id": "arch-9",
+    "oldName": "The Isadora Toi et Moi Duo",
+    "newName": "The Isadora Toi et Moi Duo",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Refined description and title to reflect pear and round stones paired in bypass setting."
+  },
+  {
+    "id": "arch-10",
+    "oldName": "The Juliette Dangling Solitaire Ring",
+    "newName": "The Juliette Dangling Solitaire Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Corrected category from Earrings to Rings; updated name from Cascade Drops to Dangling Solitaire Ring, metal to 18k Yellow Gold."
+  },
+  {
+    "id": "arch-11",
+    "oldName": "The Marcella Scalloped Eternity Band",
+    "newName": "The Marcella Scalloped Eternity Band",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Unique description highlighting scalloped profile seen on silk background."
+  },
+  {
+    "id": "arch-12",
+    "oldName": "The Helena Pigeon Blood Ruby Ring",
+    "newName": "The Helena Pigeon Blood Ruby Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Main stone accurately updated from diamond to Ruby; stone color updated to Vivid Pigeon Blood Red."
+  },
+  {
+    "id": "arch-13",
+    "oldName": "The Simone Emerald & Diamond Drops",
+    "newName": "The Simone Emerald & Diamond Drops",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Accurately identified emerald drops instead of white diamond cascade drops; stone color set to Vivid Forest Green."
+  },
+  {
+    "id": "arch-14",
+    "oldName": "The Bianca Royal Sapphire Studs",
+    "newName": "The Bianca Royal Sapphire Studs",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Changed from generic diamond studs to Royal Sapphire Studs matching blue gemstone image."
+  },
+  {
+    "id": "arch-15",
+    "oldName": "The Callista Pavé Cross Earrings",
+    "newName": "The Callista Pavé Cross Earrings",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Corrected title from Cascade Drops to Pavé Cross Earrings matching the cross-shaped image."
+  },
+  {
+    "id": "arch-16",
+    "oldName": "The Ophelia Four-Prong Basket Studs",
+    "newName": "The Ophelia Four-Prong Basket Studs",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Differentiated from other studs by specifying four-prong open wire basket structure."
+  },
+  {
+    "id": "arch-17",
+    "oldName": "The Astrid Marquise Sapphire Ring",
+    "newName": "The Astrid Marquise Sapphire Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Confirmed marquise sapphire and baguette accents matching image; color set to Midnight Blue."
+  },
+  {
+    "id": "arch-18",
+    "oldName": "The Cassia D-Flawless Specimen",
+    "newName": "The Cassia D-Flawless Specimen",
+    "oldCategory": "Loose Diamonds",
+    "newCategory": "Loose Diamonds",
+    "correction": "Updated category to Loose Diamonds matching unmounted diamond on silk photo; title updated to Specimen."
+  },
+  {
+    "id": "arch-19",
+    "oldName": "The Delphine Open Lattice Band",
+    "newName": "The Delphine Open Lattice Band",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Updated title from generic Round Ring to Open Lattice Band matching image texture."
+  },
+  {
+    "id": "arch-20",
+    "oldName": "The Eléonore Graduated Collar",
+    "newName": "The Eléonore Graduated Collar",
+    "oldCategory": "Necklaces",
+    "newCategory": "Necklaces",
+    "correction": "Unique description highlighting graduated choker line resting on silk cloth."
+  },
+  {
+    "id": "arch-21",
+    "oldName": "The Francesca Adjustable Bolo Bracelet",
+    "newName": "The Francesca Adjustable Bolo Bracelet",
+    "oldCategory": "Bracelets",
+    "newCategory": "Bracelets",
+    "correction": "Realistic carat adjusted from 8.00 to 4.50 ctw for a refined bolo line; unique description."
+  },
+  {
+    "id": "arch-22",
+    "oldName": "The Giselle Riviera Tennis Bracelet",
+    "newName": "The Giselle Riviera Tennis Bracelet",
+    "oldCategory": "Bracelets",
+    "newCategory": "Bracelets",
+    "correction": "Accurate description highlighting uniform line resting on ivory silk."
+  },
+  {
+    "id": "suite-1",
+    "oldName": "The Héloïse Fancy Yellow Bypass Ring",
+    "newName": "The Héloïse Fancy Yellow Bypass Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Stone color updated to Fancy Vivid Yellow; metal set to 18k Yellow Gold matching visible yellow diamond."
+  },
+  {
+    "id": "suite-2",
+    "oldName": "The Inès Split-Shank Pavé Ring",
+    "newName": "The Inès Split-Shank Pavé Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Updated title from Eternity Band to Split-Shank Pavé Ring matching image."
+  },
+  {
+    "id": "suite-3",
+    "oldName": "The Katrina Cushion Cathedral Ring",
+    "newName": "The Katrina Cushion Cathedral Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Updated title and shape to cushion based on ring on display pad photo."
+  },
+  {
+    "id": "suite-4",
+    "oldName": "The Lucia Hexagonal Pavé Hoops",
+    "newName": "The Lucia Hexagonal Pavé Hoops",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Unique description highlighting hexagonal geometry shown in photo."
+  },
+  {
+    "id": "suite-5",
+    "oldName": "The Mathilde Slate Halo Solitaire",
+    "newName": "The Mathilde Slate Halo Solitaire",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Unique description describing ring on slate tile photo."
+  },
+  {
+    "id": "suite-6",
+    "oldName": "The Noémie Knife-Edge Solitaire",
+    "newName": "The Noémie Knife-Edge Solitaire",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Specified knife-edge geometry on linen surface."
+  },
+  {
+    "id": "suite-7",
+    "oldName": "The Octavia Platinum Mesh Ribbon Bracelet",
+    "newName": "The Octavia Platinum Mesh Ribbon Bracelet",
+    "oldCategory": "Bracelets",
+    "newCategory": "Bracelets",
+    "correction": "Unique description emphasizing the woven mesh ribbon construction."
+  },
+  {
+    "id": "suite-8",
+    "oldName": "The Penelope Diamond Link Ribbon Bracelet",
+    "newName": "The Penelope Diamond Link Ribbon Bracelet",
+    "oldCategory": "Bracelets",
+    "newCategory": "Bracelets",
+    "correction": "Differentiated from Octavia with multi-row articulated link description."
+  },
+  {
+    "id": "suite-9",
+    "oldName": "The Rosalind Negative-Space Ring",
+    "newName": "The Rosalind Negative-Space Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Title updated from Round Ring to Negative-Space Ring matching open-space photo."
+  },
+  {
+    "id": "cat-1",
+    "oldName": "The Sabine Pear Silhouette Drops",
+    "newName": "The Sabine Pear Silhouette Drops",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Identified pear silhouette drops; replaced repetitive cascade text."
+  },
+  {
+    "id": "cat-2",
+    "oldName": "The Therese Silk-Layed Teardrop Drops",
+    "newName": "The Therese Silk-Layed Teardrop Drops",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Unique description describing drop earrings lying on silk."
+  },
+  {
+    "id": "cat-3",
+    "oldName": "The Ursula Hexagonal Geometric Ring",
+    "newName": "The Ursula Hexagonal Geometric Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Updated title to Hexagonal Geometric Ring reflecting hexagon tray image."
+  },
+  {
+    "id": "cat-4",
+    "oldName": "The Victoria Bezel Solitaire",
+    "newName": "The Victoria Bezel Solitaire",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Identified bezel mounting resting on concrete block."
+  },
+  {
+    "id": "cat-5",
+    "oldName": "The Willa Classic Six-Prong Ring",
+    "newName": "The Willa Classic Six-Prong Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Named six-prong setting shown on limestone slab."
+  },
+  {
+    "id": "cat-6",
+    "oldName": "The Xanthe Dish-Cradled Solitaire",
+    "newName": "The Xanthe Dish-Cradled Solitaire",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Unique description for ring on ceramic dish."
+  },
+  {
+    "id": "cat-7",
+    "oldName": "The Yvaine Tension-Set Floating Ring",
+    "newName": "The Yvaine Tension-Set Floating Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Named Tension-Set Floating Ring reflecting diamond suspended between pillars image."
+  },
+  {
+    "id": "cat-8",
+    "oldName": "The Zephyrine Low-Profile Solitaire",
+    "newName": "The Zephyrine Low-Profile Solitaire",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Unique description describing ring on silver display block."
+  },
+  {
+    "id": "cat-9",
+    "oldName": "The Adelaide Deco Cocktail Ring",
+    "newName": "The Adelaide Deco Cocktail Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Named Deco Cocktail Ring matching the cocktail ring on fabric photo."
+  },
+  {
+    "id": "cat-10",
+    "oldName": "The Beatrice Diamond Bezel Watch Cuff",
+    "newName": "The Beatrice Diamond Bezel Watch Cuff",
+    "oldCategory": "Bracelets",
+    "newCategory": "Bracelets",
+    "correction": "Corrected category from Rings to Bracelets matching watch-bezel photograph."
+  },
+  {
+    "id": "cat-11",
+    "oldName": "The Cordelia Bridge-Suspension Ring",
+    "newName": "The Cordelia Bridge-Suspension Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Unique description for bridge suspension photo."
+  },
+  {
+    "id": "cat-12",
+    "oldName": "The Diana Satin-Cushioned Solitaire",
+    "newName": "The Diana Satin-Cushioned Solitaire",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Named Satin-Cushioned Solitaire describing diamond engagement ring on satin."
+  },
+  {
+    "id": "cat-13",
+    "oldName": "The Evangeline Pear Cluster Drops",
+    "newName": "The Evangeline Pear Cluster Drops",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Unique description describing drop earrings on silk."
+  },
+  {
+    "id": "cat-14",
+    "oldName": "The Flora Victorian Cluster Ring",
+    "newName": "The Flora Victorian Cluster Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Adjusted carat to realistic 3.20 ctw for cluster ring; highlighted Victorian floral halo."
+  },
+  {
+    "id": "cat-15",
+    "oldName": "The Guinevere Antique Floral Cluster",
+    "newName": "The Guinevere Antique Floral Cluster",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Differentiated from cat-14 with specific open back-wire description."
+  },
+  {
+    "id": "cat-16",
+    "oldName": "The Honorine Diamond Ear Cuff",
+    "newName": "The Honorine Diamond Ear Cuff",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Accurate description for non-pierced diamond ear cuff on fabric."
+  },
+  {
+    "id": "cat-17",
+    "oldName": "The Illyria Satin Ear Climber",
+    "newName": "The Illyria Satin Ear Climber",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Unique description describing diamond ear cuff on satin."
+  },
+  {
+    "id": "cat-18",
+    "oldName": "The Jacqueline Pavé Solitaire Ring",
+    "newName": "The Jacqueline Pavé Solitaire Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Corrected category from Earrings to Rings; updated title from Cascade Drops to Pavé Solitaire Ring matching photo."
+  },
+  {
+    "id": "cat-19",
+    "oldName": "The Kallisto Princess Cut Solitaire",
+    "newName": "The Kallisto Princess Cut Solitaire",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Verified princess cut and chevron v-prongs matching photo."
+  },
+  {
+    "id": "cat-20",
+    "oldName": "The Lavinia D-Flawless Master Cut",
+    "newName": "The Lavinia D-Flawless Master Cut",
+    "oldCategory": "Loose Diamonds",
+    "newCategory": "Loose Diamonds",
+    "correction": "Accurate description for loose diamond on display tray."
+  },
+  {
+    "id": "cat-21",
+    "oldName": "The Mirabelle Medium Pavé Hoops",
+    "newName": "The Mirabelle Medium Pavé Hoops",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Differentiated hoop size and unique description."
+  },
+  {
+    "id": "cat-22",
+    "oldName": "The Nicolette Oval Hoops",
+    "newName": "The Nicolette Oval Hoops",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Specified oval hoop geometry and inside-out pavé."
+  },
+  {
+    "id": "cat-23",
+    "oldName": "The Odette Shared-Prong Eternity Band",
+    "newName": "The Odette Shared-Prong Eternity Band",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Realistic carat adjusted from 5.35 to 3.60 ctw for wearability; unique description."
+  },
+  {
+    "id": "cat-24",
+    "oldName": "The Paulina Floating Solitaire Pendant",
+    "newName": "The Paulina Floating Solitaire Pendant",
+    "oldCategory": "Necklaces",
+    "newCategory": "Necklaces",
+    "correction": "Corrected category from Rings to Necklaces matching diamond sliding on platinum chain photo."
+  },
+  {
+    "id": "cat-25",
+    "oldName": "The Quenby Ceramic Blossom Ring",
+    "newName": "The Quenby Ceramic Blossom Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Unique description describing cluster ring on ceramic."
+  },
+  {
+    "id": "cat-26",
+    "oldName": "The Roxane Graduated Riviera Necklace",
+    "newName": "The Roxane Graduated Riviera Necklace",
+    "oldCategory": "Necklaces",
+    "newCategory": "Necklaces",
+    "correction": "Unique description highlighting graduated riviera draped on bust."
+  },
+  {
+    "id": "cat-27",
+    "oldName": "The Sylvia Y-Drop Lariat",
+    "newName": "The Sylvia Y-Drop Lariat",
+    "oldCategory": "Necklaces",
+    "newCategory": "Necklaces",
+    "correction": "Unique description matching diamond lariat necklace on bust photo."
+  },
+  {
+    "id": "cat-28",
+    "oldName": "The Talia Open-Finger Bypass Ring",
+    "newName": "The Talia Open-Finger Bypass Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Named Open-Finger Bypass Ring matching open-finger ring photo."
+  },
+  {
+    "id": "cat-29",
+    "oldName": "The Valeria Block-Resting Solitaire",
+    "newName": "The Valeria Block-Resting Solitaire",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Unique description describing ring resting on display block."
+  },
+  {
+    "id": "cat-30",
+    "oldName": "The Winslet Dome Cluster Cocktail Ring",
+    "newName": "The Winslet Dome Cluster Cocktail Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Named Dome Cluster Cocktail Ring matching cocktail ring on fabric."
+  },
+  {
+    "id": "cat-31",
+    "oldName": "The Ximena Satin-Laid Tennis Line",
+    "newName": "The Ximena Satin-Laid Tennis Line",
+    "oldCategory": "Bracelets",
+    "newCategory": "Bracelets",
+    "correction": "Unique description describing tennis bracelet on satin."
+  },
+  {
+    "id": "cat-32",
+    "oldName": "The Yasmin Fluted Shank Engagement Ring",
+    "newName": "The Yasmin Fluted Shank Engagement Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Unique description highlighting fluted shank on gray surface."
+  },
+  {
+    "id": "cat-33",
+    "oldName": "The Zenaida Fancy Vivid Yellow Cushion Cut",
+    "newName": "The Zenaida Fancy Vivid Yellow Cushion Cut",
+    "oldCategory": "Loose Diamonds",
+    "newCategory": "Loose Diamonds",
+    "correction": "Corrected stone color to Fancy Vivid Yellow matching visible yellow gemstone photo."
+  },
+  {
+    "id": "cat-34",
+    "oldName": "The Amara Crown-Set Studs",
+    "newName": "The Amara Crown-Set Studs",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Differentiated from simple studs by describing crown-set mountings on cloth."
+  },
+  {
+    "id": "cat-35",
+    "oldName": "The Bellerose Bezel Solitaire Pendant",
+    "newName": "The Bellerose Bezel Solitaire Pendant",
+    "oldCategory": "Necklaces",
+    "newCategory": "Necklaces",
+    "correction": "Unique description describing diamond pendant on silk surface."
+  },
+  {
+    "id": "cat-36",
+    "oldName": "The Corisande Fancy Light Pink Cushion Ring",
+    "newName": "The Corisande Fancy Light Pink Cushion Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Confirmed Fancy Light Pink color and 18k Rose Gold metal matching pink diamond photo."
+  },
+  {
+    "id": "mot-1",
+    "oldName": "The Daphne Scalloped Band Ring",
+    "newName": "The Daphne Scalloped Band Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Unique description for diamond ring on silk."
+  },
+  {
+    "id": "mot-2",
+    "oldName": "The Emmeline Linear Diamond Drops",
+    "newName": "The Emmeline Linear Diamond Drops",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Unique description describing drop earrings on surface."
+  },
+  {
+    "id": "mot-3",
+    "oldName": "The Fleur Cascading Teardrop Drops",
+    "newName": "The Fleur Cascading Teardrop Drops",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Unique description describing drop earrings lying flat."
+  },
+  {
+    "id": "mot-4",
+    "oldName": "The Gabrielle Fancy Intense Yellow Cushion Specimen",
+    "newName": "The Gabrielle Fancy Intense Yellow Cushion Specimen",
+    "oldCategory": "Loose Diamonds",
+    "newCategory": "Loose Diamonds",
+    "correction": "Confirmed Fancy Intense Yellow color and loose stone category."
+  },
+  {
+    "id": "mot-5",
+    "oldName": "The Harmonia Fancy Intense Pink Tile Ring",
+    "newName": "The Harmonia Fancy Intense Pink Tile Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Confirmed Fancy Intense Pink stone and rose gold mounting matching tile photo."
+  },
+  {
+    "id": "mot-6",
+    "oldName": "The Isolde Ceylon Sapphire Halo Ring",
+    "newName": "The Isolde Ceylon Sapphire Halo Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Corrected main stone from white diamond to Sapphire; color updated to Royal Velvet Blue."
+  },
+  {
+    "id": "mot-7",
+    "oldName": "The Jessamine Structured Platinum Bangle",
+    "newName": "The Jessamine Structured Platinum Bangle",
+    "oldCategory": "Bracelets",
+    "newCategory": "Bracelets",
+    "correction": "Unique description describing platinum diamond bangle on silk."
+  },
+  {
+    "id": "mot-8",
+    "oldName": "The Katarina Fancy Color Rough Specimen",
+    "newName": "The Katarina Fancy Color Rough Specimen",
+    "oldCategory": "Loose Diamonds",
+    "newCategory": "Loose Diamonds",
+    "correction": "Updated to Fancy Color Rough Specimen matching raw-fancy-color-diamond-cluster photo."
+  },
+  {
+    "id": "mot-9",
+    "oldName": "The Leonora Compass-Prong Solitaire",
+    "newName": "The Leonora Compass-Prong Solitaire",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Differentiated from mot-10 by specifying compass prongs."
+  },
+  {
+    "id": "mot-10",
+    "oldName": "The Margaux Hidden Halo Solitaire",
+    "newName": "The Margaux Hidden Halo Solitaire",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Specified hidden halo design."
+  },
+  {
+    "id": "mot-11",
+    "oldName": "The Nerissa Chandelier Drops",
+    "newName": "The Nerissa Chandelier Drops",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Unique description describing drop earrings with diamonds."
+  },
+  {
+    "id": "mot-12",
+    "oldName": "The Oriana Platinum Pendant Necklace",
+    "newName": "The Oriana Platinum Pendant Necklace",
+    "oldCategory": "Necklaces",
+    "newCategory": "Necklaces",
+    "correction": "Unique description describing platinum necklace with diamond pendant."
+  },
+  {
+    "id": "mot-13",
+    "oldName": "The Philomela Art Deco Drops",
+    "newName": "The Philomela Art Deco Drops",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Unique description describing diamond drop earrings on satin."
+  },
+  {
+    "id": "mot-14",
+    "oldName": "The Raphaelle Fancy Vivid Green Cocktail Ring",
+    "newName": "The Raphaelle Fancy Vivid Green Cocktail Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Updated stone color to Fancy Vivid Green and shape to radiant matching green diamond cocktail ring."
+  },
+  {
+    "id": "mot-15",
+    "oldName": "The Serena Fancy Purplish Pink Ring",
+    "newName": "The Serena Fancy Purplish Pink Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Confirmed Fancy Purplish Pink color and rose gold metal on stone."
+  },
+  {
+    "id": "mot-16",
+    "oldName": "The Theodora Platinum Line Bracelet",
+    "newName": "The Theodora Platinum Line Bracelet",
+    "oldCategory": "Bracelets",
+    "newCategory": "Bracelets",
+    "correction": "Unique description describing platinum diamond line bracelet."
+  },
+  {
+    "id": "mot-17",
+    "oldName": "The Undine Fancy Deep Yellow Radiant Ring",
+    "newName": "The Undine Fancy Deep Yellow Radiant Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Color set to Fancy Deep Yellow and metal to 18k Yellow Gold."
+  },
+  {
+    "id": "mot-18",
+    "oldName": "The Vespera Floral Cluster Studs",
+    "newName": "The Vespera Floral Cluster Studs",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Specified floral cluster stud structure."
+  },
+  {
+    "id": "mot-19",
+    "oldName": "The Wisteria Emerald Cut Solitaire",
+    "newName": "The Wisteria Emerald Cut Solitaire",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Verified emerald cut diamond engagement ring photo."
+  },
+  {
+    "id": "mot-20",
+    "oldName": "The Xylia East-West Eternity Band",
+    "newName": "The Xylia East-West Eternity Band",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Identified east-west eternity band on cloth."
+  },
+  {
+    "id": "mot-21",
+    "oldName": "The Yara Bezel-Set Eternity Band",
+    "newName": "The Yara Bezel-Set Eternity Band",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Differentiated from mot-20 with individual bezel settings."
+  },
+  {
+    "id": "mot-22",
+    "oldName": "The Zephyra Fancy Pink Solitaire Ring",
+    "newName": "The Zephyra Fancy Pink Solitaire Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Confirmed Fancy Pink color and rose gold head."
+  },
+  {
+    "id": "mot-23",
+    "oldName": "The Althea Modern Bezel Solitaire",
+    "newName": "The Althea Modern Bezel Solitaire",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Unique description for ring on leather."
+  },
+  {
+    "id": "mot-24",
+    "oldName": "The Briseis Linear Pavé Drops",
+    "newName": "The Briseis Linear Pavé Drops",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Unique description for drop earrings on display."
+  },
+  {
+    "id": "mot-25",
+    "oldName": "The Cressida Dual-Brilliant Bypass Ring",
+    "newName": "The Cressida Dual-Brilliant Bypass Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Verified bypass ring holding two diamonds."
+  },
+  {
+    "id": "mot-26",
+    "oldName": "The Damaris Pear & Oval Toi et Moi",
+    "newName": "The Damaris Pear & Oval Toi et Moi",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Named Pear & Oval Toi et Moi matching bypass ring with two diamonds photo."
+  },
+  {
+    "id": "mot-27",
+    "oldName": "The Electra Natural Octahedron Yellow Diamond",
+    "newName": "The Electra Natural Octahedron Yellow Diamond",
+    "oldCategory": "Loose Diamonds",
+    "newCategory": "Loose Diamonds",
+    "correction": "Confirmed yellow diamond crystal on base photo; category Loose Diamonds."
+  },
+  {
+    "id": "mot-28",
+    "oldName": "The Fiorella Fancy Intense Yellow Cushion Ring",
+    "newName": "The Fiorella Fancy Intense Yellow Cushion Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Confirmed yellow diamond on slate slab; metal set to 18k Yellow Gold."
+  },
+  {
+    "id": "mot-29",
+    "oldName": "The Galatea Solid Platinum Diamond Collar",
+    "newName": "The Galatea Solid Platinum Diamond Collar",
+    "oldCategory": "Necklaces",
+    "newCategory": "Necklaces",
+    "correction": "Unique description describing platinum choker necklace with diamonds."
+  },
+  {
+    "id": "mot-30",
+    "oldName": "The Hesperia Curved Wedding Band",
+    "newName": "The Hesperia Curved Wedding Band",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Named Curved Wedding Band matching diamond wedding band on satin photo."
+  },
+  {
+    "id": "mot-31",
+    "oldName": "The Iolanthe Channel Wedding Band",
+    "newName": "The Iolanthe Channel Wedding Band",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Unique description for channel wedding band with diamonds."
+  },
+  {
+    "id": "mot-32",
+    "oldName": "The Jessamyn Fancy Green Radiant Ring",
+    "newName": "The Jessamyn Fancy Green Radiant Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Confirmed Fancy Vivid Green color matching green diamond ring on dish photo."
+  },
+  {
+    "id": "mot-33",
+    "oldName": "The Kassandra Brutalist Solitaire",
+    "newName": "The Kassandra Brutalist Solitaire",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Unique description for ring on concrete block."
+  },
+  {
+    "id": "mot-34",
+    "oldName": "The Lorelei Silk-Draped Chandelier Drops",
+    "newName": "The Lorelei Silk-Draped Chandelier Drops",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Unique description describing chandelier earrings on silk."
+  },
+  {
+    "id": "mot-35",
+    "oldName": "The Melisande Tiered Chandelier Drops",
+    "newName": "The Melisande Tiered Chandelier Drops",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Differentiated from mot-34 with three-tiered description."
+  },
+  {
+    "id": "mot-36",
+    "oldName": "The Nereida Fancy Yellow Cushion Solitaire",
+    "newName": "The Nereida Fancy Yellow Cushion Solitaire",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Confirmed Fancy Vivid Yellow color and yellow gold basket."
+  },
+  {
+    "id": "mot-37",
+    "oldName": "The Ondine Fancy Deep Blue Diamond Pendant",
+    "newName": "The Ondine Fancy Deep Blue Diamond Pendant",
+    "oldCategory": "Necklaces",
+    "newCategory": "Necklaces",
+    "correction": "Confirmed Fancy Deep Blue color matching blue diamond pendant necklace photo."
+  },
+  {
+    "id": "mot-38",
+    "oldName": "The Persephone Asscher Cut Diamond Studs",
+    "newName": "The Persephone Asscher Cut Diamond Studs",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Confirmed Asscher cut shape and windmill faceting."
+  },
+  {
+    "id": "mot-39",
+    "oldName": "The Quiterie Micro-Prong Tennis Bracelet",
+    "newName": "The Quiterie Micro-Prong Tennis Bracelet",
+    "oldCategory": "Bracelets",
+    "newCategory": "Bracelets",
+    "correction": "Unique description for tennis bracelet on satin."
+  },
+  {
+    "id": "mot-40",
+    "oldName": "The Rhiannon Seamless Line Bracelet",
+    "newName": "The Rhiannon Seamless Line Bracelet",
+    "oldCategory": "Bracelets",
+    "newCategory": "Bracelets",
+    "correction": "Differentiated from mot-39 with four-claw link description."
+  },
+  {
+    "id": "mot-41",
+    "oldName": "The Sybilla Fancy Intense Green Solitaire",
+    "newName": "The Sybilla Fancy Intense Green Solitaire",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Confirmed Fancy Intense Green color on stone slab."
+  },
+  {
+    "id": "mot-42",
+    "oldName": "The Titania Three-Stone Past Present Future Ring",
+    "newName": "The Titania Three-Stone Past Present Future Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Confirmed three-stone diamond ring on fabric photo."
+  },
+  {
+    "id": "mot-43",
+    "oldName": "The Vittoria Fancy Yellow Radiant Crystal",
+    "newName": "The Vittoria Fancy Yellow Radiant Crystal",
+    "oldCategory": "Loose Diamonds",
+    "newCategory": "Loose Diamonds",
+    "correction": "Confirmed Fancy Vivid Yellow color and loose stone category."
+  },
+  {
+    "id": "mot-44",
+    "oldName": "The Zeuxis Purplish Pink Diamond Solitaire",
+    "newName": "The Zeuxis Purplish Pink Diamond Solitaire",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Confirmed Fancy Purplish Pink color and rose gold claws."
+  },
+  {
+    "id": "mot-45",
+    "oldName": "The Alethea Studio Solitaire Ring",
+    "newName": "The Alethea Studio Solitaire Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Unique description describing diamond ring on surface."
+  },
+  {
+    "id": "mot-46",
+    "oldName": "The Belladonna Platinum Bezel Studs",
+    "newName": "The Belladonna Platinum Bezel Studs",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Specified tube bezel mounting on cloth."
+  },
+  {
+    "id": "mot-47",
+    "oldName": "The Cypriana Fancy Yellow Oval Gemstone",
+    "newName": "The Cypriana Fancy Yellow Oval Gemstone",
+    "oldCategory": "Loose Diamonds",
+    "newCategory": "Loose Diamonds",
+    "correction": "Confirmed oval shape and Fancy Vivid Yellow color for loose stone."
+  },
+  {
+    "id": "mot-48",
+    "oldName": "The Deirdre Solitaire Pendant Drop",
+    "newName": "The Deirdre Solitaire Pendant Drop",
+    "oldCategory": "Necklaces",
+    "newCategory": "Necklaces",
+    "correction": "Unique description describing platinum necklace with diamond pendant."
+  },
+  {
+    "id": "sec-1",
+    "oldName": "The Elysia Deep Blue Diamond Solitaire Ring",
+    "newName": "The Elysia Deep Blue Diamond Solitaire Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Confirmed Fancy Deep Blue color matching blue diamond ring on slab photo."
+  },
+  {
+    "id": "sec-2",
+    "oldName": "The Faustine Intense Blue Diamond Halo Ring",
+    "newName": "The Faustine Intense Blue Diamond Halo Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Confirmed Fancy Intense Blue color and white halo on stone."
+  },
+  {
+    "id": "sec-3",
+    "oldName": "The Gloriana Silk-Ribbon Eternity Band",
+    "newName": "The Gloriana Silk-Ribbon Eternity Band",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Unique description for eternity band on silk ribbon."
+  },
+  {
+    "id": "sec-4",
+    "oldName": "The Hyacinthe Fancy Vivid Green Crystal",
+    "newName": "The Hyacinthe Fancy Vivid Green Crystal",
+    "oldCategory": "Loose Diamonds",
+    "newCategory": "Loose Diamonds",
+    "correction": "Confirmed Fancy Vivid Green color for loose diamond on slate."
+  },
+  {
+    "id": "sec-5",
+    "oldName": "The Irene Flat-Lain Diamond Drops",
+    "newName": "The Irene Flat-Lain Diamond Drops",
+    "oldCategory": "Earrings",
+    "newCategory": "Earrings",
+    "correction": "Unique description for drop earrings lying flat."
+  },
+  {
+    "id": "sec-6",
+    "oldName": "The Jocasta Fabric-Fold Cathedral Ring",
+    "newName": "The Jocasta Fabric-Fold Cathedral Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Unique description describing ring on fabric fold."
+  },
+  {
+    "id": "sec-7",
+    "oldName": "The Lysandra Fancy Vivid Yellow Asscher Cut",
+    "newName": "The Lysandra Fancy Vivid Yellow Asscher Cut",
+    "oldCategory": "Loose Diamonds",
+    "newCategory": "Loose Diamonds",
+    "correction": "Confirmed Asscher cut shape and Fancy Vivid Yellow color for loose stone."
+  },
+  {
+    "id": "sec-8",
+    "oldName": "The Morrigan Fancy Yellow Solitaire Ring",
+    "newName": "The Morrigan Fancy Yellow Solitaire Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Confirmed Fancy Intense Yellow color and 18k Yellow Gold claws."
+  },
+  {
+    "id": "sec-9",
+    "oldName": "The Nephele Delicate Six-Prong Ring",
+    "newName": "The Nephele Delicate Six-Prong Ring",
+    "oldCategory": "Rings",
+    "newCategory": "Rings",
+    "correction": "Unique description describing diamond ring on silk fabric."
+  }
+]
