@@ -190,7 +190,7 @@ export const CustomerTrust: React.FC = () => {
             <button
               type="button"
               onClick={() => setShowAllReviews(!showAllReviews)}
-              className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-slate-300 hover:border-slate-900 bg-white hover:bg-slate-900 text-slate-800 hover:text-white text-xs uppercase tracking-wider font-semibold transition-all shadow-2xs cursor-pointer"
+              className="inline-flex items-center justify-center gap-2 h-11 max-h-[44px] md:h-auto px-5 md:px-6 py-2.5 rounded-[10px] md:rounded-full border border-slate-300 hover:border-slate-900 bg-white hover:bg-slate-900 text-slate-800 hover:text-white text-xs uppercase tracking-normal md:tracking-wider font-semibold transition-all shadow-2xs cursor-pointer"
             >
               <span>{showAllReviews ? 'Show fewer reviews' : `View all ${realGoogleReviews.length} Google Reviews`}</span>
               {showAllReviews ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}

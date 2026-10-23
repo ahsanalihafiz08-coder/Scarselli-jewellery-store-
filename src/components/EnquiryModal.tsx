@@ -149,7 +149,7 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({ isOpen, onClose, ini
               <button
                 type="submit"
                 disabled={submitting}
-                className="w-full py-3.5 px-4 text-xs tracking-[0.14em] uppercase font-semibold text-white bg-slate-900 hover:bg-slate-800 rounded-full transition-colors flex items-center justify-center gap-2 cursor-pointer disabled:opacity-70 shadow-xs"
+                className="w-full h-11 max-h-[44px] md:h-auto py-2.5 md:py-3.5 px-4 text-xs tracking-[0.1em] md:tracking-[0.14em] uppercase font-semibold text-white bg-slate-900 hover:bg-slate-800 rounded-[10px] md:rounded-full transition-colors flex items-center justify-center gap-2 cursor-pointer disabled:opacity-70 shadow-xs"
               >
                 {submitting ? (
                   <span>Submitting...</span>

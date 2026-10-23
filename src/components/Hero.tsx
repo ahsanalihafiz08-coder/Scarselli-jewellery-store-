@@ -76,21 +76,21 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnquiry }) => {
         </div>
 
         {/* Main Headline with high-contrast text shadow for effortless legibility */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-light text-white tracking-tight leading-[1.12] mb-5 text-balance drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)]">
+        <h1 className="text-[32px] md:text-6xl lg:text-7xl font-serif font-light text-white tracking-tight leading-[1.15] md:leading-[1.12] mb-5 text-balance drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)]">
           THE ART OF EXCEPTIONAL DIAMONDS
         </h1>
 
         {/* Supporting Description with crisp contrast */}
-        <p className="text-[15px] sm:text-lg lg:text-xl text-slate-100 font-light leading-relaxed max-w-2xl mb-10 drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)]">
+        <p className="text-[15px] md:text-lg lg:text-xl text-slate-100 font-light leading-relaxed max-w-2xl mb-8 md:mb-10 drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)]">
           IGI &amp; GIA certified lab-grown diamonds and fine jewellery, presented by private appointment on Fifth Avenue.
         </p>
 
         {/* Two High-Contrast Buttons: Discover Collection (Solid) and Enquire (Outlined) */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-12 w-full max-w-md sm:max-w-2xl mx-auto">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 mb-10 sm:mb-12 w-full max-w-md sm:max-w-2xl mx-auto">
           {/* Button 1: Discover Collection - Solid high contrast, flexible desktop width with whitespace-nowrap */}
           <a
             href="#the-collection"
-            className="w-full sm:w-auto sm:min-w-[270px] px-8 py-3.5 sm:h-14 rounded-full bg-white hover:bg-slate-100 text-slate-950 inline-flex items-center justify-center gap-3 shadow-2xl transition-all duration-300 hover:scale-[1.02] cursor-pointer text-center font-semibold text-xs sm:text-sm tracking-[0.14em] uppercase whitespace-nowrap select-none"
+            className="w-full sm:w-auto sm:min-w-[270px] h-11 max-h-[44px] sm:h-14 px-6 sm:px-8 rounded-[10px] sm:rounded-full bg-white hover:bg-slate-100 text-slate-950 inline-flex items-center justify-center gap-2.5 sm:gap-3 shadow-2xl transition-all duration-300 hover:scale-[1.02] cursor-pointer text-center font-semibold text-xs sm:text-sm tracking-[0.08em] sm:tracking-[0.14em] uppercase whitespace-nowrap select-none"
             title="Discover The Collection"
           >
             <Sparkles className="w-4 h-4 text-[#8A682D] shrink-0" />
@@ -101,7 +101,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEnquiry }) => {
           <button
             type="button"
             onClick={onOpenEnquiry}
-            className="w-full sm:w-auto sm:min-w-[270px] px-8 py-3.5 sm:h-14 rounded-full border-2 border-white hover:border-[#E6C687] bg-white/15 hover:bg-white/25 text-white inline-flex items-center justify-center gap-3 transition-all duration-300 hover:scale-[1.02] cursor-pointer text-center font-semibold text-xs sm:text-sm tracking-[0.14em] uppercase whitespace-nowrap select-none"
+            className="w-full sm:w-auto sm:min-w-[270px] h-11 max-h-[44px] sm:h-14 px-6 sm:px-8 rounded-[10px] sm:rounded-full border-2 border-white hover:border-[#E6C687] bg-white/15 hover:bg-white/25 text-white inline-flex items-center justify-center gap-2.5 sm:gap-3 transition-all duration-300 hover:scale-[1.02] cursor-pointer text-center font-semibold text-xs sm:text-sm tracking-[0.08em] sm:tracking-[0.14em] uppercase whitespace-nowrap select-none"
             title="Enquire with Scarselli"
           >
             <Phone className="w-4 h-4 text-[#E6C687] shrink-0" />

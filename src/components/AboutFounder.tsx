@@ -148,7 +148,7 @@ export const AboutFounder: React.FC<AboutFounderProps> = ({ onOpenBooking }) => 
                 <button
                   type="button"
                   onClick={handleMeetAppointment}
-                  className="py-3 px-7 rounded-full bg-slate-900 hover:bg-[#8A682D] text-white text-xs uppercase tracking-[0.16em] font-semibold transition-all duration-300 shadow-xs hover:shadow-md flex items-center gap-2 cursor-pointer"
+                  className="h-11 max-h-[44px] md:h-auto py-2.5 md:py-3 px-5 md:px-7 rounded-[10px] md:rounded-full bg-slate-900 hover:bg-[#8A682D] text-white text-xs uppercase tracking-[0.1em] md:tracking-[0.16em] font-semibold transition-all duration-300 shadow-xs hover:shadow-md flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <Calendar className="w-4 h-4 text-[#E6C687]" />
                   <span>Meet by Appointment</span>

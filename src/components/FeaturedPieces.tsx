@@ -114,7 +114,7 @@ const FeaturedPieceCard: React.FC<FeaturedPieceCardProps> = React.memo(
             <button
               type="button"
               onClick={() => onSelectPiece(piece, 'detail')}
-              className="py-2.5 px-3 rounded-full border border-slate-300 hover:border-slate-800 bg-white hover:bg-slate-50 text-slate-800 text-[11px] uppercase tracking-wider font-semibold transition-colors text-center cursor-pointer"
+              className="h-[40px] md:h-auto py-0 md:py-2.5 px-2 md:px-3 rounded-[10px] md:rounded-full border border-slate-300 hover:border-slate-800 bg-white hover:bg-slate-50 text-slate-800 text-xs md:text-[11px] uppercase tracking-normal md:tracking-wider font-semibold transition-colors text-center cursor-pointer flex items-center justify-center whitespace-nowrap"
             >
               View details
             </button>
@@ -122,7 +122,7 @@ const FeaturedPieceCard: React.FC<FeaturedPieceCardProps> = React.memo(
             <button
               type="button"
               onClick={() => onSelectPiece(piece, 'booking')}
-              className="py-2.5 px-3 rounded-full bg-slate-900 hover:bg-[#8A682D] text-white text-[11px] uppercase tracking-wider font-semibold transition-colors text-center cursor-pointer shadow-2xs"
+              className="h-[40px] md:h-auto py-0 md:py-2.5 px-2 md:px-3 rounded-[10px] md:rounded-full bg-slate-900 hover:bg-[#8A682D] text-white text-xs md:text-[11px] uppercase tracking-normal md:tracking-wider font-semibold transition-colors text-center cursor-pointer shadow-2xs flex items-center justify-center whitespace-nowrap"
             >
               Book private viewing
             </button>

@@ -395,7 +395,7 @@ export const PieceModal: React.FC<PieceModalProps> = ({
               <div className="flex flex-wrap items-center gap-2.5 pt-1">
                 <a
                   href={BUSINESS_INFO.phoneHref}
-                  className="flex-1 py-2.5 px-3 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold tracking-wider uppercase flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
+                  className="flex-1 h-11 max-h-[44px] md:h-auto py-2.5 px-3 rounded-[10px] md:rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold tracking-normal md:tracking-wider uppercase flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
                 >
                   <Phone className="w-3.5 h-3.5 text-[#8A682D]" />
                   <span>Call Atelier</span>
@@ -404,7 +404,7 @@ export const PieceModal: React.FC<PieceModalProps> = ({
                   href={whatsappHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 py-2.5 px-3 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold tracking-wider uppercase flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
+                  className="flex-1 h-11 max-h-[44px] md:h-auto py-2.5 px-3 rounded-[10px] md:rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold tracking-normal md:tracking-wider uppercase flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
                 >
                   <MessageCircle className="w-3.5 h-3.5" />
                   <span>WhatsApp</span>
@@ -515,7 +515,7 @@ export const PieceModal: React.FC<PieceModalProps> = ({
                   <div className="pt-2">
                     <button
                       type="submit"
-                      className="w-full py-3.5 rounded-full text-xs uppercase tracking-[0.18em] font-semibold text-white bg-slate-900 hover:bg-[#8A682D] transition-colors cursor-pointer shadow-sm flex items-center justify-center gap-2"
+                      className="w-full h-11 max-h-[44px] md:h-auto py-2.5 md:py-3.5 rounded-[10px] md:rounded-full text-xs uppercase tracking-[0.1em] md:tracking-[0.18em] font-semibold text-white bg-slate-900 hover:bg-[#8A682D] transition-colors cursor-pointer shadow-sm flex items-center justify-center gap-2"
                     >
                       <Calendar className="w-4 h-4 text-[#E6C687]" />
                       <span>Confirm Private Appointment for {piece.title}</span>

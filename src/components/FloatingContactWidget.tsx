@@ -2,7 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import { MessageSquare, Phone, Mail, MessageCircle, X } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/jewelleryData';
 
-export const FloatingContactWidget: React.FC = () => {
+interface FloatingContactWidgetProps {
+  isHidden?: boolean;
+}
+
+export const FloatingContactWidget: React.FC<FloatingContactWidgetProps> = ({ isHidden = false }) => {
   const [isOpen, setIsOpen] = useState(false);
   const widgetRef = useRef<HTMLDivElement>(null);
 
@@ -20,6 +24,8 @@ export const FloatingContactWidget: React.FC = () => {
       document.removeEventListener('mousedown', handleOutsideClick);
     };
   }, [isOpen]);
+
+  if (isHidden) return null;
 
   return (
     <div
@@ -106,11 +112,11 @@ export const FloatingContactWidget: React.FC = () => {
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
         aria-label="Contact Scarselli Concierge"
-        className="pointer-events-auto flex items-center gap-2.5 py-3 px-5 rounded-full bg-slate-950 hover:bg-[#8A682D] text-white shadow-xl hover:shadow-2xl transition-all duration-300 border border-slate-700 cursor-pointer group"
+        className="pointer-events-auto flex items-center justify-center gap-2 h-[40px] px-3.5 py-0 rounded-[10px] md:h-auto md:py-3 md:px-5 md:rounded-full bg-slate-950 hover:bg-[#8A682D] text-white shadow-xl hover:shadow-2xl transition-all duration-300 border border-slate-700 cursor-pointer group"
       >
         <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-        <MessageSquare className="w-4 h-4 text-[#E6C687] group-hover:scale-110 transition-transform" />
-        <span className="text-xs uppercase tracking-[0.16em] font-semibold">
+        <MessageSquare className="w-3.5 h-3.5 md:w-4 md:h-4 text-[#E6C687] group-hover:scale-110 transition-transform" />
+        <span className="text-xs uppercase tracking-normal md:tracking-[0.16em] font-semibold">
           {isOpen ? 'Close' : 'Contact'}
         </span>
       </button>

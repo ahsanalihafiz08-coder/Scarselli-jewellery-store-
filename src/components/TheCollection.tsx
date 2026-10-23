@@ -112,7 +112,7 @@ const CollectionProductCard: React.FC<CollectionCardProps> = React.memo(
             <button
               type="button"
               onClick={() => onSelectPiece(piece, 'detail')}
-              className="py-2.5 px-3 rounded-full border border-slate-300 hover:border-slate-800 bg-white hover:bg-slate-50 text-slate-800 text-[11px] uppercase tracking-wider font-semibold transition-colors text-center cursor-pointer"
+              className="h-[40px] md:h-auto py-0 md:py-2.5 px-2 md:px-3 rounded-[10px] md:rounded-full border border-slate-300 hover:border-slate-800 bg-white hover:bg-slate-50 text-slate-800 text-xs md:text-[11px] uppercase tracking-normal md:tracking-wider font-semibold transition-colors text-center cursor-pointer flex items-center justify-center whitespace-nowrap"
             >
               View details
             </button>
@@ -120,7 +120,7 @@ const CollectionProductCard: React.FC<CollectionCardProps> = React.memo(
             <button
               type="button"
               onClick={() => onSelectPiece(piece, 'booking')}
-              className="py-2.5 px-3 rounded-full bg-slate-900 hover:bg-[#8A682D] text-white text-[11px] uppercase tracking-wider font-semibold transition-colors text-center cursor-pointer shadow-2xs"
+              className="h-[40px] md:h-auto py-0 md:py-2.5 px-2 md:px-3 rounded-[10px] md:rounded-full bg-slate-900 hover:bg-[#8A682D] text-white text-xs md:text-[11px] uppercase tracking-normal md:tracking-wider font-semibold transition-colors text-center cursor-pointer shadow-2xs flex items-center justify-center whitespace-nowrap"
             >
               Book private viewing
             </button>
@@ -361,7 +361,7 @@ export const TheCollection: React.FC<TheCollectionProps> = ({
                   setActiveCategory(cat);
                   setVisibleCount(12);
                 }}
-                className={`px-4 sm:px-5 py-2 text-xs sm:text-sm tracking-[0.12em] uppercase font-medium transition-all rounded-full cursor-pointer ${
+                className={`h-9 md:h-auto px-3.5 md:px-5 py-1.5 md:py-2 text-xs md:text-sm tracking-normal md:tracking-[0.12em] uppercase font-medium transition-all rounded-[10px] md:rounded-full cursor-pointer ${
                   activeCategory === cat
                     ? 'bg-slate-900 text-white shadow-xs'
                     : 'bg-slate-50 text-slate-600 hover:text-slate-950 hover:bg-slate-100 border border-slate-200'
@@ -556,7 +556,7 @@ export const TheCollection: React.FC<TheCollectionProps> = ({
             <button
               type="button"
               onClick={clearAllFilters}
-              className="px-6 py-2.5 rounded-full bg-slate-900 text-white text-xs tracking-wider uppercase font-medium hover:bg-[#8A682D] transition-colors cursor-pointer"
+              className="h-11 max-h-[44px] md:h-auto px-5 md:px-6 py-2.5 rounded-[10px] md:rounded-full bg-slate-900 text-white text-xs tracking-normal md:tracking-wider uppercase font-medium hover:bg-[#8A682D] transition-colors cursor-pointer inline-flex items-center justify-center"
             >
               Clear all filters
             </button>
@@ -577,11 +577,11 @@ export const TheCollection: React.FC<TheCollectionProps> = ({
 
         {/* Load More Button (12 items increment) */}
         {hasMore && (
-          <div className="mt-12 sm:mt-16 text-center">
+          <div className="mt-10 sm:mt-16 text-center">
             <button
               type="button"
               onClick={() => setVisibleCount((prev) => prev + 12)}
-              className="px-8 sm:px-10 py-3.5 rounded-full border border-slate-300 hover:border-slate-900 bg-white hover:bg-slate-900 text-slate-800 hover:text-white text-xs sm:text-sm tracking-[0.16em] uppercase font-semibold transition-all shadow-xs hover:shadow-md cursor-pointer"
+              className="h-11 max-h-[44px] md:h-auto px-6 md:px-10 py-2.5 md:py-3.5 rounded-[10px] md:rounded-full border border-slate-300 hover:border-slate-900 bg-white hover:bg-slate-900 text-slate-800 hover:text-white text-xs md:text-sm tracking-[0.1em] md:tracking-[0.16em] uppercase font-semibold transition-all shadow-xs hover:shadow-md cursor-pointer inline-flex items-center justify-center"
             >
               Load More Pieces ({filteredPieces.length - visibleCount} remaining)
             </button>

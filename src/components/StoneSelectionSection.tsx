@@ -272,7 +272,7 @@ export const StoneSelectionSection: React.FC<StoneSelectionSectionProps> = ({
           <button
             type="button"
             onClick={handleViewInventory}
-            className="w-full sm:w-auto min-w-[260px] py-4 px-9 rounded-full bg-[#0B192C] hover:bg-[#1B3050] text-white font-semibold text-xs sm:text-sm tracking-[0.18em] uppercase transition-all duration-300 shadow-md hover:shadow-lg hover:scale-[1.02] flex items-center justify-center gap-3 cursor-pointer group"
+            className="w-full sm:w-auto min-w-[260px] h-11 max-h-[44px] md:h-auto py-2.5 md:py-4 px-6 md:px-9 rounded-[10px] md:rounded-full bg-[#0B192C] hover:bg-[#1B3050] text-white font-semibold text-xs sm:text-sm tracking-[0.1em] md:tracking-[0.18em] uppercase transition-all duration-300 shadow-md hover:shadow-lg hover:scale-[1.02] flex items-center justify-center gap-2.5 md:gap-3 cursor-pointer group"
           >
             <Sparkles className="w-4 h-4 text-[#E6C687]" />
             <span>View Inventory In Collection</span>

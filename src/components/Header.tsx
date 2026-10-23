@@ -63,7 +63,7 @@ export const Header: React.FC<HeaderProps> = ({
         }
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="h-18 sm:h-20 flex items-center justify-between">
+          <div className="h-14 md:h-20 flex items-center justify-between">
             
             {/* 1. SCARSELLI Serif Wordmark */}
             <div className="flex items-center shrink-0">
@@ -72,14 +72,14 @@ export const Header: React.FC<HeaderProps> = ({
                 className="group flex flex-col justify-center"
               >
                 <span
-                  className={`text-xl sm:text-2xl font-serif tracking-[0.24em] font-normal uppercase transition-colors ${
+                  className={`text-lg md:text-2xl font-serif tracking-[0.18em] md:tracking-[0.24em] font-normal uppercase transition-colors ${
                     isScrolled ? 'text-slate-900 group-hover:text-[#8A682D]' : 'text-white group-hover:text-[#E6C687] drop-shadow-md'
                   }`}
                 >
                   {BUSINESS_INFO.name}
                 </span>
                 <span
-                  className={`text-[9px] tracking-[0.28em] uppercase -mt-0.5 font-sans font-light transition-colors ${
+                  className={`text-[8px] md:text-[9px] tracking-[0.2em] md:tracking-[0.28em] uppercase -mt-0.5 font-sans font-light transition-colors ${
                     isScrolled ? 'text-slate-500' : 'text-slate-200/90'
                   }`}
                 >
@@ -106,12 +106,12 @@ export const Header: React.FC<HeaderProps> = ({
             </nav>
 
             {/* 3. Action Group: Wishlist + Phone + "Book Private Viewing" Button */}
-            <div className="flex items-center gap-2.5 sm:gap-3.5">
+            <div className="flex items-center gap-2 sm:gap-3.5">
               
-              {/* Phone Icon */}
+              {/* Phone Icon: 36px round on mobile, 40px on desktop */}
               <a
                 href={BUSINESS_INFO.phoneHref}
-                className={`w-9 h-9 sm:w-10 sm:h-10 rounded-full border flex items-center justify-center transition-all shadow-xs hover:scale-105 cursor-pointer ${
+                className={`w-[36px] h-[36px] md:w-10 md:h-10 rounded-full border flex items-center justify-center transition-all shadow-xs hover:scale-105 cursor-pointer ${
                   isScrolled
                     ? 'border-slate-300 hover:border-[#8A682D] bg-white text-slate-700 hover:text-[#8A682D]'
                     : 'border-white/40 bg-slate-950/40 hover:bg-slate-900/70 text-white backdrop-blur-md'
@@ -119,14 +119,14 @@ export const Header: React.FC<HeaderProps> = ({
                 title="Call 580 Fifth Avenue Showroom"
                 aria-label="Call 580 Fifth Avenue Showroom"
               >
-                <Phone className="w-4 h-4 text-[#B5925A]" />
+                <Phone className="w-3.5 h-3.5 md:w-4 md:h-4 text-[#B5925A]" />
               </a>
 
-              {/* Wishlist Heart Icon */}
+              {/* Wishlist Heart Icon: 36px round on mobile, 40px on desktop */}
               <button
                 type="button"
                 onClick={onOpenSaved}
-                className={`w-9 h-9 sm:w-10 sm:h-10 rounded-full border flex items-center justify-center transition-all shadow-xs hover:scale-105 relative cursor-pointer ${
+                className={`w-[36px] h-[36px] md:w-10 md:h-10 rounded-full border flex items-center justify-center transition-all shadow-xs hover:scale-105 relative cursor-pointer ${
                   isScrolled
                     ? 'border-slate-300 hover:border-rose-400 bg-white text-slate-700 hover:text-rose-600'
                     : 'border-white/40 bg-slate-950/40 hover:bg-slate-900/70 text-white backdrop-blur-md'
@@ -135,7 +135,7 @@ export const Header: React.FC<HeaderProps> = ({
                 aria-label="Wishlist"
               >
                 <Heart
-                  className={`w-4 h-4 transition-colors ${
+                  className={`w-3.5 h-3.5 md:w-4 md:h-4 transition-colors ${
                     savedCount > 0 ? 'fill-rose-500 stroke-rose-500 text-rose-500' : ''
                   }`}
                 />
@@ -156,19 +156,19 @@ export const Header: React.FC<HeaderProps> = ({
                 <span>Book Private Viewing</span>
               </button>
 
-              {/* Mobile Hamburger Button */}
+              {/* Mobile Hamburger Button: 36px round on mobile, 40px on desktop */}
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 aria-expanded={mobileMenuOpen}
                 aria-label="Navigation Menu"
-                className={`lg:hidden w-9 h-9 sm:w-10 sm:h-10 rounded-full border flex items-center justify-center transition-all shadow-xs cursor-pointer ${
+                className={`lg:hidden w-[36px] h-[36px] md:w-10 md:h-10 rounded-full border flex items-center justify-center transition-all shadow-xs cursor-pointer ${
                   isScrolled
                     ? 'border-slate-300 bg-white text-slate-800'
                     : 'border-white/40 bg-slate-950/40 text-white backdrop-blur-md'
                 }`}
               >
-                {mobileMenuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
+                {mobileMenuOpen ? <X className="w-3.5 h-3.5 md:w-4 md:h-4" /> : <Menu className="w-3.5 h-3.5 md:w-4 md:h-4" />}
               </button>
 
             </div>
@@ -198,7 +198,7 @@ export const Header: React.FC<HeaderProps> = ({
                 setMobileMenuOpen(false);
                 onOpenEnquiry('Private Viewing Appointment');
               }}
-              className="w-full py-3 rounded-full bg-[#0B192C] hover:bg-[#1B3050] text-white text-xs font-semibold tracking-[0.16em] uppercase flex items-center justify-center gap-2 transition-all shadow-xs"
+              className="w-full h-11 max-h-[44px] rounded-[10px] md:rounded-full bg-[#0B192C] hover:bg-[#1B3050] text-white text-xs font-semibold tracking-[0.1em] md:tracking-[0.16em] uppercase flex items-center justify-center gap-2 transition-all shadow-xs"
             >
               <Sparkles className="w-3.5 h-3.5 text-[#E6C687]" />
               <span>Book Private Viewing</span>

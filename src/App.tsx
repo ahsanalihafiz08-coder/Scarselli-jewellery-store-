@@ -233,7 +233,15 @@ export default function App() {
       />
 
       {/* Single Expanding Floating Contact Button (Call / WhatsApp / Email) */}
-      <FloatingContactWidget />
+      <FloatingContactWidget
+        isHidden={Boolean(
+          selectedPiece ||
+          isGeneralEnquiryOpen ||
+          isSavedModalOpen ||
+          isInventoryOpen ||
+          activePolicy
+        )}
+      />
 
     </div>
   );

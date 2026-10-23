@@ -219,7 +219,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                           message: '',
                         });
                       }}
-                      className="px-6 py-2.5 text-xs tracking-wider uppercase font-semibold text-slate-800 bg-slate-100 hover:bg-slate-200 rounded-full transition-colors cursor-pointer"
+                      className="h-11 max-h-[44px] md:h-auto px-5 md:px-6 py-2.5 text-xs tracking-normal md:tracking-wider uppercase font-semibold text-slate-800 bg-slate-100 hover:bg-slate-200 rounded-[10px] md:rounded-full transition-colors cursor-pointer inline-flex items-center justify-center"
                     >
                       Submit Another Enquiry
                     </button>
@@ -398,7 +398,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full py-4 px-6 text-xs tracking-[0.18em] uppercase font-semibold text-white bg-slate-900 hover:bg-[#8A682D] transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-70 rounded-full shadow-md hover:shadow-lg"
+                    className="w-full h-11 max-h-[44px] md:h-auto py-2.5 md:py-4 px-6 text-xs tracking-[0.1em] md:tracking-[0.18em] uppercase font-semibold text-white bg-slate-900 hover:bg-[#8A682D] transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-70 rounded-[10px] md:rounded-full shadow-md hover:shadow-lg"
                   >
                     {loading ? (
                       <span>Transmitting Consultation Request...</span>
@@ -449,7 +449,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
               href={BUSINESS_INFO.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 hover:bg-[#8A682D] text-white text-xs tracking-wider uppercase font-semibold transition-all shadow-xs shrink-0 self-start sm:self-auto cursor-pointer"
+              className="inline-flex items-center justify-center gap-2 h-11 max-h-[44px] md:h-auto px-4 md:px-5 py-2.5 rounded-[10px] md:rounded-full bg-slate-900 hover:bg-[#8A682D] text-white text-xs tracking-normal md:tracking-wider uppercase font-semibold transition-all shadow-xs shrink-0 self-start sm:self-auto cursor-pointer"
             >
               <span>Get Directions on Google Maps</span>
               <ExternalLink className="w-3.5 h-3.5" />

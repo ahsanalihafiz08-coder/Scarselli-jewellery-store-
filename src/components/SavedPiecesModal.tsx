@@ -196,7 +196,7 @@ export const SavedPiecesModal: React.FC<SavedPiecesModalProps> = ({
             <button
               type="button"
               onClick={handleEnquireClick}
-              className="w-full py-3.5 px-6 rounded-full bg-slate-900 hover:bg-[#8A682D] text-white text-xs uppercase tracking-[0.16em] font-semibold transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 cursor-pointer group text-center"
+              className="w-full h-11 max-h-[44px] md:h-auto py-2.5 md:py-3.5 px-6 rounded-[10px] md:rounded-full bg-slate-900 hover:bg-[#8A682D] text-white text-xs uppercase tracking-[0.1em] md:tracking-[0.16em] font-semibold transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 cursor-pointer group text-center"
             >
               <Send className="w-4 h-4 text-[#E6C687] group-hover:translate-x-0.5 transition-transform" />
               <span>Enquire about these pieces</span>
